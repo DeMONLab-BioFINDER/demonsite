@@ -1,5 +1,112 @@
 ---
-title: "DEMONLAB"
+pagetitle: "demonlab"
+page-layout: custom
+section-divs: false
+toc: false
+css: index.css
+editor: source
+resources: 
+  - images/red_brain.mp4
 ---
 
-This is a demon site
+::: {.hello-quarto}
+
+::: {.content-block}
+
+::: {.grid}
+
+::: {.g-col-8}
+# Welcome to demonlab 
+
+Part of [BioFINDER](https://biofinder.se/), Department of Clinical Sciences Malmö, Lund University, Sweden.
+
+### Research
+
+Descriptive and captivating text about what we are trying to achieve. 
+
+- Here is an example of a question, which we are trying to answer in [project A](projects/example2)
+- Here is another one, which we are trying to answer in [project B](projects/example-project)
+
+[Read our papers](papers.qmd){.btn-action-primary .btn-action .btn .btn-primary .btn-lg role="button"}
+:::
+
+
+::: {.g-col-2}
+
+<video autoplay muted playsinline loop width="400" height="300">
+<source src="images/red_brain.mp4" type="video/mp4"/>
+</video>
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+::: {.hello-quarto}
+::: {.content-block}
+
+---
+
+# Methodology and data
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim.
+
+<ul class="nav nav-pills" id="hello-quarto-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="meth-tab" data-bs-toggle="tab" data-bs-target="#meth" type="button" role="tab" aria-controls="meth" aria-selected="true">Methodology</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">Data</button>
+  </li>
+</ul>
+
+<div class="tab-content" id="hello-quarto-tabcontent">
+
+<div class="tab-pane fade  show active" id="meth" role="tabpanel" aria-labelledby="meth-tab">
+
+
+::: {.grid}
+::: {.g-col-6}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.
+:::
+
+::: {.g-col-4}
+![](images/demon.jpeg)
+:::
+:::
+
+</div>
+
+<div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
+
+::: {.grid}
+
+::: {.g-col-6}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.
+
+:::
+
+
+
+::: {.g-col-6}
+![](images/demon.jpeg)
+:::
+:::
+
+</div>
+
+
+</div>
+
+
+:::
+:::
+

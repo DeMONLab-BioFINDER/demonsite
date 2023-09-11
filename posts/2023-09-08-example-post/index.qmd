@@ -1,0 +1,20 @@
+---
+title: "Example post"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem"
+author:
+  - name: Jonathan Rittmo
+date: 2023-09-08
+categories: [examples, stuff, fun] 
+#citation: 
+#  url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+image: demon.jpeg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).
+
+```{r}
+x <- rnorm(100)
+plot(x)
+```
+

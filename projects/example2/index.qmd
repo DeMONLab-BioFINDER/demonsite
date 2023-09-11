@@ -1,0 +1,38 @@
+---
+title: "rsfMRI connectivity across the lifespan"
+subtitle: "Looking at changes of functional connectivity in healthy aging and disease"
+categories: [fmri, connectivity, fun] 
+about:
+  id: hero-heading
+  template: trestles
+  image: connect.jpg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+:::{#hero-heading}
+
+## Quick summary
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor.
+
+## Funding? Tools? 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+:::
+
+## Lengthier project description
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.
+
+Sed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.
+
+Morbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.
+
+Integer interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc.
+

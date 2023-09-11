@@ -1,11 +1,21 @@
 ---
 title: "Members"
+format: 
+  html:
+    page-layout: full
+listing: 
+  - id: member-list
+    contents: 
+      - "members/jake.qmd"
+      - "members/yu.qmd"
+      - "members/gabri.qmd"
+      - "members/jon.qmd"
+    type: default
+    sort: false
+    image-align: "left"
 ---
 
-## Jacob Vogel
+All current members of the lab are listed below, click on any of them for details. 
 
-## Xiao Yu
-
-## Gabriele Vilkaite
-
-## Jonathan Rittmo
+:::{#member-list}
+:::

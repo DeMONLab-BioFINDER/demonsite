@@ -1,8 +1,10 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  title: "DEMONLAB"
+  title: "demonlab"
+  favicon: images/demon.jpeg
   navbar:
     logo: images/demon.jpeg
     right: 
@@ -15,6 +17,8 @@ website:
       - papers.qmd
       - href: blog.qmd
         text: Blog
+      - href: news.qmd
+        text: News
       - takepart.qmd
 
 format:
@@ -25,5 +29,5 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 

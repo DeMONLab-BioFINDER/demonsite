@@ -1,0 +1,71 @@
+
+.content-block {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+@media(min-width: 900px) {
+.content-block {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+}
+
+@media (min-width: 1200px) {
+.content-block {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+
+.hello-quarto {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+.hello-quarto-banner {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.hello-quarto-banner h1 {
+  margin-right: 40px;
+}
+}
+
+.hello-quarto-banner .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border: none;
+  border-bottom: 2px solid #39729E !important;
+  color: #39729E;
+  background-color: transparent;
+  
+}
+
+.hello-quarto-banner .nav-pills button {
+  width: 125px;
+}
+
+.hello-quarto .tab-content {
+  border: none;
+  padding: 0;
+  color: rgb(84, 85, 85);
+}
+
+.hello-quarto .tab-content p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.hello-quarto div.sourceCode {
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+
+

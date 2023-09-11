@@ -1,0 +1,12 @@
+---
+title: "Example project"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem"
+date: 2023-09-08
+categories: [fmri, connectivity, fun] 
+#citation: 
+#  url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+image: demon.jpeg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+For each project we can include a card like this. We can stylize them differently if we want to. Here I've for example just copied the blog post template. But in the other example project I've 

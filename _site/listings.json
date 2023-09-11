@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2023-09-08-example-post/index.html"
+    ]
+  },
+  {
+    "listing": "/members.html",
+    "items": [
+      "/members/jake.html",
+      "/members/yu.html",
+      "/members/gabri.html",
+      "/members/jon.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/example2/index.html",
+      "/projects/example-project/index.html"
+    ]
+  }
+]
