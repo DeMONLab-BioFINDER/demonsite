@@ -18,7 +18,7 @@ resources:
 ::: {.g-col-8}
 # Welcome to demonlab 
 
-Part of [BioFINDER](https://biofinder.se/), Department of Clinical Sciences Malmö, Lund University, Sweden.
+Part of [BioFINDER](https://biofinder.se/), Department of Clinical Sciences, Lund University, Sweden.
 
 ### Research
 
@@ -97,7 +97,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis 
 
 
 ::: {.g-col-6}
-![](images/demon.jpeg)
+
+```{r}
+with(mtcars, plot(mpg, qsec))
+```
+
+
 :::
 :::
 
