@@ -1,5 +1,6 @@
 ---
 title: "Papers"
+page-layout: full
 ---
 
 ```{r data, echo=FALSE, message=FALSE, cache=TRUE}
