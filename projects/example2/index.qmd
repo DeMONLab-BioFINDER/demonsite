@@ -1,11 +1,11 @@
 ---
-title: "rsfMRI connectivity across the lifespan"
+title: "Functional connectivity in healthy and pathological aging"
 subtitle: "Looking at changes of functional connectivity in healthy aging and disease"
 categories: [fmri, connectivity, fun] 
 about:
   id: hero-heading
   template: trestles
-  image: connect.jpg
+  image: migrations.png
   links:
     - icon: github
       text: Github

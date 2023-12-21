@@ -4,11 +4,15 @@ title: "Lab News"
 
 Here we can post any updates, such as new people joining or papers being accepted. 
 
-# demonlab 0.2.0 (04-09-23)
+### demonlab 0.3.0 (01-11-23)
+
+- Xiao Yu started
+
+### demonlab 0.2.0 (04-09-23)
 
 - Gabriele and Jonathan started 
 
 
-# demonlab 0.1.0 (??-??-??)
+### demonlab 0.1.0 (??-??-??)
 
 - Initial commit

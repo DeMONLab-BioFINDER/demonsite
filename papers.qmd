@@ -2,4 +2,167 @@
 title: "Papers"
 ---
 
-Here we can post all papers
+```{r data, echo=FALSE, message=FALSE, cache=TRUE}
+library(rentrez)
+library(xml2)
+library(tidyverse)
+library(lubridate)
+library(reactable)
+library(tm)
+library(topicmodels)
+library(tidytext)
+library(ggwordcloud)
+library(visNetwork)
+
+
+query <- '(Jacob Vogel[Auth]) OR (Vogel JW[Auth])'
+
+
+pmids <- entrez_search(db='pubmed', term=query, retmax=100)$ids
+publications <- entrez_summary(db='pubmed', id=pmids)
+raw_xml <- entrez_fetch(db="pubmed", id=pmids, rettype="xml")
+
+xml_data <- read_xml(raw_xml)
+records <- xml_find_all(xml_data, ".//MedlineCitation")
+papers <- xml_find_all(records, ".//Article")
+
+extract_authors <- function(record) {
+  lastname <- record %>% xml_find_all(".//LastName") %>% xml_text()
+  initials <- record %>% xml_find_all(".//Initials") %>% xml_text()
+  paste(lastname, initials, collapse = ", ")
+}
+extract_first_two <- function(s) {
+  elements <- str_split(s, ",", simplify = TRUE)[1, ]
+  paste(elements[1:min(2, length(elements))], collapse = ", ")
+}
+extract_last <- function(s) {
+  elements <- str_split(s, ",", simplify = TRUE)[1, ]
+  elements[length(elements)]
+}
+
+titles <- papers %>% xml_find_all(".//ArticleTitle") %>% xml_text() %>% str_trim()
+authors <- sapply(papers, extract_authors)
+journal <- papers %>% xml_find_all(".//Title") %>% xml_text() %>% str_trim() %>% str_squish()
+pub_date <- papers %>% xml_find_all(".//PubDate") %>% xml_text() %>% ymd(truncated = 2)
+pub_type <- papers %>% xml_find_first(".//PublicationType") %>% xml_text()
+abstract <- papers %>% xml_find_first(".//Abstract") %>% xml_text()
+
+
+filt_year <- ymd('2014', truncated = 2)
+pub_data_org <- tibble(Title = titles, Author = authors, Journal = journal, Date = ymd(pub_date, truncated = 2), Type = pub_type, Abstract = abstract, pmid = pmids)
+
+records <- xml_find_all(xml_data, ".//PubmedArticle")
+extract_references <- function(paper) {
+  refs <- paper %>% xml_find_all(".//ArticleId[@IdType = 'pubmed']") %>% xml_text()
+  return(refs)
+}
+paper_references <- lapply(records, extract_references)
+
+ref_data <- pub_data_org %>% mutate(refs = paper_references) %>% 
+  unnest(refs)  
+
+edge_list <- ref_data %>% filter(Type != 'Preprint') %>% 
+  select(pmid, refs) %>% rename(Paper = pmid, Reference = refs) %>% 
+  filter(Reference %in% Paper) %>% 
+  filter(Paper != Reference) %>% 
+  inner_join(pub_data_org, join_by(Paper == pmid)) %>% 
+  mutate(Paper = Title) %>% 
+  select(Paper, Reference) %>% 
+  inner_join(pub_data_org, join_by(Reference == pmid)) %>% 
+  mutate(Reference = Title) %>% 
+  filter(Date > filt_year) %>% 
+  select(Paper, Reference)
+
+
+corpus <- VCorpus(VectorSource(pub_data_org %>%  filter(Type != 'Preprint', 
+                                                        Title %in% c(edge_list$Paper, edge_list$Reference)) %>%  
+                               mutate(combined = paste(Title, Abstract)) %>% pull(combined)))
+corpus <- tm_map(corpus, content_transformer(tolower))
+corpus <- tm_map(corpus, removePunctuation)
+corpus <- tm_map(corpus, removeWords, c(stopwords("english"), 'discussion', 'method',
+                                        'methods', 'participants', 'used', 
+                                        'individuals', 'mean', 'association', 'included',
+                                        'among', 'associated', 'study', 'associated',
+                                        'higher', 'compared', 'measures', 'showed', 
+                                        'results', 'using', 'human', 'analysis', 
+                                        'including', 'can', 'show', 'identified', 
+                                        'two', 'patients', 'result', 'objective', 'abstract', 'disease'))
+corpus <- tm_map(corpus, stripWhitespace)
+
+dtm <- DocumentTermMatrix(corpus)
+dtm_tfidf <- weightTfIdf(dtm)
+num_topics <- 4
+lda_model <- LDA(dtm, k = num_topics, method = "Gibbs")
+ap_topics <- tidy(lda_model, matrix = "beta")
+
+
+nodes <- data.frame(name=unique(c(edge_list$Paper, edge_list$Reference)))
+edge_list$PaperID <- match(edge_list$Paper, nodes$name) - 1
+edge_list$ReferenceID <- match(edge_list$Reference, nodes$name) - 1
+
+
+edges <- data.frame(from = edge_list$PaperID, to = edge_list$ReferenceID,
+                    arrows = c("to"),
+                    smooth = c(TRUE),
+                    shadow = c(TRUE)) 
+
+nodes <- data.frame(id = unique(c(edge_list$PaperID, edge_list$ReferenceID)),
+                    title = nodes$name,
+                    group = topics(lda_model)
+                    )
+
+
+
+```
+
+
+```{r wc, echo=FALSE, message=FALSE}
+#| layout-ncol: 2
+
+
+top_terms <- ap_topics%>%
+  #group_by(topic) %>%
+  group_by(term) %>% 
+  summarise(beta = sum(beta)) %>% 
+  slice_max(beta, n = 30) 
+
+ggplot(top_terms, aes(label = term, size = beta, color = beta)) +
+  geom_text_wordcloud() +
+  scale_size_area(max_size = 15) +
+  theme_minimal() +
+  scale_color_gradient(high = "darkred", low = "pink")
+
+visNetwork(nodes, edges)
+
+```
+
+
+
+```{r papertable, echo=FALSE, message=FALSE}
+
+
+pub_data <- pub_data_org %>% filter(Date > filt_year,
+                                Type %in% c('Journal Article', 'Systematic Review', 'Observational Study')) %>%
+  arrange(desc(Date)) %>%
+  mutate(
+    Auth = paste(map_chr(Author, extract_first_two), '...', map_chr(Author, extract_last)),
+    Year = year(Date)
+  ) %>%
+  relocate(Auth, .after = 'Author') %>% 
+  select(-Date)
+
+reactable(pub_data %>% select(-Author, -Abstract, -pmid, -Type), searchable = TRUE,
+          columns = list(Title = colDef(width = 300),
+                         Year = colDef(width = 80)),
+          showPageSizeOptions = TRUE, filterable = TRUE,
+          details = function(index) {
+            abs <- pub_data[index, ] %>%  select(Author, Abstract) %>% t()
+            tbl <- reactable(abs, outlined = TRUE, highlight = TRUE, fullWidth = TRUE,
+                             columns = list(V1 = colDef(width = 600))
+            )
+          })
+
+```
+
+
+

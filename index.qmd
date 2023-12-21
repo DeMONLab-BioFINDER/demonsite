@@ -13,12 +13,14 @@ resources:
 
 ::: {.content-block}
 
-::: {.grid}
+![](images/placeholderbanner.png)
 
-::: {.g-col-8}
-# Welcome to demonlab 
 
-Part of [BioFINDER](https://biofinder.se/), Department of Clinical Sciences, Lund University, Sweden.
+# Welcome to DeMONlab 
+
+Our lab’s main focus is in aging and neurodegenerative disease research, where we take advantage of large data resources to model disease progression and discover contributions to disease pathogenesis. Some of our lab’s principal research avenues include characterizing individual difference in disease progression, predicting the neurobiological progression of neurodegenerative diseases, and modeling the earliest biological changes that lead to neurodegenerative syndromes. Our work achieves these goals by blending large neuroimaging and multi-omic datasets, and applying to these datasets supervised and unsupervised methods in statistical learning and disease progression modeling.
+
+Our lab is part of the Swedish [BioFINDER study](https://biofinder.se/), which is one of the premier neurodegenerative datasets in the world. Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. The group boasts a sophistication in many statistical approaches and an expertise in many types of datasets. We also have a commitment to open science, FAIR principals and contributing to the greater research community.
 
 ### Research
 
@@ -27,16 +29,24 @@ Descriptive and captivating text about what we are trying to achieve.
 - Here is an example of a question, which we are trying to answer in [project A](projects/example2)
 - Here is another one, which we are trying to answer in [project B](projects/example-project)
 
-[Read our papers](papers.qmd){.btn-action-primary .btn-action .btn .btn-primary .btn-lg role="button"}
+
+::: {.grid}
+
+::: {.g-col-4}
+
+[Who are we?](members.qmd){.btn-action-primary .btn-action .btn .btn-primary .btn-lg role="button"}
+
 :::
 
+::: {.g-col-4}
 
-::: {.g-col-2}
+[What do we do?](projects.qmd){.btn-action-primary .btn-action .btn .btn-primary .btn-lg role="button"}
 
-<video autoplay muted playsinline loop width="400" height="300">
-<source src="images/red_brain.mp4" type="video/mp4"/>
-</video>
+:::
 
+::: {.g-col-4}
+
+[Publications](papers.qmd){.btn-action-primary .btn-action .btn .btn-primary .btn-lg role="button"}
 
 :::
 

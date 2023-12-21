@@ -8,29 +8,37 @@ about:
   links:
     - icon: twitter
       text: twitter
-      href: https://twitter.com
+      href: https://twitter.com/jorittmo
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/jorittmo
 ---
 
 :::{#hero-heading}
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+When I was younger I figured one had only two paths to choose when wanting to understand the world: either you study the world directly, i.e. physics, or you study the thing that does the understanding, the brain. I chose the latter which brought me on a journey into Cognitive Science, Neuropsychology and Statistics.
+
+My PhD project will focus on functional connectivity changes in the brain, with a special focus on the medial temporal lobe, across the lifespan both in health and across the Alzheimer's disease spectrum. The aim is to unravel how, why and when these alterations manifest, and whether they drive changes in cognitive functioning.
 
 ## Education
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
+Lund University | MSc in Statistics | 2021
 
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+University of Edinburgh | MSc in Human Cognitive Neuropsychology | 2020
+
+University of Gothenburg | BSc in Statistics | 2019
+
+University of Gothenburg | BSc in Cognitive Science | 2018
 
 ## Experience
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
+Sogeti Sweden | Data Scientist | 2022 - 2023
 
-GeoScynce | Chief Analyst | Sept 2012 - April 2018
+University of Edinburgh | Postgraduate Statistics Tutor | 2021
+
+University of Gothenburg | Research Assistant | 2018
+
+University of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019
 
 :::
 

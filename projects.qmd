@@ -12,5 +12,4 @@ page-layout: full
 title-block-banner: false
 ---
 
-
-Here we can post all cool projects
+In the projects below you can find out more about what we do!

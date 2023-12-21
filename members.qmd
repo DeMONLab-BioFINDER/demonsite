@@ -15,7 +15,10 @@ listing:
     image-align: "left"
 ---
 
-All current members of the lab are listed below, click on any of them for details. 
+![](images/the_gang.png)
+
+------------------------------------------
 
 :::{#member-list}
+
 :::

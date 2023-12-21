@@ -3,10 +3,10 @@ project:
   output-dir: _site
 
 website:
-  title: "demonlab"
-  favicon: images/demon.jpeg
+  title: "DeMON"
+  favicon: images/logobraindev.png
   navbar:
-    logo: images/demon.jpeg
+    logo: images/logobraindev.png
     right: 
         - icon: house-fill
     left:
@@ -19,7 +19,8 @@ website:
         text: Blog
       - href: news.qmd
         text: News
-      - takepart.qmd
+      - href: takepart.qmd
+        text: Join
 
 format:
   html:
