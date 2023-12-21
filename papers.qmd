@@ -120,6 +120,16 @@ nodes <- data.frame(id = unique(c(edge_list$PaperID, edge_list$ReferenceID)),
 ```{r wc, echo=FALSE, message=FALSE}
 #| layout-ncol: 2
 
+library(rentrez)
+library(xml2)
+library(tidyverse)
+library(lubridate)
+library(reactable)
+library(tm)
+library(topicmodels)
+library(tidytext)
+library(ggwordcloud)
+library(visNetwork)
 
 top_terms <- ap_topics%>%
   #group_by(topic) %>%
@@ -142,6 +152,17 @@ visNetwork(nodes, edges)
 ```{r papertable, echo=FALSE, message=FALSE}
 
 
+library(rentrez)
+library(xml2)
+library(tidyverse)
+library(lubridate)
+library(reactable)
+library(tm)
+library(topicmodels)
+library(tidytext)
+library(ggwordcloud)
+library(visNetwork)
+
 pub_data <- pub_data_org %>% filter(Date > filt_year,
                                 Type %in% c('Journal Article', 'Systematic Review', 'Observational Study')) %>%
   arrange(desc(Date)) %>%
@@ -153,7 +174,7 @@ pub_data <- pub_data_org %>% filter(Date > filt_year,
   select(-Date)
 
 reactable(pub_data %>% select(-Author, -Abstract, -pmid, -Type), searchable = TRUE,
-          columns = list(Title = colDef(width = 300),
+          columns = list(Title = colDef(width = 500),
                          Year = colDef(width = 80)),
           showPageSizeOptions = TRUE, filterable = TRUE,
           details = function(index) {
