@@ -16,9 +16,7 @@ about:
 
 :::{#hero-heading}
 
-When I was younger I figured one had only two paths to choose when wanting to understand the world: either you study the world directly, i.e. physics, or you study the thing that does the understanding, the brain. I chose the latter which brought me on a journey into Cognitive Science, Neuropsychology and Statistics.
-
-My PhD project will focus on functional connectivity changes in the brain, with a special focus on the medial temporal lobe, across the lifespan both in health and across the Alzheimer's disease spectrum. The aim is to unravel how, why and when these alterations manifest, and whether they drive changes in cognitive functioning.
+Hej
 
 ## Education
 
