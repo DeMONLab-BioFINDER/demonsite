@@ -3,7 +3,7 @@ title: "Papers"
 page-layout: full
 ---
 
-```{r data, echo=FALSE, message=FALSE, cache=TRUE}
+```{r data, echo=FALSE, message=FALSE, cache=FALSE}
 library(rentrez)
 library(xml2)
 library(tidyverse)

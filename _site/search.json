@@ -1,80 +1,38 @@
 [
   {
-    "objectID": "papers.html",
-    "href": "papers.html",
-    "title": "Papers",
+    "objectID": "projects/example2/index.html",
+    "href": "projects/example2/index.html",
+    "title": "Functional connectivity in healthy and pathological aging",
     "section": "",
-    "text": "# A tibble: 38 × 8\n   Title                 Author Journal Date       Type  Abstract pmid  combined\n   &lt;chr&gt;                 &lt;chr&gt;  &lt;chr&gt;   &lt;date&gt;     &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt;   \n 1 Novel data-driven su… Shen … Transl… 2023-12-07 Jour… TDP-43 … 3806… Novel d…\n 2 Connectome-based mod… Vogel… Nature… 2023-10-01 Jour… Neurode… 3762… Connect…\n 3 A data-driven study … Aksma… Brain … 2023-12-01 Obse… Amyloid… 3743… A data-…\n 4 Comparison of Group-… Leuzy… JAMA n… 2023-06-01 Jour… Longitu… 3715… Compari…\n 5 Data-driven neuropat… Young… Brain … 2023-07-03 Jour… TAR DNA… 3715… Data-dr…\n 6 Development of top-d… Pines… Neuron  2023-04-19 Jour… Hierarc… 3680… Develop…\n 7 Obesity-Associated N… Morys… Journa… 2023-01-01 Obse… Excess … 3656… Obesity…\n 8 Gray matter hypoperf… Ahmad… Journa… 2023-04-01 Jour… Several… 3641… Gray ma…\n 9 Local molecular and … Hanse… Nature… 2022-08-10 Jour… Numerou… 3594… Local m…\n10 Linking Individual D… Cui Z… Biolog… 2022-12-15 Jour… The spa… 3592… Linking…\n# ℹ 28 more rows"
+    "text": "Github\n  \n\n  \n  \n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DEMONLAB",
+    "objectID": "projects/example2/index.html#quick-summary",
+    "href": "projects/example2/index.html#quick-summary",
+    "title": "Functional connectivity in healthy and pathological aging",
     "section": "",
-    "text": "Welcome to Quarto\n\nAn open-source scientific and technical publishing system\n\nAuthor using Jupyter notebooks or with plain text markdown in your favorite editor.\nCreate dynamic content with Python, R, Julia, and Observable.\nPublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nShare knowledge and insights organization-wide by publishing to Posit Connect, Confluence, or other publishing systems.\nWrite using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.\n\n\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nTake part!"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "projects/example2/index.html#funding-tools",
+    "href": "projects/example2/index.html#funding-tools",
+    "title": "Functional connectivity in healthy and pathological aging",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
-    "objectID": "members.html",
-    "href": "members.html",
-    "title": "Members",
+    "objectID": "projects/example2/index.html#lengthier-project-description",
+    "href": "projects/example2/index.html#lengthier-project-description",
+    "title": "Functional connectivity in healthy and pathological aging",
+    "section": "Lengthier project description",
+    "text": "Lengthier project description\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.\nSed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.\nMorbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.\nInteger interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "Lab News",
     "section": "",
-    "text": "Jacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXiao Yu\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "In the projects below you can find out more about what we do!\n\n\n\n\n\n\n\n\n\n\n\n\nFunctional connectivity in healthy and pathological aging\n\n\n\nfmri\n\n\nconnectivity\n\n\nfun\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample project\n\n\n\nfmri\n\n\nconnectivity\n\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus…\n\n\n\n\n\n\nSep 8, 2023\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "takepart.html",
-    "href": "takepart.html",
-    "title": "Joining DeMON and lab philosophy",
-    "section": "",
-    "text": "If you are interested in"
-  },
-  {
-    "objectID": "members.html#gabriele-vilkaite",
-    "href": "members.html#gabriele-vilkaite",
-    "title": "Members",
-    "section": "Gabriele Vilkaite",
-    "text": "Gabriele Vilkaite"
-  },
-  {
-    "objectID": "members.html#jonathan-rittmo",
-    "href": "members.html#jonathan-rittmo",
-    "title": "Members",
-    "section": "Jonathan Rittmo",
-    "text": "Jonathan Rittmo"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "The Demon Blog",
-    "section": "",
-    "text": "Example post\n\n\n\n\n\n\nexamples\n\n\nstuff\n\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem\n\n\n\n\n\nSep 8, 2023\n\n\nJonathan Rittmo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#xiao-yu",
-    "href": "members.html#xiao-yu",
-    "title": "Members",
-    "section": "Xiao Yu",
-    "text": "Xiao Yu"
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Example post",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem. Curabitur mollis augue tincidunt iaculis scelerisque. Duis erat tortor, semper eu finibus sit amet, pharetra ac neque. Fusce sed semper velit. In ac odio nec nunc congue sodales nec vel turpis. Sed laoreet sapien lectus, eu mattis orci condimentum maximus. Sed luctus mattis tempus. Fusce a ultrices ante. Suspendisse potenti.\nVestibulum elementum aliquet diam. Suspendisse feugiat lacus a nisi sollicitudin tincidunt. Phasellus ac mattis tellus, id imperdiet massa. Praesent sollicitudin mauris nec turpis volutpat bibendum. Donec non risus sed turpis porttitor lobortis sit amet maximus eros. Pellentesque risus nisl, suscipit quis augue sed, porta bibendum tortor. Sed varius turpis nibh. Nam feugiat arcu augue, in consequat felis interdum iaculis. Phasellus at turpis vel sem ornare maximus non non felis. Pellentesque tempor lacinia nibh eu sagittis. Aliquam lobortis vel sapien ut scelerisque. Cras eros nunc, varius rhoncus metus nec, eleifend vestibulum tellus. Aenean maximus scelerisque iaculis. Nunc mattis velit eget ante dapibus commodo. Aliquam nec ipsum varius dui vulputate molestie dictum sed odio. Nulla bibendum pulvinar dolor id gravida.\nQuisque venenatis, nunc in pretium ultrices, ante neque efficitur velit, sit amet suscipit leo odio id dui. Aenean id semper velit. Proin fringilla, augue ac scelerisque gravida, justo est auctor ex, in tempor nunc neque et dolor. Integer dignissim velit semper ultrices maximus. Aliquam fringilla lorem iaculis, bibendum nulla nec, pulvinar neque. Aenean commodo sapien eget condimentum mollis. Nunc lobortis eros a nisi commodo, vitae iaculis dolor bibendum. Phasellus faucibus, erat sed tempor vulputate, sem nisi venenatis risus, quis commodo purus lacus at neque. Curabitur in blandit diam.\nMauris finibus, enim ut finibus sollicitudin, neque velit blandit leo, ac dictum orci eros sit amet lacus. Suspendisse facilisis eleifend nulla id laoreet. Etiam placerat risus quam, euismod cursus ligula mattis ut. Nunc eget condimentum dolor. Mauris venenatis, ligula vel consequat scelerisque, orci leo pulvinar lacus, vel dignissim dui orci at est. Vivamus mattis ante nec purus vestibulum, ac venenatis arcu varius. Proin ac aliquet mauris.\nDonec a mi dolor. Quisque vitae massa sed urna ornare dapibus sit amet eget tortor. Duis rhoncus tincidunt nisi, ut porttitor risus congue et. Donec placerat, mauris quis placerat imperdiet, urna eros luctus massa, ac maximus enim libero vitae dui. Etiam sapien eros, tincidunt in elit sit amet, auctor sollicitudin augue. Fusce tempus sit amet quam eu hendrerit. Pellentesque risus dolor, rutrum vel iaculis vitae, scelerisque et felis. Ut turpis est, hendrerit non nisi a, malesuada aliquet nisl. Vivamus ultricies, nulla sed sollicitudin accumsan, mauris ligula laoreet nisi, quis ullamcorper odio enim in lectus. Sed eget convallis odio. Aenean viverra magna vel lacinia pharetra."
+    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
   },
   {
     "objectID": "posts/2023-09-08-example-post/index.html",
@@ -84,95 +42,67 @@
     "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
   },
   {
-    "objectID": "members.html#bio",
-    "href": "members.html#bio",
-    "title": "Members",
+    "objectID": "members/jon.html",
+    "href": "members/jon.html",
+    "title": "Jonathan Rittmo",
     "section": "",
-    "text": "I’m a PhD candidate at SUNY-ESF, working on new tools to make complex, broad-scale systems easier for humans to understand. Right now, that means I split my time between predictive modeling (to monitor forest carbon sequestration across New York State, track the development of early-successional forests, and more) and visualization (including using game engines as a GIS and making it easier to make reproducible VR environments for research). By training I’m either an ecologist (specializing in landscape and translational ecology) or environmental scientist; professionally, I’ve worked as a data analyst, software engineer, and chicken farmer.\nOn this site I keep a list of my publications, presentations, and my CV, as well as a technical blog."
+    "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nHej\n\n\nLund University | MSc in Statistics | 2021\nUniversity of Edinburgh | MSc in Human Cognitive Neuropsychology | 2020\nUniversity of Gothenburg | BSc in Statistics | 2019\nUniversity of Gothenburg | BSc in Cognitive Science | 2018\n\n\n\nSogeti Sweden | Data Scientist | 2022 - 2023\nUniversity of Edinburgh | Postgraduate Statistics Tutor | 2021\nUniversity of Gothenburg | Research Assistant | 2018\nUniversity of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019"
   },
   {
-    "objectID": "members.html#selected-projects",
-    "href": "members.html#selected-projects",
-    "title": "Members",
-    "section": "Selected Projects",
-    "text": "Selected Projects\n\nPublications\nFiltering ground noise from LiDAR returns produces inferior models of forest aboveground biomass in heterogenous landscapes. Mahoney, MJ, Johnson, LK, Bevilacqua, E, and Beier, CM. 2022. GIScience & Remote Sensing 59(1): 1266-1280. https://doi.org/10.1080/15481603.2022.2103069\nClassification and mapping of low-statured shrubland cover types in post-agricultural landscapes of the US Northeast. Mahoney, MJ, Johnson, LK, Guinan, AZ, and Beier, CM. 2022. International Journal of Remote Sensing 43(19-24): 7117-7138. https://doi.org/10.1080/01431161.2022.2155086\nunifir: A Unifying API for Interacting with Unity from R. Mahoney, MJ, Beier, CM, and Ackerman, AC. 2022. Journal of Open Source Software 7(73): 4388. https://doi.org/10.21105/joss.04388\nterrainr: An R package for creating immersive virtual environments. Mahoney, MJ, Beier, CM, and Ackerman, AC. 2022. Journal of Open Source Software, 7(69): 4060. https://doi.org/10.21105/joss.04060\n\n\nR Packages\nwaywiser | Ergonomic Methods for Assessing Spatial Models | 2023\nspatialsample | Spatial Resampling Infrastructure | 2022\nunifir | A Unifying API for Working with Unity in R | 2022\nterrainr | Retrieve Data from the USGS National Map and Transform it for 3D Landscape Visualizations | 2021"
-  },
-  {
-    "objectID": "members.html#education",
-    "href": "members.html#education",
-    "title": "Finley Malloc",
+    "objectID": "members/jon.html#education",
+    "href": "members/jon.html#education",
+    "title": "Jonathan Rittmo",
     "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+    "text": "Lund University | MSc in Statistics | 2021\nUniversity of Edinburgh | MSc in Human Cognitive Neuropsychology | 2020\nUniversity of Gothenburg | BSc in Statistics | 2019\nUniversity of Gothenburg | BSc in Cognitive Science | 2018"
   },
   {
-    "objectID": "members.html#experience",
-    "href": "members.html#experience",
-    "title": "Finley Malloc",
+    "objectID": "members/jon.html#experience",
+    "href": "members/jon.html#experience",
+    "title": "Jonathan Rittmo",
     "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+    "text": "Sogeti Sweden | Data Scientist | 2022 - 2023\nUniversity of Edinburgh | Postgraduate Statistics Tutor | 2021\nUniversity of Gothenburg | Research Assistant | 2018\nUniversity of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019"
   },
   {
-    "objectID": "members.html#education-1",
-    "href": "members.html#education-1",
-    "title": "Finley Malloc",
-    "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "members.html#experience-1",
-    "href": "members.html#experience-1",
-    "title": "Finley Malloc",
-    "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "members.html#lab-reports",
-    "href": "members.html#lab-reports",
-    "title": "Members",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "members.html#meeting-notes",
-    "href": "members.html#meeting-notes",
-    "title": "Members",
-    "section": "Meeting Notes",
-    "text": "Meeting Notes\n\n\n\n\n  \n\n\n\n\nFinley Malloc\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "jon.html",
-    "href": "jon.html",
-    "title": "Finley Malloc",
+    "objectID": "members/gabri.html",
+    "href": "members/gabri.html",
+    "title": "Gabriele Vilkaite",
     "section": "",
     "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
   },
   {
-    "objectID": "jon.html#education",
-    "href": "jon.html#education",
-    "title": "Finley Malloc",
+    "objectID": "members/gabri.html#education",
+    "href": "members/gabri.html#education",
+    "title": "Gabriele Vilkaite",
     "section": "",
     "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
   },
   {
-    "objectID": "jon.html#experience",
-    "href": "jon.html#experience",
-    "title": "Finley Malloc",
+    "objectID": "members/gabri.html#experience",
+    "href": "members/gabri.html#experience",
+    "title": "Gabriele Vilkaite",
     "section": "",
     "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
   },
   {
-    "objectID": "members.html#jonathan",
-    "href": "members.html#jonathan",
-    "title": "Members",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "No matching items"
+    "text": "In the projects below you can find out more about what we do!\n\n\n\n\n\n\n\n\n\n\n\n\nFunctional connectivity in healthy and pathological aging\n\n\n\nfmri\n\n\nconnectivity\n\n\nfun\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample project\n\n\n\nfmri\n\n\nconnectivity\n\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus…\n\n\n\n\n\n\nSep 8, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "members.html#jonathan-1",
-    "href": "members.html#jonathan-1",
+    "objectID": "members.html",
+    "href": "members.html",
     "title": "Members",
-    "section": "Jonathan",
-    "text": "Jonathan\n\n\n\n\n  \n\n\n\n\nFinley Malloc\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "section": "",
+    "text": "Jacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXiao Yu\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "takepart.html#lund-university",
+    "href": "takepart.html#lund-university",
+    "title": "Joining DeMON and lab philosophy",
+    "section": "Lund University",
+    "text": "Lund University"
   },
   {
     "objectID": "members/yu.html",
@@ -217,144 +147,11 @@
     "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
   },
   {
-    "objectID": "members/gabri.html",
-    "href": "members/gabri.html",
-    "title": "Gabriele Vilkaite",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "The Demon Blog",
     "section": "",
-    "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "members/gabri.html#education",
-    "href": "members/gabri.html#education",
-    "title": "Gabriele Vilkaite",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "members/gabri.html#experience",
-    "href": "members/gabri.html#experience",
-    "title": "Gabriele Vilkaite",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "members/jon.html",
-    "href": "members/jon.html",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nHej\n\n\nLund University | MSc in Statistics | 2021\nUniversity of Edinburgh | MSc in Human Cognitive Neuropsychology | 2020\nUniversity of Gothenburg | BSc in Statistics | 2019\nUniversity of Gothenburg | BSc in Cognitive Science | 2018\n\n\n\nSogeti Sweden | Data Scientist | 2022 - 2023\nUniversity of Edinburgh | Postgraduate Statistics Tutor | 2021\nUniversity of Gothenburg | Research Assistant | 2018\nUniversity of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019"
-  },
-  {
-    "objectID": "members/jon.html#education",
-    "href": "members/jon.html#education",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "Lund University | MSc in Statistics | 2021\nUniversity of Edinburgh | MSc in Human Cognitive Neuropsychology | 2020\nUniversity of Gothenburg | BSc in Statistics | 2019\nUniversity of Gothenburg | BSc in Cognitive Science | 2018"
-  },
-  {
-    "objectID": "members/jon.html#experience",
-    "href": "members/jon.html#experience",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "Sogeti Sweden | Data Scientist | 2022 - 2023\nUniversity of Edinburgh | Postgraduate Statistics Tutor | 2021\nUniversity of Gothenburg | Research Assistant | 2018\nUniversity of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019"
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "Lab News",
-    "section": "",
-    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
-  },
-  {
-    "objectID": "news.html#demonlab-0.1.0-04-09-23",
-    "href": "news.html#demonlab-0.1.0-04-09-23",
-    "title": "Lab News",
-    "section": "demonlab 0.1.0 (04-09-23)",
-    "text": "demonlab 0.1.0 (04-09-23)\n\nGabriele and Jonathan started"
-  },
-  {
-    "objectID": "news.html#demonlab-0.2.0-04-09-23",
-    "href": "news.html#demonlab-0.2.0-04-09-23",
-    "title": "Lab News",
-    "section": "demonlab 0.2.0 (04-09-23)",
-    "text": "demonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started"
-  },
-  {
-    "objectID": "news.html#demonlab-0.1.0---",
-    "href": "news.html#demonlab-0.1.0---",
-    "title": "Lab News",
-    "section": "demonlab 0.1.0 (??-??-??)",
-    "text": "demonlab 0.1.0 (??-??-??)\n\nInitial commit"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/jon.html",
-    "href": "projects/2023-09-10-example2/jon.html",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/jon.html#education",
-    "href": "projects/2023-09-10-example2/jon.html#education",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/jon.html#experience",
-    "href": "projects/2023-09-10-example2/jon.html#experience",
-    "title": "Jonathan Rittmo",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "projects/2023-09-08-example-project/index.html",
-    "href": "projects/2023-09-08-example-project/index.html",
-    "title": "Example project",
-    "section": "",
-    "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html",
-    "href": "projects/2023-09-10-example2/index.html",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "",
-    "text": "Github\n  \n\n  \n  \n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html#education",
-    "href": "projects/2023-09-10-example2/index.html#education",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html#experience",
-    "href": "projects/2023-09-10-example2/index.html#experience",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html#quick-summary",
-    "href": "projects/2023-09-10-example2/index.html#quick-summary",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor."
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html#lengthier-project-description",
-    "href": "projects/2023-09-10-example2/index.html#lengthier-project-description",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "Lengthier project description",
-    "text": "Lengthier project description\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.\nSed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.\nMorbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.\nInteger interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc."
-  },
-  {
-    "objectID": "projects/2023-09-10-example2/index.html#funding-tools",
-    "href": "projects/2023-09-10-example2/index.html#funding-tools",
-    "title": "rsfMRI connectivity across the lifespan",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "text": "Example post\n\n\n\n\n\n\nexamples\n\n\nstuff\n\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem\n\n\n\n\n\nSep 8, 2023\n\n\nJonathan Rittmo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/example-project/index.html",
@@ -362,47 +159,5 @@
     "title": "Example project",
     "section": "",
     "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
-  },
-  {
-    "objectID": "projects/example2/index.html",
-    "href": "projects/example2/index.html",
-    "title": "Functional connectivity in healthy and pathological aging",
-    "section": "",
-    "text": "Github\n  \n\n  \n  \n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "objectID": "projects/example2/index.html#quick-summary",
-    "href": "projects/example2/index.html#quick-summary",
-    "title": "Functional connectivity in healthy and pathological aging",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor."
-  },
-  {
-    "objectID": "projects/example2/index.html#funding-tools",
-    "href": "projects/example2/index.html#funding-tools",
-    "title": "Functional connectivity in healthy and pathological aging",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "objectID": "projects/example2/index.html#lengthier-project-description",
-    "href": "projects/example2/index.html#lengthier-project-description",
-    "title": "Functional connectivity in healthy and pathological aging",
-    "section": "Lengthier project description",
-    "text": "Lengthier project description\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.\nSed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.\nMorbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.\nInteger interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc."
-  },
-  {
-    "objectID": "takepart.html#joining",
-    "href": "takepart.html#joining",
-    "title": "Joining DeMON and lab philosophy",
-    "section": "",
-    "text": "If you are interested in"
-  },
-  {
-    "objectID": "takepart.html#lund-university",
-    "href": "takepart.html#lund-university",
-    "title": "Joining DeMON and lab philosophy",
-    "section": "Lund University",
-    "text": "Lund University"
   }
 ]
