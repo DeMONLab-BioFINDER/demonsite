@@ -1,0 +1,19 @@
+---
+title: "Léa Chauveau"
+subtitle: "Postdoctoral researcher"
+category: "Postdoctoral researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/lea.png
+---
+
+:::{#hero-heading}
+
+I joined the DeMON Lab in 2025 as a postdoc researcher, after completing a PhD in the Neuropresage Team (Caen, France). My scientific curiosity has long revolved around the hippocampus and its resilience mechanisms, which led me to explore medial temporal lobe alterations in aging and Alzheimer’s disease through neuroimaging — falling for fMRI along the way.
+
+I traded my French seahorse for the Swedish archipelago — hoping to squeeze in some backpacking adventures across the northern landscapes. At the lab, I continue to tackle fundamental questions about Alzheimer’s disease pathophysiology. My current focus is to elucidate how the dynamics between brain network activity and toxic protein accumulation orchestrate the pathological cascade of Alzheimer’s disease.
+
+
+:::
+

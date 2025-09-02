@@ -1,36 +1,19 @@
 ---
 title: "Gabriele Vilkaite"
 subtitle: "Phd Student"
+category: "Phd Student"
 about:
   id: hero-heading
   template: trestles
-  image: images/placeholder.png
-  links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
-    - icon: github
-      text: Github
-      href: https://github.com
+  image: images/gabi.png
 ---
 
 :::{#hero-heading}
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell transcriptomics and computational approaches to study cellular and molecular mechanisms of Alzheimer’s disease.
 
-## Education
+In her free time, Gabriele enjoys sailing, both recreationally and competitively, having sailed all over Europe and with dreams to one day make a journey across the Atlantic.
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
-
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
-
-## Experience
-
-Wengo Analytics | Head Data Scientist | April 2018 - present
-
-GeoScynce | Chief Analyst | Sept 2012 - April 2018
 
 :::
 

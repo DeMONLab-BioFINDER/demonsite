@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-member-list .list');
+    const listingTargetEl = window.document.querySelector('#listing-pi .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -87,7 +87,91 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-member-list'] = new List('listing-member-list', options);
+    window['quarto-listings']['listing-pi'] = new List('listing-pi', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-postdocs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-postdocs'] = new List('listing-postdocs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-phds .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-phds'] = new List('listing-phds', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-ras .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-ras'] = new List('listing-ras', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -171,16 +255,8 @@ window.Quarto = {
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
-<span class="menu-text">News</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./takepart.html"> 
-<span class="menu-text">Join</span></a>
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -196,11 +272,20 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#principal-investigator" id="toc-principal-investigator" class="nav-link active" data-scroll-target="#principal-investigator">Principal Investigator</a></li>
+  <li><a href="#postdocs" id="toc-postdocs" class="nav-link" data-scroll-target="#postdocs">Postdocs</a></li>
+  <li><a href="#graduate-students" id="toc-graduate-students" class="nav-link" data-scroll-target="#graduate-students">Graduate Students</a></li>
+  <li><a href="#research-assistants" id="toc-research-assistants" class="nav-link" data-scroll-target="#research-assistants">Research Assistants</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -209,7 +294,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -221,14 +306,16 @@ window.Quarto = {
 </header>
 
 
-<p><img src="images/the_gang.png" class="img-fluid"></p>
+<p><img src="images/group.jpg" class="img-fluid"></p>
 <hr>
-<div id="listing-member-list" class="quarto-listing quarto-listing-container-default">
+<section id="principal-investigator" class="level2">
+<h2 class="anchored" data-anchor-id="principal-investigator">Principal Investigator</h2>
+<div id="listing-pi" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1694335611000" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1756805683443" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
 <div class="thumbnail">
 <p><a href="./members/jake.html" class="no-external"></a></p><a href="./members/jake.html" class="no-external">
-<p class="card-img-top"><img src="members/images/placeholder.png"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="members/images/jake.jpg"  class="thumbnail-image card-img"/></p>
 </a><p><a href="./members/jake.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -239,7 +326,7 @@ window.Quarto = {
 <a href="./members/jake.html" class="no-external">Principal Investigator</a>
 </div>
 <div class="listing-description">
-<a href="./members/jake.html" class="no-external">Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.</a>
+<a href="./members/jake.html" class="no-external">Jake is the head of the DeMON Lab and the director of the Neurodegenerative Research Unit at the Department of Clinical Science Malmö at Lund University. As a SciLifeLab and…</a>
 </div>
 </div>
 <div class="metadata">
@@ -247,51 +334,93 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1694335667000" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="postdocs" class="level2">
+<h2 class="anchored" data-anchor-id="postdocs">Postdocs</h2>
+<div id="listing-postdocs" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1756805667431" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
 <div class="thumbnail">
-<p><a href="./members/yu.html" class="no-external"></a></p><a href="./members/yu.html" class="no-external">
-<p class="card-img-top"><img src="members/images/placeholder.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./members/yu.html" class="no-external"></a></p>
+<p><a href="./members/xiaoyu.html" class="no-external"></a></p><a href="./members/xiaoyu.html" class="no-external">
+<p class="card-img-top"><img src="members/images/xiaoyu.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/xiaoyu.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./members/yu.html" class="no-external">Xiao Yu</a>
+<a href="./members/xiaoyu.html" class="no-external">Yu Xiao</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./members/yu.html" class="no-external">Postdoctoral researcher</a>
+<a href="./members/xiaoyu.html" class="no-external">Postdoctoral researcher</a>
 </div>
 <div class="listing-description">
-<a href="./members/yu.html" class="no-external">Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.</a>
+<a href="./members/xiaoyu.html" class="no-external">XIAO Yu joined the lab in November 2023 as a postdoctoral researcher after earning her Ph.D.&nbsp;at Duke-NUS Medical School, National University of Singapore. Trained as a…</a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./members/yu.html" class="no-external"></a></p><a href="./members/yu.html" class="no-external">
+<p><a href="./members/xiaoyu.html" class="no-external"></a></p><a href="./members/xiaoyu.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1694335636000" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1756805675895" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <div class="thumbnail">
-<p><a href="./members/gabri.html" class="no-external"></a></p><a href="./members/gabri.html" class="no-external">
-<p class="card-img-top"><img src="members/images/placeholder.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./members/gabri.html" class="no-external"></a></p>
+<p><a href="./members/lijun.html" class="no-external"></a></p><a href="./members/lijun.html" class="no-external">
+<p class="card-img-top"><img src="members/images/lijun.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/lijun.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./members/gabri.html" class="no-external">Gabriele Vilkaite</a>
+<a href="./members/lijun.html" class="no-external">Lijun An</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./members/gabri.html" class="no-external">Phd Student</a>
+<a href="./members/lijun.html" class="no-external">Postdoctoral researcher</a>
 </div>
 <div class="listing-description">
-<a href="./members/gabri.html" class="no-external">Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.</a>
+<a href="./members/lijun.html" class="no-external">Lijun grew up in China and earned his Ph.D.&nbsp;in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is…</a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./members/gabri.html" class="no-external"></a></p><a href="./members/gabri.html" class="no-external">
+<p><a href="./members/lijun.html" class="no-external"></a></p><a href="./members/lijun.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="3" data-listing-file-modified-sort="1744888705376" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1756805678015" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<div class="thumbnail">
+<p><a href="./members/lea.html" class="no-external"></a></p><a href="./members/lea.html" class="no-external">
+<p class="card-img-top"><img src="members/images/lea.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/lea.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./members/lea.html" class="no-external">Léa Chauveau</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./members/lea.html" class="no-external">Postdoctoral researcher</a>
+</div>
+<div class="listing-description">
+<a href="./members/lea.html" class="no-external">I joined the DeMON Lab in 2025 as a postdoc researcher, after completing a PhD in the Neuropresage Team (Caen, France). My scientific curiosity has long revolved around the…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./members/lea.html" class="no-external"></a></p><a href="./members/lea.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="graduate-students" class="level2">
+<h2 class="anchored" data-anchor-id="graduate-students">Graduate Students</h2>
+<div id="listing-phds" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1756805654719" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
 <div class="thumbnail">
 <p><a href="./members/jon.html" class="no-external"></a></p><a href="./members/jon.html" class="no-external">
 <p class="card-img-top"><img src="members/images/jon.jpg"  class="thumbnail-image card-img"/></p>
@@ -305,11 +434,109 @@ window.Quarto = {
 <a href="./members/jon.html" class="no-external">Phd Student</a>
 </div>
 <div class="listing-description">
-<a href="./members/jon.html" class="no-external">Hej</a>
+<a href="./members/jon.html" class="no-external">Jonathan is a PhD student studying how brain connectivity changes across aging and Alzheimer’s disease. With a background in statistics and cognitive science, his work…</a>
 </div>
 </div>
 <div class="metadata">
 <p><a href="./members/jon.html" class="no-external"></a></p><a href="./members/jon.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1756805681615" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
+<div class="thumbnail">
+<p><a href="./members/gabri.html" class="no-external"></a></p><a href="./members/gabri.html" class="no-external">
+<p class="card-img-top"><img src="members/images/gabi.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/gabri.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./members/gabri.html" class="no-external">Gabriele Vilkaite</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./members/gabri.html" class="no-external">Phd Student</a>
+</div>
+<div class="listing-description">
+<a href="./members/gabri.html" class="no-external">Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./members/gabri.html" class="no-external"></a></p><a href="./members/gabri.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="research-assistants" class="level2">
+<h2 class="anchored" data-anchor-id="research-assistants">Research Assistants</h2>
+<div id="listing-ras" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1756805671935" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="thumbnail">
+<p><a href="./members/ruoyi.html" class="no-external"></a></p><a href="./members/ruoyi.html" class="no-external">
+<p class="card-img-top"><img src="members/images/ruoyi.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/ruoyi.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./members/ruoyi.html" class="no-external">Zoe Ruoyi Zhao</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./members/ruoyi.html" class="no-external">Research Assistant</a>
+</div>
+<div class="listing-description">
+<a href="./members/ruoyi.html" class="no-external">Ruoyi graduated with a Master’s degree in Machine Learning from Lund University in September 2024 and joined the lab immediately after. She is currently focusing on…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./members/ruoyi.html" class="no-external"></a></p><a href="./members/ruoyi.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1756805679835" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<div class="thumbnail">
+<p><a href="./members/gabriele.html" class="no-external"></a></p><a href="./members/gabriele.html" class="no-external">
+<p class="card-img-top"><img src="members/images/gabrieled.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/gabriele.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./members/gabriele.html" class="no-external">Gabriele De Leonardis</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./members/gabriele.html" class="no-external">Research Assistant</a>
+</div>
+<div class="listing-description">
+<a href="./members/gabriele.html" class="no-external">Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./members/gabriele.html" class="no-external"></a></p><a href="./members/gabriele.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1756805673859" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="thumbnail">
+<p><a href="./members/romina.html" class="no-external"></a></p><a href="./members/romina.html" class="no-external">
+<p class="card-img-top"><img src="members/images/romina.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./members/romina.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./members/romina.html" class="no-external">Romina Zendehdel</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./members/romina.html" class="no-external">Research Assistant</a>
+</div>
+<div class="listing-description">
+<a href="./members/romina.html" class="no-external">Romina joined the lab in 2024 as a master’s student in Molecular Medicine, completing her degree project. With a background in Molecular Biology, she focused on proteomics…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./members/romina.html" class="no-external"></a></p><a href="./members/romina.html" class="no-external">
 </a>
 </div>
 </div>
@@ -321,6 +548,7 @@ No matching items
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

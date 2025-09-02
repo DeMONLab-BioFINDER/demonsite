@@ -1,0 +1,20 @@
+---
+title: "Zoe Ruoyi Zhao"
+subtitle: "Research Assistant"
+category: "Research Assistant"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/ruoyi.jpg
+
+---
+
+:::{#hero-heading}
+
+Ruoyi graduated with a Master’s degree in Machine Learning from Lund University in September 2024 and joined the lab immediately after. She is currently focusing on developing deep learning methods for the automated segmentation of medial temporal lobe (MTL) subregions in histological data to advance the understanding of neurodegenerative pathology. Driven by academic curiosity, she is interested in exploring how AI models can reveal the hidden structural patterns in either images or clinical data that may provide new insights into the progression of neurodegenerative disease.
+
+Outside of research, Ruoyi enjoys hiking and exploring nature, having trekked Kungsleden, Trolltunga, and Stoos, with her next goal being the Camino de Santiago. She also takes time to recharge through camping, skiing, and watching movies.
+
+
+:::
+

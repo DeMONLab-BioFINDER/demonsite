@@ -1,36 +1,26 @@
 ---
 title: "Jacob Vogel"
 subtitle: "Principal Investigator"
+category: "Principal Investigator"
 about:
   id: hero-heading
   template: trestles
-  image: images/placeholder.png
+  image: images/jake.jpg
   links:
     - icon: twitter
       text: twitter
-      href: https://twitter.com
+      href: https://x.com/_JakeVogel_
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/illdopejake
 ---
 
 :::{#hero-heading}
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+Jake is the head of the DeMON Lab and the director of the Neurodegenerative Research Unit at the Department of Clinical Science Malmö at Lund University. As a [SciLifeLab](https://www.scilifelab.se/) and Wallenberg National Program Data-driven Life Sciences (DDLS) fellow, Jake is a proud member of SciLifeLab, and is also a member of [Multi-Park Lund](https://www.multipark.lu.se/multipark/). Jake trained at UC-Berkeley, got his PhD at McGill University, and did a postdoc at the University of Pennsylvania, becoming an expert along the way in neuroimaging, aging, AI and bioinformatics. He now dedicates his time toward better understanding how neurodegenerative diseases work, and building innovative tools to improve clinical care.
 
-## Education
+Outside the lab, Jake is an [active musician](https://open.spotify.com/artist/1FmSvsZpRUO4QNmvQuBk1A), an avid (indoor) boulderer, an inveterate beer snob, a frequent traveler, and a die-hard fan of the Philadelphia Eagles. He’s also been known to [consort with the queen](https://www.scilifelab.se/news/ddls-fellow-jacob-vogel-receives-h-m-queen-silvias-prize-for-a-young-alzheimers-researcher/).  
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
-
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
-
-## Experience
-
-Wengo Analytics | Head Data Scientist | April 2018 - present
-
-GeoScynce | Chief Analyst | Sept 2012 - April 2018
 
 :::
 

@@ -15,12 +15,12 @@ website:
       - members.qmd
       - projects.qmd
       - papers.qmd
-      - href: blog.qmd
-        text: Blog
-      - href: news.qmd
-        text: News
+      # - href: blog.qmd
+      #   text: Blog
+      # - href: news.qmd
+      #   text: News
       - href: takepart.qmd
-        text: Join
+        text: Contact
 
 format:
   html:

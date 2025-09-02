@@ -1,0 +1,20 @@
+---
+title: "Gabriele De Leonardis"
+subtitle: "Research Assistant"
+category: "Research Assistant"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/gabrieled.jpg
+
+---
+
+:::{#hero-heading}
+
+Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating and processing  multimodal MRI images from the ROSMAP dataset, a great resource for research on aging and neurodegenerative disease. He is particularly interested in brain connectivity, both structural and functional, and how network-based approaches can help unravel complex mechanisms underlying cognition and pathology. 
+
+Outside the lab, Gabriele enjoys spending free time with friends, cooking new recipes, playing sports and exploring nature through hiking.
+
+
+:::
+

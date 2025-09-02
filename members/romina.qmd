@@ -1,0 +1,19 @@
+---
+title: "Romina Zendehdel"
+subtitle: "Research Assistant"
+category: "Research Assistant"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/romina.png
+
+---
+
+:::{#hero-heading}
+
+Romina joined the lab in 2024 as a master’s student in Molecular Medicine, completing her degree project. With a background in Molecular Biology, she focused on proteomics data and bioinformatics approaches to study how organ aging may contribute to neurodegenerative diseases. Her research combined molecular insights with computational methods to better understand systemic factors influencing brain health.
+
+Outside the lab, Romina enjoys listening to music, watching sports, movies, and cooking in her free time.
+
+:::
+

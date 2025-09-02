@@ -4,21 +4,65 @@ format:
   html:
     page-layout: full
 listing: 
-  - id: member-list
-    contents: 
+  - id: pi
+    contents:
       - "members/jake.qmd"
-      - "members/yu.qmd"
-      - "members/gabri.qmd"
+    type: default
+    sort: false
+    image-align: "left"
+  - id: postdocs
+    contents:
+      - "members/xiaoyu.qmd"
+      - "members/lijun.qmd"
+      - "members/lea.qmd"
+    type: default
+    sort: false
+    image-align: "left"
+  - id: phds
+    contents:
       - "members/jon.qmd"
+      - "members/gabri.qmd"
+    type: default
+    sort: false
+    image-align: "left"
+  - id: ras
+    contents:
+      - "members/ruoyi.qmd"
+      - "members/gabriele.qmd"
+      - "members/romina.qmd"
     type: default
     sort: false
     image-align: "left"
 ---
 
-![](images/the_gang.png)
+![](images/group.jpg)
 
 ------------------------------------------
 
-:::{#member-list}
+## Principal Investigator
+
+:::{#pi}
 
 :::
+
+
+## Postdocs
+
+:::{#postdocs}
+
+:::
+
+## Graduate Students
+
+:::{#phds}
+
+:::
+
+## Research Assistants
+
+:::{#ras}
+
+:::
+
+
+

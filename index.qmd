@@ -13,21 +13,21 @@ resources:
 
 ::: {.content-block}
 
-![](images/placeholderbanner.png)
+![](images/banner.png)
 
 
-# Welcome to DeMONlab 
+# Welcome to the Dementia Multi-Omics and Neuroimaging (DeMON) Lab!
 
 Our lab’s main focus is in aging and neurodegenerative disease research, where we take advantage of large data resources to model disease progression and discover contributions to disease pathogenesis. Some of our lab’s principal research avenues include characterizing individual difference in disease progression, predicting the neurobiological progression of neurodegenerative diseases, and modeling the earliest biological changes that lead to neurodegenerative syndromes. Our work achieves these goals by blending large neuroimaging and multi-omic datasets, and applying to these datasets supervised and unsupervised methods in statistical learning and disease progression modeling.
 
-Our lab is part of the Swedish [BioFINDER study](https://biofinder.se/), which is one of the premier neurodegenerative datasets in the world. Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. The group boasts a sophistication in many statistical approaches and an expertise in many types of datasets. We also have a commitment to open science, FAIR principals and contributing to the greater research community.
+Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. The group boasts a sophistication in many statistical approaches and an expertise in many types of datasets. We also have a commitment to open science, FAIR principals and contributing to the greater research community.
 
-### Research
+<!-- ### Research -->
 
-Descriptive and captivating text about what we are trying to achieve. 
+<!-- Descriptive and captivating text about what we are trying to achieve.  -->
 
-- Here is an example of a question, which we are trying to answer in [project A](projects/example2)
-- Here is another one, which we are trying to answer in [project B](projects/example-project)
+<!-- - Here is an example of a question, which we are trying to answer in [project A](projects/example2) -->
+<!-- - Here is another one, which we are trying to answer in [project B](projects/example-project) -->
 
 
 ::: {.grid}
@@ -64,64 +64,93 @@ Descriptive and captivating text about what we are trying to achieve.
 
 ---
 
-# Methodology and data
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim.
-
-<ul class="nav nav-pills" id="hello-quarto-tab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="meth-tab" data-bs-toggle="tab" data-bs-target="#meth" type="button" role="tab" aria-controls="meth" aria-selected="true">Methodology</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">Data</button>
-  </li>
-</ul>
-
-<div class="tab-content" id="hello-quarto-tabcontent">
-
-<div class="tab-pane fade  show active" id="meth" role="tabpanel" aria-labelledby="meth-tab">
-
-
-::: {.grid}
-::: {.g-col-6}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.
-:::
-
-::: {.g-col-4}
-![](images/demon.jpeg)
-:::
-:::
-
-</div>
-
-<div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
 
 ::: {.grid}
 
 ::: {.g-col-6}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.
+
+[![](images/lundolog.png)](https://lu.se/)
+
 
 :::
-
 
 
 ::: {.g-col-6}
 
-```{r}
-with(mtcars, plot(mpg, qsec))
-```
+[![](images/scilifelab_logo.png)](https://scilifelab.se/)
 
+
+:::
+
+:::
+
+:::
 
 :::
 :::
 
-</div>
 
 
-</div>
+
+<!-- # Methodology and data -->
+
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. -->
+
+<!-- <ul class="nav nav-pills" id="hello-quarto-tab" role="tablist"> -->
+<!--   <li class="nav-item" role="presentation"> -->
+<!--     <button class="nav-link active" id="meth-tab" data-bs-toggle="tab" data-bs-target="#meth" type="button" role="tab" aria-controls="meth" aria-selected="true">Methodology</button> -->
+<!--   </li> -->
+<!--   <li class="nav-item" role="presentation"> -->
+<!--     <button class="nav-link" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">Data</button> -->
+<!--   </li> -->
+<!-- </ul> -->
+
+<!-- <div class="tab-content" id="hello-quarto-tabcontent"> -->
+
+<!-- <div class="tab-pane fade  show active" id="meth" role="tabpanel" aria-labelledby="meth-tab"> -->
 
 
-:::
-:::
+<!-- ::: {.grid} -->
+<!-- ::: {.g-col-6} -->
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum. -->
+<!-- ::: -->
+
+<!-- ::: {.g-col-4} -->
+<!-- ![](images/demon.jpeg) -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- </div> -->
+
+<!-- <div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab"> -->
+
+<!-- ::: {.grid} -->
+
+<!-- ::: {.g-col-6} -->
+
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum. -->
+
+<!-- ::: -->
+
+
+
+<!-- ::: {.g-col-6} -->
+
+<!-- ```{r} -->
+<!-- with(mtcars, plot(mpg, qsec)) -->
+<!-- ``` -->
+
+
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- </div> -->
+
+
+<!-- </div> -->
+
+
+<!-- ::: -->
+<!-- ::: -->
 

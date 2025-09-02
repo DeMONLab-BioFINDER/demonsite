@@ -49,18 +49,45 @@ pub_type <- papers %>% xml_find_first(".//PublicationType") %>% xml_text()
 abstract <- papers %>% xml_find_first(".//Abstract") %>% xml_text()
 
 
-filt_year <- ymd('2014', truncated = 2)
-pub_data_org <- tibble(Title = titles, Author = authors, Journal = journal, Date = ymd(pub_date, truncated = 2), Type = pub_type, Abstract = abstract, pmid = pmids)
+filt_year <- ymd('2020', truncated = 2)
+pub_data_org <- tibble(Title = titles, 
+                       Author = authors, 
+                       Journal = journal, 
+                       Date = ymd(pub_date, truncated = 2), 
+                       Type = pub_type, 
+                       Abstract = abstract, 
+                       pmid = pmids)
+
 
 records <- xml_find_all(xml_data, ".//PubmedArticle")
 extract_references <- function(paper) {
   refs <- paper %>% xml_find_all(".//ArticleId[@IdType = 'pubmed']") %>% xml_text()
   return(refs)
 }
+
 paper_references <- lapply(records, extract_references)
 
-ref_data <- pub_data_org %>% mutate(refs = paper_references) %>% 
+
+x <- pub_data_org %>%
+  rowwise() |> 
+  mutate(auth_split = list(str_split_1(Author, ",\\s*"))) |> 
+  pull(auth_split)
+
+jake_log <- c()
+for (i in seq_along(x)) {
+  first_auth <- grepl("Vogel", head(x[[i]], 3))
+  last_auth <- grepl("Vogel", tail(x[[i]], 3)) 
+  jake_log_i <- sum(c(first_auth, last_auth))
+  jake_log <- c(jake_log, jake_log_i>0)
+}
+
+pub_data_org <- pub_data_org |> mutate(main_auth = jake_log)
+
+ref_data <- pub_data_org %>% mutate(refs = paper_references) |> 
+  filter(Date > filt_year, main_auth) %>% 
   unnest(refs)  
+
+pub_data_org <- pub_data_org |> filter(Date > filt_year, main_auth) 
 
 edge_list <- ref_data %>% filter(Type != 'Preprint') %>% 
   select(pmid, refs) %>% rename(Paper = pmid, Reference = refs) %>% 
@@ -74,45 +101,62 @@ edge_list <- ref_data %>% filter(Type != 'Preprint') %>%
   filter(Date > filt_year) %>% 
   select(Paper, Reference)
 
+graph_titles <- unique(c(edge_list$Paper, edge_list$Reference))
 
-corpus <- VCorpus(VectorSource(pub_data_org %>%  filter(Type != 'Preprint', 
-                                                        Title %in% c(edge_list$Paper, edge_list$Reference)) %>%  
-                               mutate(combined = paste(Title, Abstract)) %>% pull(combined)))
-corpus <- tm_map(corpus, content_transformer(tolower))
-corpus <- tm_map(corpus, removePunctuation)
-corpus <- tm_map(corpus, removeWords, c(stopwords("english"), 'discussion', 'method',
-                                        'methods', 'participants', 'used', 
-                                        'individuals', 'mean', 'association', 'included',
-                                        'among', 'associated', 'study', 'associated',
-                                        'higher', 'compared', 'measures', 'showed', 
-                                        'results', 'using', 'human', 'analysis', 
-                                        'including', 'can', 'show', 'identified', 
-                                        'two', 'patients', 'result', 'objective', 'abstract', 'disease'))
-corpus <- tm_map(corpus, stripWhitespace)
+docs <- pub_data_org %>%
+  filter(Type != "Preprint", Title %in% graph_titles) %>%
+  group_by(Title) %>%
+  summarise(
+    Abstract = paste(na.omit(Abstract), collapse = " "),
+    .groups = "drop"
+  ) %>%
+  mutate(text = paste(Title, Abstract))
+
+corpus <- VCorpus(VectorSource(docs$text)) %>%
+  tm_map(content_transformer(tolower)) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(removeWords, c(stopwords("english"),
+                        'discussion','method','methods','participants','used',
+                        'individuals','mean','association','included','among',
+                        'associated','study','higher','compared','measures','showed',
+                        'results','using','human','analysis','including','can','show',
+                        'identified','two','patients','result','objective','abstract','disease')) %>%
+  tm_map(stripWhitespace)
 
 dtm <- DocumentTermMatrix(corpus)
-dtm_tfidf <- weightTfIdf(dtm)
+
 num_topics <- 4
 lda_model <- LDA(dtm, k = num_topics, method = "Gibbs")
-ap_topics <- tidy(lda_model, matrix = "beta")
+doc_topics <- tibble(Title = docs$Title, group = topics(lda_model))
+
+nodes_lookup <- tibble(name = graph_titles)
+
+topic_colors <- c(
+  "1" = "tomato",
+  "2" = "steelblue",
+  "3" = "forestgreen",
+  "4" = "goldenrod"
+)
+
+nodes <- nodes_lookup %>%
+  left_join(doc_topics, by = c("name" = "Title")) %>%
+  mutate(group = replace_na(group, 0L),
+         color = topic_colors[as.character(group)]) %>% 
+  mutate(id = row_number(),
+         title = name)
 
 
-nodes <- data.frame(name=unique(c(edge_list$Paper, edge_list$Reference)))
-edge_list$PaperID <- match(edge_list$Paper, nodes$name) - 1
-edge_list$ReferenceID <- match(edge_list$Reference, nodes$name) - 1
+edge_list <- edge_list %>%
+  mutate(PaperID     = match(Paper,     nodes$name),
+         ReferenceID = match(Reference, nodes$name))
 
-
-edges <- data.frame(from = edge_list$PaperID, to = edge_list$ReferenceID,
-                    arrows = c("to"),
-                    smooth = c(TRUE),
-                    shadow = c(TRUE)) 
-
-nodes <- data.frame(id = unique(c(edge_list$PaperID, edge_list$ReferenceID)),
-                    title = nodes$name,
-                    group = topics(lda_model)
-                    )
-
-
+edges <- data.frame(
+  from   = edge_list$PaperID,
+  to     = edge_list$ReferenceID,
+  arrows = "to",
+  smooth = TRUE,
+  shadow = TRUE
+)
 
 ```
 
@@ -131,22 +175,27 @@ library(tidytext)
 library(ggwordcloud)
 library(visNetwork)
 
-top_terms <- ap_topics%>%
-  #group_by(topic) %>%
-  group_by(term) %>% 
+top_terms <- tidy(lda_model, matrix = "beta") %>%
+  group_by(topic, term) %>% 
   summarise(beta = sum(beta)) %>% 
-  slice_max(beta, n = 30) 
+  slice_max(beta, n = 15) |> 
+  mutate(color = topic_colors[as.character(topic)])
+  
 
-ggplot(top_terms, aes(label = term, size = beta, color = beta)) +
+ggplot(top_terms, aes(label = term, size = beta, alpha = beta, color = color)) +
   geom_text_wordcloud() +
-  scale_size_area(max_size = 15) +
-  theme_minimal() +
-  scale_color_gradient(high = "darkred", low = "pink")
+  scale_size_area(max_size = 10) +
+  facet_wrap(~topic) +
+  theme_void() +
+  scale_alpha_continuous(range = c(0.5, 1)) +
+  scale_color_identity() +
+  theme(
+      strip.text.x = element_blank()
+      )
 
 visNetwork(nodes, edges)
 
 ```
-
 
 
 ```{r papertable, echo=FALSE, message=FALSE}
@@ -164,7 +213,7 @@ library(ggwordcloud)
 library(visNetwork)
 
 pub_data <- pub_data_org %>% filter(Date > filt_year,
-                                Type %in% c('Journal Article', 'Systematic Review', 'Observational Study')) %>%
+                                !(Type %in% c('Preprint', 'Published Erratum', "Editorial"))) %>%
   arrange(desc(Date)) %>%
   mutate(
     Auth = paste(map_chr(Author, extract_first_two), '...', map_chr(Author, extract_last)),
@@ -173,7 +222,10 @@ pub_data <- pub_data_org %>% filter(Date > filt_year,
   relocate(Auth, .after = 'Author') %>% 
   select(-Date)
 
-reactable(pub_data %>% select(-Author, -Abstract, -pmid, -Type), searchable = TRUE,
+reactable(pub_data %>% select(-Author, -Abstract, -pmid, -Type, -main_auth), searchable = TRUE,
+          defaultColDef = colDef(
+            style = list(fontSize = "11px")
+          ),
           columns = list(Title = colDef(width = 500),
                          Year = colDef(width = 80)),
           showPageSizeOptions = TRUE, filterable = TRUE,

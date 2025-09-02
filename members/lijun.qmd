@@ -1,0 +1,25 @@
+---
+title: "Lijun An"
+subtitle: "Postdoctoral researcher"
+category: "Postdoctoral researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/lijun.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://x.com/anlijuncn
+
+---
+
+:::{#hero-heading}
+
+Lijun grew up in China and earned his Ph.D. in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..
+
+His research focuses on developing machine learning algorithms for multi-modal data (e.g., brain imaging and multi-omics) to advance our understanding of neurodegenerative diseases. Lijun believes that future scientific breakthroughs will be driven by algorithms that can uncover new insights from massive data across scientific disciplines. Currently, he is working on several exciting projects together with his talented lab colleagues. To learn more, visit his homepage: https://anlijun.cn.
+
+Outside the lab, Lijun enjoys hiking and writing humorous Chinese poetry.
+
+:::
+

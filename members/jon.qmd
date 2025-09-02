@@ -1,6 +1,7 @@
 ---
 title: "Jonathan Rittmo"
 subtitle: "Phd Student"
+category: "Phd Student"
 about:
   id: hero-heading
   template: trestles
@@ -16,7 +17,9 @@ about:
 
 :::{#hero-heading}
 
-Hej
+Jonathan is a PhD student studying how brain connectivity changes across aging and Alzheimer’s disease. With a background in statistics and cognitive science, his work focuses on large-scale neuroimaging datasets to better understand how functional brain networks reorganize in the face of pathology.
+
+On his free time Jonathan enjoys building and tinkering -- whether it’s constructing a tiny self-sufficient house, developing new brain visualization tools, or building various applications. If a problem exists he likes trying to solve it (though he admits he often creates new ones in the process).
 
 ## Education
 

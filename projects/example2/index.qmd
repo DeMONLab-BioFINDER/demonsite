@@ -1,7 +1,7 @@
 ---
 title: "Functional connectivity in healthy and pathological aging"
 subtitle: "Looking at changes of functional connectivity in healthy aging and disease"
-categories: [fmri, connectivity, fun] 
+categories: [fmri, connectivity] 
 about:
   id: hero-heading
   template: trestles

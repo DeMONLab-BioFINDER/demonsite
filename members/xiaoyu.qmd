@@ -1,0 +1,18 @@
+---
+title: "Yu Xiao"
+subtitle: "Postdoctoral researcher"
+category: "Postdoctoral researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/xiaoyu.jpg
+---
+
+:::{#hero-heading}
+
+XIAO Yu joined the lab in November 2023 as a postdoctoral researcher after earning her Ph.D. at Duke-NUS Medical School, National University of Singapore. Trained as a neuroimager, her research broadly centers on uncovering the mechanisms underlying Alzheimer’s disease and related dementias through computational modeling. Her work focuses on developing and adapting disease progression models to better understand pathological spread and atrophy accumulation in these disorders.
+
+Outside the lab, she loves hosting and playing murder mystery games with friends, stepping into different characters to crack fictional cases. She has a wide-ranging taste in music and finds she works best with hype tracks, feeling happiest when TWICE is on. She also enjoys traveling and spending time with friends.
+
+:::
+
