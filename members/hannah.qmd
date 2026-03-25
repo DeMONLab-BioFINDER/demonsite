@@ -1,0 +1,18 @@
+---
+title: "Hannah Baumeister"
+subtitle: "Postdoctoral researcher"
+category: "Postdoctoral researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/hannah.jpg
+---
+
+:::{#hero-heading}
+
+Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer's disease.
+Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job.
+
+
+:::
+

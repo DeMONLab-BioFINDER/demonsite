@@ -15,6 +15,7 @@ listing:
       - "members/xiaoyu.qmd"
       - "members/lijun.qmd"
       - "members/lea.qmd"
+      - "members/hannah.qmd"
     type: default
     sort: false
     image-align: "left"
