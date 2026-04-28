@@ -1,5 +1,96 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "The Demon Blog",
+    "section": "",
+    "text": "Example post\n\n\n\nexamples\n\nstuff\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem\n\n\n\n\n\nSep 8, 2023\n\n\nJonathan Rittmo\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members/xiaoyu.html",
+    "href": "members/xiaoyu.html",
+    "title": "Yu Xiao",
+    "section": "",
+    "text": "XIAO Yu joined the lab in November 2023 as a postdoctoral researcher after earning her Ph.D. at Duke-NUS Medical School, National University of Singapore. Trained as a neuroimager, her research broadly centers on uncovering the mechanisms underlying Alzheimer’s disease and related dementias through computational modeling. Her work focuses on developing and adapting disease progression models to better understand pathological spread and atrophy accumulation in these disorders.\nOutside the lab, she loves hosting and playing murder mystery games with friends, stepping into different characters to crack fictional cases. She has a wide-ranging taste in music and finds she works best with hype tracks, feeling happiest when TWICE is on. She also enjoys traveling and spending time with friends."
+  },
+  {
+    "objectID": "members/gabri.html",
+    "href": "members/gabri.html",
+    "title": "Gabriele Vilkaite",
+    "section": "",
+    "text": "Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell transcriptomics and computational approaches to study cellular and molecular mechanisms of Alzheimer’s disease.\nIn her free time, Gabriele enjoys sailing, both recreationally and competitively, having sailed all over Europe and with dreams to one day make a journey across the Atlantic."
+  },
+  {
+    "objectID": "members/mirjam.html",
+    "href": "members/mirjam.html",
+    "title": "Mirjam Müller",
+    "section": "",
+    "text": "I started my PhD in 2023 and joined the lab halfway through, bringing a background in mathematics and bioinformatics.\nMy research focuses on subtyping neurodegenerative diseases using both omics data and image analysis, with the goal of better understanding their underlying complexity.\nWhen I am not at work, I am owned by two cats (my children), who demand most of my attention and keep life interesting."
+  },
+  {
+    "objectID": "members/gabriele.html",
+    "href": "members/gabriele.html",
+    "title": "Gabriele De Leonardis",
+    "section": "",
+    "text": "Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating and processing multimodal MRI images from the ROSMAP dataset, a great resource for research on aging and neurodegenerative disease. He is particularly interested in brain connectivity, both structural and functional, and how network-based approaches can help unravel complex mechanisms underlying cognition and pathology.\nOutside the lab, Gabriele enjoys spending free time with friends, cooking new recipes, playing sports and exploring nature through hiking."
+  },
+  {
+    "objectID": "members/hannah.html",
+    "href": "members/hannah.html",
+    "title": "Hannah Baumeister",
+    "section": "",
+    "text": "Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer’s disease. Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "Lab News",
+    "section": "",
+    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
+  },
+  {
+    "objectID": "projects/example-project/index.html",
+    "href": "projects/example-project/index.html",
+    "title": "Example project",
+    "section": "",
+    "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
+  },
+  {
+    "objectID": "members.html#principal-investigator",
+    "href": "members.html#principal-investigator",
+    "title": "Members",
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\nJacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#postdocs",
+    "href": "members.html#postdocs",
+    "title": "Members",
+    "section": "Postdocs",
+    "text": "Postdocs\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHannah Baumeister\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#graduate-students",
+    "href": "members.html#graduate-students",
+    "title": "Members",
+    "section": "Graduate Students",
+    "text": "Graduate Students\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirjam Müller\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#research-assistants",
+    "href": "members.html#research-assistants",
+    "title": "Members",
+    "section": "Research Assistants",
+    "text": "Research Assistants\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-09-08-example-post/index.html",
+    "href": "posts/2023-09-08-example-post/index.html",
+    "title": "Example post",
+    "section": "",
+    "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
+  },
+  {
     "objectID": "projects/example2/index.html",
     "href": "projects/example2/index.html",
     "title": "Functional connectivity in healthy and pathological aging",
@@ -28,18 +119,32 @@
     "text": "Lengthier project description\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.\nSed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.\nMorbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.\nInteger interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc."
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "Lab News",
+    "objectID": "takepart.html",
+    "href": "takepart.html",
+    "title": "Contact",
     "section": "",
-    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
+    "text": "Jacob &lt;dot&gt; vogel &lt;at&gt; med &lt;dot&gt; edu\nLocated at: BMC C11/I12 Sölvegatan 19 223 62 Lund Sweden"
   },
   {
-    "objectID": "posts/2023-09-08-example-post/index.html",
-    "href": "posts/2023-09-08-example-post/index.html",
-    "title": "Example post",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
+    "text": "In the projects below you can find out more about what we do!\n[Coming soon]"
+  },
+  {
+    "objectID": "members/lijun.html",
+    "href": "members/lijun.html",
+    "title": "Lijun An",
+    "section": "",
+    "text": "twitter\n  \n\n  \n  \nLijun grew up in China and earned his Ph.D. in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..\nHis research focuses on developing machine learning algorithms for multi-modal data (e.g., brain imaging and multi-omics) to advance our understanding of neurodegenerative diseases. Lijun believes that future scientific breakthroughs will be driven by algorithms that can uncover new insights from massive data across scientific disciplines. Currently, he is working on several exciting projects together with his talented lab colleagues. To learn more, visit his homepage: https://anlijun.cn.\nOutside the lab, Lijun enjoys hiking and writing humorous Chinese poetry."
+  },
+  {
+    "objectID": "members/ruoyi.html",
+    "href": "members/ruoyi.html",
+    "title": "Zoe Ruoyi Zhao",
+    "section": "",
+    "text": "Ruoyi graduated with a Master’s degree in Machine Learning from Lund University in September 2024 and joined the lab immediately after. She is currently focusing on developing deep learning methods for the automated segmentation of medial temporal lobe (MTL) subregions in histological data to advance the understanding of neurodegenerative pathology. Driven by academic curiosity, she is interested in exploring how AI models can reveal the hidden structural patterns in either images or clinical data that may provide new insights into the progression of neurodegenerative disease.\nOutside of research, Ruoyi enjoys hiking and exploring nature, having trekked Kungsleden, Trolltunga, and Stoos, with her next goal being the Camino de Santiago. She also takes time to recharge through camping, skiing, and watching movies."
   },
   {
     "objectID": "members/jon.html",
@@ -63,67 +168,11 @@
     "text": "Sogeti Sweden | Data Scientist | 2022 - 2023\nUniversity of Edinburgh | Postgraduate Statistics Tutor | 2021\nUniversity of Gothenburg | Research Assistant | 2018\nUniversity of Gothenburg, Litteraturbanken | Project Assistant | 2017 - 2019"
   },
   {
-    "objectID": "members/gabri.html",
-    "href": "members/gabri.html",
-    "title": "Gabriele Vilkaite",
+    "objectID": "members/romina.html",
+    "href": "members/romina.html",
+    "title": "Romina Zendehdel",
     "section": "",
-    "text": "Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell transcriptomics and computational approaches to study cellular and molecular mechanisms of Alzheimer’s disease.\nIn her free time, Gabriele enjoys sailing, both recreationally and competitively, having sailed all over Europe and with dreams to one day make a journey across the Atlantic."
-  },
-  {
-    "objectID": "members/gabri.html#education",
-    "href": "members/gabri.html#education",
-    "title": "Gabriele Vilkaite",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "members/gabri.html#experience",
-    "href": "members/gabri.html#experience",
-    "title": "Gabriele Vilkaite",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "In the projects below you can find out more about what we do!\n[Coming soon]"
-  },
-  {
-    "objectID": "members.html",
-    "href": "members.html",
-    "title": "Members",
-    "section": "",
-    "text": "Jacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "takepart.html#lund-university",
-    "href": "takepart.html#lund-university",
-    "title": "Joining DeMON and lab philosophy",
-    "section": "Lund University",
-    "text": "Lund University"
-  },
-  {
-    "objectID": "members/yu.html",
-    "href": "members/yu.html",
-    "title": "Xiao Yu",
-    "section": "",
-    "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "members/yu.html#education",
-    "href": "members/yu.html#education",
-    "title": "Xiao Yu",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "members/yu.html#experience",
-    "href": "members/yu.html#experience",
-    "title": "Xiao Yu",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+    "text": "Romina joined the lab in 2024 as a master’s student in Molecular Medicine, completing her degree project. With a background in Molecular Biology, she focused on proteomics data and bioinformatics approaches to study how organ aging may contribute to neurodegenerative diseases. Her research combined molecular insights with computational methods to better understand systemic factors influencing brain health.\nOutside the lab, Romina enjoys listening to music, watching sports, movies, and cooking in her free time."
   },
   {
     "objectID": "members/jake.html",
@@ -133,115 +182,10 @@
     "text": "twitter\n  \n  \n    \n     Github\n  \n\n  \n  \nJake is the head of the DeMON Lab and the director of the Neurodegenerative Research Unit at the Department of Clinical Science Malmö at Lund University. As a SciLifeLab and Wallenberg National Program Data-driven Life Sciences (DDLS) fellow, Jake is a proud member of SciLifeLab, and is also a member of Multi-Park Lund. Jake trained at UC-Berkeley, got his PhD at McGill University, and did a postdoc at the University of Pennsylvania, becoming an expert along the way in neuroimaging, aging, AI and bioinformatics. He now dedicates his time toward better understanding how neurodegenerative diseases work, and building innovative tools to improve clinical care.\nOutside the lab, Jake is an active musician, an avid (indoor) boulderer, an inveterate beer snob, a frequent traveler, and a die-hard fan of the Philadelphia Eagles. He’s also been known to consort with the queen."
   },
   {
-    "objectID": "members/jake.html#education",
-    "href": "members/jake.html#education",
-    "title": "Jacob Vogel",
-    "section": "",
-    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "members/jake.html#experience",
-    "href": "members/jake.html#experience",
-    "title": "Jacob Vogel",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "The Demon Blog",
-    "section": "",
-    "text": "Example post\n\n\n\n\n\n\nexamples\n\n\nstuff\n\n\nfun\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat odio. Donec maximus, eros quis semper interdum, diam arcu mollis est, sed aliquam risus nulla vel sem\n\n\n\n\n\nSep 8, 2023\n\n\nJonathan Rittmo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/example-project/index.html",
-    "href": "projects/example-project/index.html",
-    "title": "Example project",
-    "section": "",
-    "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
-  },
-  {
-    "objectID": "members/gabriele.html",
-    "href": "members/gabriele.html",
-    "title": "Gabriele De Leonardis",
-    "section": "",
-    "text": "Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating and processing multimodal MRI images from the ROSMAP dataset, a great resource for research on aging and neurodegenerative disease. He is particularly interested in brain connectivity, both structural and functional, and how network-based approaches can help unravel complex mechanisms underlying cognition and pathology.\nOutside the lab, Gabriele enjoys spending free time with friends, cooking new recipes, playing sports and exploring nature through hiking."
-  },
-  {
-    "objectID": "members/lijun.html",
-    "href": "members/lijun.html",
-    "title": "Lijun An",
-    "section": "",
-    "text": "twitter\n  \n\n  \n  \nLijun grew up in China and earned his Ph.D. in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..\nHis research focuses on developing machine learning algorithms for multi-modal data (e.g., brain imaging and multi-omics) to advance our understanding of neurodegenerative diseases. Lijun believes that future scientific breakthroughs will be driven by algorithms that can uncover new insights from massive data across scientific disciplines. Currently, he is working on several exciting projects together with his talented lab colleagues. To learn more, visit his homepage: https://anlijun.cn.\nOutside the lab, Lijun enjoys hiking and writing humorous Chinese poetry."
-  },
-  {
-    "objectID": "members/romina.html",
-    "href": "members/romina.html",
-    "title": "Romina Zendehdel",
-    "section": "",
-    "text": "Romina joined the lab in 2024 as a master’s student in Molecular Medicine, completing her degree project. With a background in Molecular Biology, she focused on proteomics data and bioinformatics approaches to study how organ aging may contribute to neurodegenerative diseases. Her research combined molecular insights with computational methods to better understand systemic factors influencing brain health.\nOutside the lab, Romina enjoys listening to music, watching sports, movies, and cooking in her free time."
-  },
-  {
     "objectID": "members/lea.html",
     "href": "members/lea.html",
     "title": "Léa Chauveau",
     "section": "",
     "text": "I joined the DeMON Lab in 2025 as a postdoc researcher, after completing a PhD in the Neuropresage Team (Caen, France). My scientific curiosity has long revolved around the hippocampus and its resilience mechanisms, which led me to explore medial temporal lobe alterations in aging and Alzheimer’s disease through neuroimaging — falling for fMRI along the way.\nI traded my French seahorse for the Swedish archipelago — hoping to squeeze in some backpacking adventures across the northern landscapes. At the lab, I continue to tackle fundamental questions about Alzheimer’s disease pathophysiology. My current focus is to elucidate how the dynamics between brain network activity and toxic protein accumulation orchestrate the pathological cascade of Alzheimer’s disease."
-  },
-  {
-    "objectID": "members/xiaoyu.html",
-    "href": "members/xiaoyu.html",
-    "title": "Yu Xiao",
-    "section": "",
-    "text": "XIAO Yu joined the lab in November 2023 as a postdoctoral researcher after earning her Ph.D. at Duke-NUS Medical School, National University of Singapore. Trained as a neuroimager, her research broadly centers on uncovering the mechanisms underlying Alzheimer’s disease and related dementias through computational modeling. Her work focuses on developing and adapting disease progression models to better understand pathological spread and atrophy accumulation in these disorders.\nOutside the lab, she loves hosting and playing murder mystery games with friends, stepping into different characters to crack fictional cases. She has a wide-ranging taste in music and finds she works best with hype tracks, feeling happiest when TWICE is on. She also enjoys traveling and spending time with friends."
-  },
-  {
-    "objectID": "members/ruoyi.html",
-    "href": "members/ruoyi.html",
-    "title": "Zoe Ruoyi Zhao",
-    "section": "",
-    "text": "Ruoyi graduated with a Master’s degree in Machine Learning from Lund University in September 2024 and joined the lab immediately after. She is currently focusing on developing deep learning methods for the automated segmentation of medial temporal lobe (MTL) subregions in histological data to advance the understanding of neurodegenerative pathology. Driven by academic curiosity, she is interested in exploring how AI models can reveal the hidden structural patterns in either images or clinical data that may provide new insights into the progression of neurodegenerative disease.\nOutside of research, Ruoyi enjoys hiking and exploring nature, having trekked Kungsleden, Trolltunga, and Stoos, with her next goal being the Camino de Santiago. She also takes time to recharge through camping, skiing, and watching movies."
-  },
-  {
-    "objectID": "members.html#postdocs",
-    "href": "members.html#postdocs",
-    "title": "Members",
-    "section": "Postdocs",
-    "text": "Postdocs\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHannah Baumeister\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#principal-investigator",
-    "href": "members.html#principal-investigator",
-    "title": "Members",
-    "section": "Principal Investigator",
-    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\nJacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#graduate-students",
-    "href": "members.html#graduate-students",
-    "title": "Members",
-    "section": "Graduate Students",
-    "text": "Graduate Students\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#research-assistants",
-    "href": "members.html#research-assistants",
-    "title": "Members",
-    "section": "Research Assistants",
-    "text": "Research Assistants\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "takepart.html",
-    "href": "takepart.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Jacob &lt;dot&gt; vogel &lt;at&gt; med &lt;dot&gt; edu\nLocated at: BMC C11/I12 Sölvegatan 19 223 62 Lund Sweden"
-  },
-  {
-    "objectID": "members/hannah.html",
-    "href": "members/hannah.html",
-    "title": "Hannah Baumeister",
-    "section": "",
-    "text": "Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer’s disease. Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job."
   }
 ]
