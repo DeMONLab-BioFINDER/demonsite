@@ -23,6 +23,7 @@ listing:
     contents:
       - "members/jon.qmd"
       - "members/gabri.qmd"
+      - "members/narjes.qmd"
       - "members/mirjam.qmd"
     type: default
     sort: false

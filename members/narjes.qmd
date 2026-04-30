@@ -1,0 +1,15 @@
+---
+title: "Narjes Goshtasbi"
+subtitle: "Phd Student"
+category: "Phd Student"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/Narjes.jpg
+---
+
+:::{#hero-heading}
+I am a PhD student joining the DeMon Lab in 2026, with a background in biomedical engineering and machine learning. My research focuses on applying statistical and computational methods to neuroimaging data to study the heterogeneity of Alzheimer’s disease. My work is grounded in data-driven approaches in neuroscience, motivated by an interest in leveraging engineering methodologies to investigate complex brain-related conditions.
+
+Outside the lab, I enjoy listening to music, watching films, and hiking. I also enjoy travelling and exploring new places whenever I have the chance.
+:::

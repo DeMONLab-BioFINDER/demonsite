@@ -35,60 +35,32 @@
     "text": "Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating and processing multimodal MRI images from the ROSMAP dataset, a great resource for research on aging and neurodegenerative disease. He is particularly interested in brain connectivity, both structural and functional, and how network-based approaches can help unravel complex mechanisms underlying cognition and pathology.\nOutside the lab, Gabriele enjoys spending free time with friends, cooking new recipes, playing sports and exploring nature through hiking."
   },
   {
-    "objectID": "members/hannah.html",
-    "href": "members/hannah.html",
-    "title": "Hannah Baumeister",
+    "objectID": "members/narjes.html",
+    "href": "members/narjes.html",
+    "title": "Narjes Goshtasbi",
     "section": "",
-    "text": "Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer’s disease. Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job."
+    "text": "I am a PhD student joining the DeMon Lab in 2026, with a background in biomedical engineering and machine learning. My research focuses on applying statistical and computational methods to neuroimaging data to study the heterogeneity of Alzheimer’s disease. My work is grounded in data-driven approaches in neuroscience, motivated by an interest in leveraging engineering methodologies to investigate complex brain-related conditions.\nOutside the lab, I enjoy listening to music, watching films, and hiking. I also enjoy travelling and exploring new places whenever I have the chance."
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "Lab News",
+    "objectID": "members/lijun.html",
+    "href": "members/lijun.html",
+    "title": "Lijun An",
     "section": "",
-    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
+    "text": "twitter\n  \n\n  \n  \nLijun grew up in China and earned his Ph.D. in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..\nHis research focuses on developing machine learning algorithms for multi-modal data (e.g., brain imaging and multi-omics) to advance our understanding of neurodegenerative diseases. Lijun believes that future scientific breakthroughs will be driven by algorithms that can uncover new insights from massive data across scientific disciplines. Currently, he is working on several exciting projects together with his talented lab colleagues. To learn more, visit his homepage: https://anlijun.cn.\nOutside the lab, Lijun enjoys hiking and writing humorous Chinese poetry."
   },
   {
-    "objectID": "projects/example-project/index.html",
-    "href": "projects/example-project/index.html",
-    "title": "Example project",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
+    "text": "In the projects below you can find out more about what we do!\n[Coming soon]"
   },
   {
-    "objectID": "members.html#principal-investigator",
-    "href": "members.html#principal-investigator",
-    "title": "Members",
-    "section": "Principal Investigator",
-    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\nJacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#postdocs",
-    "href": "members.html#postdocs",
-    "title": "Members",
-    "section": "Postdocs",
-    "text": "Postdocs\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHannah Baumeister\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#graduate-students",
-    "href": "members.html#graduate-students",
-    "title": "Members",
-    "section": "Graduate Students",
-    "text": "Graduate Students\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirjam Müller\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "members.html#research-assistants",
-    "href": "members.html#research-assistants",
-    "title": "Members",
-    "section": "Research Assistants",
-    "text": "Research Assistants\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2023-09-08-example-post/index.html",
-    "href": "posts/2023-09-08-example-post/index.html",
-    "title": "Example post",
+    "objectID": "takepart.html",
+    "href": "takepart.html",
+    "title": "Contact",
     "section": "",
-    "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
+    "text": "Jacob &lt;dot&gt; vogel &lt;at&gt; med &lt;dot&gt; edu\nLocated at: BMC C11/I12 Sölvegatan 19 223 62 Lund Sweden"
   },
   {
     "objectID": "projects/example2/index.html",
@@ -119,25 +91,60 @@
     "text": "Lengthier project description\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat turpis vel massa euismod dignissim consectetur in sem. Nullam hendrerit eros vel urna facilisis, commodo porta nisi dignissim. Nunc consectetur tortor nisi, nec molestie turpis pretium egestas. Vestibulum rhoncus congue ligula in commodo. Integer congue ex eget nibh fermentum, ut venenatis ex volutpat. Pellentesque imperdiet auctor lobortis. Donec elit massa, imperdiet sit amet neque sed, pellentesque pulvinar dolor. Curabitur consequat gravida mauris vel mattis. Vivamus id dui ut tellus molestie maximus a eu leo. Nulla nibh ligula, commodo quis dui vel, tempus porta ipsum.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae nunc vitae turpis lacinia porttitor. Phasellus est sapien, dapibus ut pellentesque et, dapibus in turpis. Duis lobortis non lacus quis pulvinar. Donec sagittis magna vulputate vulputate rutrum. Donec eu neque vitae ipsum convallis tempor nec vitae eros. Fusce vitae euismod dui, ut vehicula enim. In egestas ut dui quis sodales.\nSed mi lectus, porta rutrum dictum ac, imperdiet id mi. Aliquam nisi dolor, euismod vitae dolor ut, dictum rhoncus sapien. Suspendisse a ipsum vel lacus imperdiet fringilla. Sed sit amet est dapibus, tristique nunc eget, finibus ligula. Donec maximus dui nec dui fringilla, et posuere lacus fringilla. Proin lobortis semper dui vel auctor. Vestibulum nec risus diam. Sed rhoncus elit a vestibulum tempor. Suspendisse accumsan condimentum tortor et accumsan.\nMorbi non rutrum eros, et sodales lacus. Curabitur sit amet auctor odio, scelerisque sagittis tellus. Mauris orci nibh, porta id pretium a, sollicitudin sit amet tortor. Maecenas venenatis sem vitae quam congue sodales. Praesent ante eros, volutpat facilisis tortor nec, mollis posuere dui. Suspendisse tempor est sed vestibulum scelerisque. Nullam id ex tempor, eleifend arcu in, porta ligula. Aenean tempus egestas dapibus. In sit amet tellus lacinia, congue mauris ut, vulputate enim. Donec vel efficitur leo.\nInteger interdum sem at nibh aliquam, ut eleifend nibh accumsan. Vestibulum porttitor ante convallis lorem hendrerit, at vestibulum ex posuere. Mauris cursus nisl nulla. Mauris ex lorem, auctor nec finibus nec, iaculis nec dui. Aliquam erat volutpat. Nunc suscipit tempor tortor vitae dictum. Aenean vel diam nec tellus lobortis imperdiet. Mauris ut nisi et purus tristique mollis ut sit amet nunc."
   },
   {
-    "objectID": "takepart.html",
-    "href": "takepart.html",
-    "title": "Contact",
+    "objectID": "posts/2023-09-08-example-post/index.html",
+    "href": "posts/2023-09-08-example-post/index.html",
+    "title": "Example post",
     "section": "",
-    "text": "Jacob &lt;dot&gt; vogel &lt;at&gt; med &lt;dot&gt; edu\nLocated at: BMC C11/I12 Sölvegatan 19 223 62 Lund Sweden"
+    "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "In the projects below you can find out more about what we do!\n[Coming soon]"
+    "objectID": "members.html#principal-investigator",
+    "href": "members.html#principal-investigator",
+    "title": "Members",
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\nJacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "members/lijun.html",
-    "href": "members/lijun.html",
-    "title": "Lijun An",
+    "objectID": "members.html#postdocs",
+    "href": "members.html#postdocs",
+    "title": "Members",
+    "section": "Postdocs",
+    "text": "Postdocs\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHannah Baumeister\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#graduate-students",
+    "href": "members.html#graduate-students",
+    "title": "Members",
+    "section": "Graduate Students",
+    "text": "Graduate Students\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNarjes Goshtasbi\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirjam Müller\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#research-assistants",
+    "href": "members.html#research-assistants",
+    "title": "Members",
+    "section": "Research Assistants",
+    "text": "Research Assistants\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/example-project/index.html",
+    "href": "projects/example-project/index.html",
+    "title": "Example project",
     "section": "",
-    "text": "twitter\n  \n\n  \n  \nLijun grew up in China and earned his Ph.D. in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..\nHis research focuses on developing machine learning algorithms for multi-modal data (e.g., brain imaging and multi-omics) to advance our understanding of neurodegenerative diseases. Lijun believes that future scientific breakthroughs will be driven by algorithms that can uncover new insights from massive data across scientific disciplines. Currently, he is working on several exciting projects together with his talented lab colleagues. To learn more, visit his homepage: https://anlijun.cn.\nOutside the lab, Lijun enjoys hiking and writing humorous Chinese poetry."
+    "text": "For each project we can include a card like this. We can stylize them differently if we want to. Here I’ve for example just copied the blog post template. But in the other example project I’ve"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "Lab News",
+    "section": "",
+    "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
+  },
+  {
+    "objectID": "members/hannah.html",
+    "href": "members/hannah.html",
+    "title": "Hannah Baumeister",
+    "section": "",
+    "text": "Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer’s disease. Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job."
   },
   {
     "objectID": "members/ruoyi.html",
