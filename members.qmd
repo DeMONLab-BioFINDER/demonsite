@@ -38,6 +38,8 @@ listing:
     image-align: "left"
 ---
 
+<div class="members-page">
+
 ![](images/group.jpg)
 
 ------------------------------------------
@@ -47,7 +49,6 @@ listing:
 :::{#pi}
 
 :::
-
 
 ## Postdocs
 
@@ -67,5 +68,54 @@ listing:
 
 :::
 
+------------------------------------------
 
+## Bachelor / Master Students
 
+<div class="student-gallery">
+
+<div class="student-tile">
+![](members/images/student1.jpg)
+**Student Name 1**  
+Thesis  
+Program Name
+</div>
+
+<div class="student-tile">
+![](members/images/student2.jpg)
+**Student Name 2**  
+Internship  
+Program Name
+</div>
+
+<div class="student-tile">
+![](members/images/student3.jpg)
+**Student Name 3**  
+Thesis  
+Program Name
+</div>
+
+<div class="student-tile">
+![](members/images/student4.jpg)
+**Student Name 4**  
+Project  
+Program Name
+</div>
+
+<div class="student-tile">
+![](members/images/student5.jpg)
+**Student Name 5**  
+Internship  
+Program Name
+</div>
+
+<div class="student-tile">
+![](members/images/student6.jpg)
+**Student Name 6**  
+Thesis  
+Program Name
+</div>
+
+</div>
+
+</div>

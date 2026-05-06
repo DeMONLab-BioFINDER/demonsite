@@ -1,1 +1,42 @@
 /* css styles */
+/* =========================
+   MEMBERS PAGE ONLY
+   ========================= */
+
+/* Member images */
+.members-page .quarto-listing .listing-image img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Align image + text */
+.members-page .quarto-listing .listing-item {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* Student gallery grid */
+.members-page .student-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Student tile */
+.members-page .student-tile {
+  text-align: center;
+}
+
+/* Square images */
+.members-page .student-tile img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 10px auto;
+}

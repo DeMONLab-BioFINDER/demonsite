@@ -98,32 +98,46 @@
     "text": "In a blog post it is easy to include and run code (note that this needs to be rendered locally and that when you push, you should also include the _site folder).\n\nx &lt;- rnorm(100)\nplot(x)"
   },
   {
+    "objectID": "members.html",
+    "href": "members.html",
+    "title": "Members",
+    "section": "",
+    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Student Name 1\nThesis\nProgram Name\n\n\n Student Name 2\nInternship\nProgram Name\n\n\n Student Name 3\nThesis\nProgram Name\n\n\n Student Name 4\nProject\nProgram Name\n\n\n Student Name 5\nInternship\nProgram Name\n\n\n Student Name 6\nThesis\nProgram Name"
+  },
+  {
     "objectID": "members.html#principal-investigator",
     "href": "members.html#principal-investigator",
     "title": "Members",
-    "section": "Principal Investigator",
-    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\nJacob Vogel\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "section": "",
+    "text": "Principal Investigator\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "members.html#postdocs",
     "href": "members.html#postdocs",
     "title": "Members",
-    "section": "Postdocs",
-    "text": "Postdocs\n\n\n\n\n\n\n\n\n\n\nYu Xiao\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLijun An\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLéa Chauveau\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHannah Baumeister\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "section": "",
+    "text": "Postdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostdoctoral researcher\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "members.html#graduate-students",
     "href": "members.html#graduate-students",
     "title": "Members",
-    "section": "Graduate Students",
-    "text": "Graduate Students\n\n\n\n\n\n\n\n\n\n\nJonathan Rittmo\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele Vilkaite\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNarjes Goshtasbi\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirjam Müller\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "section": "",
+    "text": "Phd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhd Student\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "members.html#research-assistants",
     "href": "members.html#research-assistants",
     "title": "Members",
-    "section": "Research Assistants",
-    "text": "Research Assistants\n\n\n\n\n\n\n\n\n\n\nZoe Ruoyi Zhao\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriele De Leonardis\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRomina Zendehdel\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "section": "",
+    "text": "Research Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "members.html#bachelor-master-students",
+    "href": "members.html#bachelor-master-students",
+    "title": "Members",
+    "section": "",
+    "text": "Student Name 1\nThesis\nProgram Name\n\n\n Student Name 2\nInternship\nProgram Name\n\n\n Student Name 3\nThesis\nProgram Name\n\n\n Student Name 4\nProject\nProgram Name\n\n\n Student Name 5\nInternship\nProgram Name\n\n\n Student Name 6\nThesis\nProgram Name"
   },
   {
     "objectID": "projects/example-project/index.html",
