@@ -5,7 +5,7 @@ category: "Phd Student"
 about:
   id: hero-heading
   template: trestles
-  image: images/gabri.jpg
+  image: images/gabi.png
 
 ---
 

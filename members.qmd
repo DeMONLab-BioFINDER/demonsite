@@ -10,6 +10,7 @@ listing:
     type: default
     sort: false
     image-align: "left"
+    max-description-length: 700
   - id: postdocs
     contents:
       - "members/xiaoyu.qmd"
@@ -19,6 +20,7 @@ listing:
     type: default
     sort: false
     image-align: "left"
+    max-description-length: 700
   - id: phds
     contents:
       - "members/jon.qmd"
@@ -28,7 +30,7 @@ listing:
     type: default
     sort: false
     image-align: "left"
-    max-description-length: 300
+    max-description-length: 700
   - id: ras
     contents:
       - "members/ruoyi.qmd"
@@ -37,6 +39,7 @@ listing:
     type: default
     sort: false
     image-align: "left"
+    max-description-length: 700
 ---
 
 <div class="members-page">
