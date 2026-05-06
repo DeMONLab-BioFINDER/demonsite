@@ -40,7 +40,7 @@ listing:
 
 <div class="members-page">
 
-![](images/group.jpg)
+![](images/GroupPhotoV1.jpg)
 
 ------------------------------------------
 

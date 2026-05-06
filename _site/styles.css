@@ -3,6 +3,15 @@
    MEMBERS PAGE ONLY
    ========================= */
 
+/* REMOVE Quarto truncation of member text */
+.members-page .listing-description,
+.members-page .listing-excerpt {
+  display: block !important;
+  overflow: visible !important;
+  -webkit-line-clamp: 8 !important;
+  max-height: none !important;
+}
+
 /* Member images */
 .members-page .quarto-listing .listing-image img {
   width: 220px;
@@ -33,10 +42,8 @@
 
 /* Square images */
 .members-page .student-tile img {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 10px auto;
 }
