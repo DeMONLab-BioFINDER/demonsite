@@ -11,6 +11,13 @@
   overflow: hidden !important;
 }
 
+.members-page .listing-description {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 8 !important;
+  overflow: hidden !important;
+}
+
 /* Member images */
 .members-page .quarto-listing .listing-image img {
   width: 220px;

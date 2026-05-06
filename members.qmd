@@ -40,7 +40,7 @@ listing:
 
 <div class="members-page">
 
-![](images/GroupPhotoV1.jpg)
+![](members/images/GroupPhotoV1.jpg)
 
 ------------------------------------------
 
@@ -77,8 +77,8 @@ listing:
 <div class="student-tile">
 ![](members/images/nadine.jpeg)
 **Nadine Li Pigida**  
-Project (Master)
-Bioinformatics
+Project
+Master in Bioinformatics
 </div>
 
 <div class="student-tile">
@@ -91,29 +91,29 @@ Machine Learning, Systems and Control
 <div class="student-tile">
 ![](members/images/yaqi.jpg)
 **Yaqi Jiao**  
-Project (Master)  
-Bioinformatics
+Project  
+Master in Bioinformatics
 </div>
 
 <div class="student-tile">
 ![](members/images/elsa.jpg)
 **Elsa Gustafsson**  
-Internship (Master)
-Biomedical Engineering
+Internship
+Master in Biomedical Engineering
 </div>
 
 <div class="student-tile">
 ![](members/images/catarina.jpg)
 **Catarina Barreiros**  
-Bachelor Thesis  
-Biomedicine
+Thesis  
+Bachelor in Biomedicine
 </div>
 
 <div class="student-tile">
 ![](members/images/emma.jpg)
 **Emma Volcov**  
-Bachelor Thesis  
-Biomedicine
+Thesis
+Bachelor in Biomedicine
 </div>
 
 </div>
