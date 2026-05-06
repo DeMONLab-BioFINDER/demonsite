@@ -2,16 +2,11 @@
 title: "Gabriele Vilkaite"
 subtitle: "Phd Student"
 category: "Phd Student"
-image: images/gabi.png
-
-description: |
-  Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell transcriptomics and computational approaches to study cellular and molecular mechanisms of Alzheimer’s disease.
-
-  In her free time, Gabriele enjoys sailing, both recreationally and competitively, having sailed all over Europe and with dreams to one day make a journey across the Atlantic.
-
 about:
   id: hero-heading
   template: trestles
+  image: images/gabri.jpg
+
 ---
 
 :::{#hero-heading}

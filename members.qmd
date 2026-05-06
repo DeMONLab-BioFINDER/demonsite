@@ -28,6 +28,7 @@ listing:
     type: default
     sort: false
     image-align: "left"
+    max-description-length: 300
   - id: ras
     contents:
       - "members/ruoyi.qmd"
