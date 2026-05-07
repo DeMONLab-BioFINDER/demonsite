@@ -81,14 +81,14 @@ listing:
 <div class="student-tile">
 ![](members/images/nadine.jpeg)
 **Nadine Li Pigida**  
-Project
+Project  
 Master in Bioinformatics
 </div>
 
 <div class="student-tile">
 ![](members/images/ruizhen.jpg)
 **Ruizhen Shen**  
-Master Thesis 
+Master Thesis  
 Machine Learning, Systems and Control
 </div>
 
@@ -102,7 +102,7 @@ Master in Bioinformatics
 <div class="student-tile">
 ![](members/images/elsa.jpg)
 **Elsa Gustafsson**  
-Internship
+Internship  
 Master in Biomedical Engineering
 </div>
 
@@ -116,7 +116,7 @@ Bachelor in Biomedicine
 <div class="student-tile">
 ![](members/images/emma.jpg)
 **Emma Volcov**  
-Thesis
+Thesis  
 Bachelor in Biomedicine
 </div>
 
