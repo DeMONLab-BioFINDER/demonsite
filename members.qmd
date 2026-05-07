@@ -80,43 +80,48 @@ listing:
 
 <div class="student-tile">
 ![](members/images/nadine.jpeg)
-**Nadine Li Pigida**  
-Project  
+<strong>Nadine Li Pigida</strong><br>
+Project<br>
 Master in Bioinformatics
 </div>
 
 <div class="student-tile">
-![](members/images/ruizhen.jpg)
-**Ruizhen Shen**  
-Master Thesis  
+<img src="members/images/ruizhen.jpg">
+
+<strong>Ruizhen Shen</strong><br>
+Master Thesis<br>
 Machine Learning, Systems and Control
 </div>
 
 <div class="student-tile">
-![](members/images/yaqi.jpg)
-**Yaqi Jiao**  
-Project  
+<img src="members/images/yaqi.jpg">
+
+<strong>Yaqi Jiao</strong><br>
+Project<br>
 Master in Bioinformatics
 </div>
 
 <div class="student-tile">
-![](members/images/elsa.jpg)
-**Elsa Gustafsson**  
-Internship  
+<img src="members/images/elsa.jpg">
+
+<strong>Elsa Gustafsson</strong><br>
+Internship<br>
 Master in Biomedical Engineering
 </div>
 
 <div class="student-tile">
-![](members/images/catarina.jpg)
-**Catarina Barreiros**  
-Thesis  
+<img src="members/images/catarina.jpg">
+
+<strong>Catarina Barreiros</strong><br>
+Thesis<br>
 Bachelor in Biomedicine
 </div>
 
 <div class="student-tile">
-![](members/images/emma.jpg)
-**Emma Volcov**  
-Thesis  
+<img src="members/images/emma.jpg">
+
+<strong>Emma Volcov</strong><br>
+Thesis<br>
 Bachelor in Biomedicine
 </div>
 
