@@ -58,14 +58,21 @@
   {
     "objectID": "takepart.html",
     "href": "takepart.html",
-    "title": "Contact",
+    "title": "DeMON",
+    "section": "",
+    "text": "Feel free to contact us:\n📧 Email: jacob.vogel@med.lu.se\nFind us also on:\n💼 LinkedIn: DeMON Lab LinkedIn\n💻 GitHub: DeMON Lab GitHub"
+  },
+  {
+    "objectID": "takepart.html#contact",
+    "href": "takepart.html#contact",
+    "title": "DeMON",
     "section": "",
     "text": "Feel free to contact us:\n📧 Email: jacob.vogel@med.lu.se\nFind us also on:\n💼 LinkedIn: DeMON Lab LinkedIn\n💻 GitHub: DeMON Lab GitHub"
   },
   {
     "objectID": "takepart.html#location",
     "href": "takepart.html#location",
-    "title": "Contact",
+    "title": "DeMON",
     "section": "Location",
     "text": "Location\nBMC C11/I12\nSölvegatan 19\n223 62 Lund\nSweden"
   },
