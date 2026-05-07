@@ -2,12 +2,12 @@
 title: "Contact"
 ---
 
-## Contact
-
 Feel free to contact us:  
+
 📧 Email: [jacob.vogel@med.lu.se](mailto:jacob.vogel@med.lu.se)
 
 Find us also on:  
+
 💼 LinkedIn: [DeMON Lab LinkedIn](https://www.linkedin.com/company/demon-lab/posts/?feedView=all)
 
 💻 GitHub: [DeMON Lab GitHub](https://github.com/DeMONLab-BioFINDER)
