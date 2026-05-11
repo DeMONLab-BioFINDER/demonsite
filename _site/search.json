@@ -168,11 +168,11 @@
     "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
   },
   {
-    "objectID": "index.html#welcome-to-the-demon-lab",
-    "href": "index.html#welcome-to-the-demon-lab",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
     "title": "DeMON",
-    "section": "Welcome to the DeMON Lab!",
-    "text": "Welcome to the DeMON Lab!\nWe develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.\nOur work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.\n\nOur Research\nPublications"
+    "section": "Welcome!",
+    "text": "Welcome!\nIn the DeMON lab, we develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.\nOur work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.\n\nOur Research\nPublications"
   },
   {
     "objectID": "index.html#about-the-lab",

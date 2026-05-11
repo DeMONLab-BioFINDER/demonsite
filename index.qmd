@@ -19,9 +19,9 @@ editor: source
 
 <div class="hero-text">
 
-##  Welcome to the DeMON Lab!
+##  Welcome!
 
-We develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.
+In the DeMON lab, we develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.
 
 Our work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.
 
