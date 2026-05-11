@@ -168,23 +168,16 @@
     "text": "Here we can post any updates, such as new people joining or papers being accepted.\n\ndemonlab 0.3.0 (01-11-23)\n\nXiao Yu started\n\n\n\ndemonlab 0.2.0 (04-09-23)\n\nGabriele and Jonathan started\n\n\n\ndemonlab 0.1.0 (??-??-??)\n\nInitial commit"
   },
   {
-    "objectID": "index.html#welcome-to-the-demon-lab",
-    "href": "index.html#welcome-to-the-demon-lab",
-    "title": "DeMON",
-    "section": "Welcome to the DeMON Lab!",
-    "text": "Welcome to the DeMON Lab!\n\nUnderstanding Neurodegenerative Diseases\nWe develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.\nOur work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.\n\nOur Research\nPublications"
-  },
-  {
     "objectID": "index.html#about-the-lab",
     "href": "index.html#about-the-lab",
-    "title": "DeMON",
+    "title": "Welcome to the DeMON Lab",
     "section": "About the Lab",
-    "text": "About the Lab\n🚧 Website updates in progress. More information coming soon.\nThe Dementia Multi-Omics and Neuroimaging (DeMON) Lab at Lund University focuses on computational neuroscience and neurodegenerative disease research.\nWe use multimodal datasets, including MRI, PET, transcriptomics, and genetics, to model disease progression and better understand the biological mechanisms underlying dementia."
+    "text": "About the Lab\n🚧 Website updates in progress. More information coming soon.\nOur lab’s main focus is in aging and neurodegenerative disease research, where we take advantage of large data resources to model disease progression and discover contributions to disease pathogenesis. Some of our lab’s principal research avenues include characterizing individual difference in disease progression, predicting the neurobiological progression of neurodegenerative diseases, and modeling the earliest biological changes that lead to neurodegenerative syndromes. Our work achieves these goals by blending large neuroimaging and multi-omic datasets, and applying to these datasets supervised and unsupervised methods in statistical learning and disease progression modeling.\nOur research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. The group boasts a sophistication in many statistical approaches and an expertise in many types of datasets. We also have a commitment to open science, FAIR principals and contributing to the greater research community."
   },
   {
     "objectID": "index.html#latest-news",
     "href": "index.html#latest-news",
-    "title": "DeMON",
+    "title": "Welcome to the DeMON Lab",
     "section": "Latest News",
     "text": "Latest News\n🚧 Website updates in progress.\nNews from Linked In will appear here soon. In the meantime, check out our linked in!:\nLinkedIn"
   },
