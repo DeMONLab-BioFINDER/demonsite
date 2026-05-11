@@ -19,11 +19,11 @@ editor: source
 
 <div class="hero-text">
 
-## DeMON Lab
+## Welcome to the DeMON Lab!
 
-### Mapping the trajectory of neurodegenerative disease
+### Understanding Neurodegenerative Diseases
 
-We develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s disease and related dementias.
+We develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.
 
 Our work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.
 
@@ -31,7 +31,7 @@ Our work combines statistical learning, disease progression modelling, neuroimag
 
 [Our Research](projects.qmd){.btn .btn-primary .btn-lg}
 
-[Publications](papers.qmd){.btn .btn-outline-primary .btn-lg}
+[Publications](papers.qmd){.btn .btn-primary .btn-lg}
 
 </div>
 
@@ -57,8 +57,9 @@ Our work combines statistical learning, disease progression modelling, neuroimag
 <div class="home-about">
 
 ## About the Lab
+🚧 Website updates in progress. More information coming soon.
 
-The DeMON Lab at Lund University focuses on computational neuroscience and neurodegenerative disease research.
+The Dementia Multi-Omics and Neuroimaging (DeMON) Lab at Lund University focuses on computational neuroscience and neurodegenerative disease research.
 
 We use multimodal datasets, including MRI, PET, transcriptomics, and genetics, to model disease progression and better understand the biological mechanisms underlying dementia.
 
@@ -70,9 +71,9 @@ We use multimodal datasets, including MRI, PET, transcriptomics, and genetics, t
 
 🚧 Website updates in progress.
 
-News from Linked In will appear here soon, in the meantime:
+News from Linked In will appear here soon. In the meantime, check out our linked in!:
 
-[LinkedIn](https://www.linkedin.com/company/demon-lab/posts/?feedView=all){.btn .btn-outline-primary}
+[LinkedIn](https://www.linkedin.com/company/demon-lab/posts/?feedView=all){.btn .btn-primary .btn-lg}
 
 </div>
 
