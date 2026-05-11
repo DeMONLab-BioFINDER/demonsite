@@ -3,6 +3,8 @@ title: "Papers"
 page-layout: full
 ---
 
+![](images/Construction_Brain.png)
+
 ```{r data, echo=FALSE, message=FALSE, cache=FALSE}
 library(rentrez)
 library(xml2)

@@ -13,6 +13,8 @@ resources:
 
 ::: {.content-block}
 
+![](images/Construction_Brain.png)
+
 ![](images/banner.png)
 
 

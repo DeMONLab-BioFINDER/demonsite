@@ -12,6 +12,6 @@ page-layout: full
 title-block-banner: false
 ---
 
-In the projects below you can find out more about what we do!
+![](images/Construction_Brain.png)
 
-[Coming soon]
+[Descriptions of our projects coming soon!]
