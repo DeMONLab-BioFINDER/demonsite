@@ -12,6 +12,6 @@ page-layout: full
 title-block-banner: false
 ---
 
-![](images/Construction_Brain.png)
+![](images/WebsiteUnderConstruction.png)
 
 [Descriptions of our projects coming soon!]
