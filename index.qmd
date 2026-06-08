@@ -23,7 +23,7 @@ editor: source
 
 In the DeMON lab, we develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.
 
-Our work combines statistical learning, disease progression modelling, neuroimaging, and molecular profiling to identify biologically meaningful disease subtypes and early pathological change.
+We develop computational models that integrate neuroimaging and multi-omics data to understand disease progression and biological heterogeneity in neurodegenerative diseases.
 
 <div class="hero-buttons">
 
@@ -57,11 +57,49 @@ Our work combines statistical learning, disease progression modelling, neuroimag
 ## About the Lab
 🚧 Website updates in progress. More information coming soon.  
   
-Our lab’s main focus is in aging and neurodegenerative disease research, where we take advantage of large data resources to model disease progression and discover contributions to disease pathogenesis. Some of our lab’s principal research avenues include characterizing individual difference in disease progression, predicting the neurobiological progression of neurodegenerative diseases, and modeling the earliest biological changes that lead to neurodegenerative syndromes. Our work achieves these goals by blending large neuroimaging and multi-omic datasets, and applying to these datasets supervised and unsupervised methods in statistical learning and disease progression modeling.
-  
-Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. The group boasts a sophistication in many statistical approaches and an expertise in many types of datasets. We also have a commitment to open science, FAIR principals and contributing to the greater research community.
+In the DeMON Lab, we investigate how neurodegenerative diseases develop and progress over time. Our research focuses primarily on Alzheimer’s disease but also other neurodegenerative disorders, with the goal of identifying biological changes at any stage of the disease, even those that precede clinical symptoms, and understanding why individuals experience disease differently.
+
+To address these questions, we integrate large-scale neuroimaging, molecular, genetic, and clinical datasets. By combining statistical learning, disease progression modelling, and multi-omics approaches, we develop computational methods that model disease progression, reveal patterns of heterogeneity in these diseases, identify biologically meaningful subtypes, and improve our understanding of disease mechanisms.
+
+Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. 
+
+We are committed to open and reproducible science, FAIR data principles, and the development of methods and resources that benefit the wider research community.
+
+<div class="about-links">
+
+[BioFINDER](INSERT-LINK-HERE){.about-button}
+[MultiPark](INSERT-LINK-HERE){.about-button}
+[SciLifeLab](INSERT-LINK-HERE){.about-button}
+[GitHub](INSERT-LINK-HERE){.about-button}
 
 </div>
+
+<div class="lab-stats">
+
+<div class="stat-card">
+<div class="stat-number">X+</div>
+<div class="stat-label">Cohorts</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-number">Y+</div>
+<div class="stat-label">Participants</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-number">Z+</div>
+<div class="stat-label">Publications</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-number">W+</div>
+<div class="stat-label">Collaborators</div>
+</div>
+
+</div>
+
+</div>
+
 
 <div class="home-news">
 
