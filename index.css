@@ -189,6 +189,18 @@
 /* =========================
    ABOUT PAGE
    ========================= */
+.hero-buttons .btn-primary {
+  background-color: #A63A50;
+  border-color: #A63A50;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #8F3245;
+  border-color: #8F3245;
+}
 
 .about-links {
   display: flex;

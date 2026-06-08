@@ -21,9 +21,9 @@ editor: source
 
 ##  Welcome!
 
-In the DeMON lab, we develop computational approaches integrating neuroimaging and multi-omics data to understand disease progression in Alzheimer’s and other neurodegenerative disease.
+In the DeMON Lab, we develop computational models that integrate neuroimaging and multi-omics data to understand disease progression and biological heterogeneity in neurodegenerative diseases.
 
-We develop computational models that integrate neuroimaging and multi-omics data to understand disease progression and biological heterogeneity in neurodegenerative diseases.
+Our work combines statistical learning, disease progression modelling, and molecular profiling to identify meaningful disease subtypes and biological changes associated with neurodegeneration.
 
 <div class="hero-buttons">
 
@@ -67,10 +67,10 @@ We are committed to open and reproducible science, FAIR data principles, and the
 
 <div class="about-links">
 
-[BioFINDER](INSERT-LINK-HERE){.about-button}
-[MultiPark](INSERT-LINK-HERE){.about-button}
-[SciLifeLab](INSERT-LINK-HERE){.about-button}
-[GitHub](INSERT-LINK-HERE){.about-button}
+[BioFINDER](https://biofinder.se/){.about-button}
+[MultiPark](https://www.multipark.lu.se/){.about-button}
+[SciLifeLab](https://www.scilifelab.se/){.about-button}
+[Our GitHub](https://github.com/DeMONLab-BioFINDER){.about-button}
 
 </div>
 
