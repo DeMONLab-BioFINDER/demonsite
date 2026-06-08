@@ -19,25 +19,17 @@ editor: source
 
 <div class="hero-text">
 
-##  Welcome!
+## Welcome!
 
 In the DeMON Lab, we develop computational models that integrate neuroimaging and multi-omics data to understand disease progression and biological heterogeneity in neurodegenerative diseases.
 
 Our work combines statistical learning, disease progression modelling, and molecular profiling to identify meaningful disease subtypes and biological changes associated with neurodegeneration.
 
-<div class="hero-buttons">
-
-[Our Research](projects.qmd){.btn .btn-primary .btn-lg}
-
-[Publications](papers.qmd){.btn .btn-primary .btn-lg}
-
-</div>
-
 </div>
 
 <div class="hero-image">
 
-![](images/logo_col_type1.png)
+![](images/logo_mirjam_type1.png)
 
 </div>
 
@@ -48,14 +40,11 @@ Our work combines statistical learning, disease progression modelling, and molec
 
 ::: {.content-block}
 
----
-
-<div class="home-grid">
-
-<div class="home-about">
+<div class="about-card">
 
 ## About the Lab
-🚧 Website updates in progress. More information coming soon.  
+
+🚧 Website updates in progress. Statistics updates will be completed soon. 
   
 In the DeMON Lab, we investigate how neurodegenerative diseases develop and progress over time. Our research focuses primarily on Alzheimer’s disease but also other neurodegenerative disorders, with the goal of identifying biological changes at any stage of the disease, even those that precede clinical symptoms, and understanding why individuals experience disease differently.
 
@@ -65,12 +54,10 @@ Our research group is also privileged with a large network of collaborators that
 
 We are committed to open and reproducible science, FAIR data principles, and the development of methods and resources that benefit the wider research community.
 
-<div class="about-links">
+<div class="about-buttons">
 
-[BioFINDER](https://biofinder.se/){.about-button}
-[MultiPark](https://www.multipark.lu.se/){.about-button}
-[SciLifeLab](https://www.scilifelab.se/){.about-button}
-[Our GitHub](https://github.com/DeMONLab-BioFINDER){.about-button}
+[Projects](projects.qmd){.btn .btn-primary .btn-lg}
+[Publications](papers.qmd){.btn .btn-primary .btn-lg}
 
 </div>
 
@@ -100,33 +87,26 @@ We are committed to open and reproducible science, FAIR data principles, and the
 
 </div>
 
-
-<div class="home-news">
-
-## Latest News
-
-🚧 Website updates in progress.  
-
-News from Linked In will appear here soon. In the meantime, check out our linked in.
-
-[LinkedIn](https://www.linkedin.com/company/demon-lab/posts/?feedView=all){.btn .btn-primary .btn-lg}
-
-</div>
-
-</div>
-
 :::
 
 
 ::: {.content-block}
 
----
+<div class="network-section">
+
+## Research Network
 
 <div class="logo-row">
 
 [![](images/lundolog.png)](https://lu.se/)
 
 [![](images/scilifelab_logo.png)](https://scilifelab.se/)
+
+[![](images/biofinder-logo.png)](https://biofinder.se/)
+
+<!-- [![](images/multipark_logo.png)](https://www.multipark.lu.se/) -->
+
+</div>
 
 </div>
 
