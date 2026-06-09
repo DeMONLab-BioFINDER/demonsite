@@ -80,6 +80,7 @@ listing:
 
 <div class="student-tile">
 ![](members/images/nadine.jpeg)
+  
 <strong>Nadine Li Pigida</strong><br>
 Project<br>
 Master in Bioinformatics
