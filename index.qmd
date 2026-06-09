@@ -61,30 +61,6 @@ We are committed to open and reproducible science, FAIR data principles, and the
 
 </div>
 
-<div class="lab-stats">
-
-<div class="stat-card">
-<div class="stat-number">X+</div>
-<div class="stat-label">Cohorts</div>
-</div>
-
-<div class="stat-card">
-<div class="stat-number">Y+</div>
-<div class="stat-label">Participants</div>
-</div>
-
-<div class="stat-card">
-<div class="stat-number">Z+</div>
-<div class="stat-label">Publications</div>
-</div>
-
-<div class="stat-card">
-<div class="stat-number">W+</div>
-<div class="stat-label">Collaborators</div>
-</div>
-
-</div>
-
 </div>
 
 :::
@@ -102,9 +78,7 @@ We are committed to open and reproducible science, FAIR data principles, and the
 
 [![](images/scilifelab_logo.png)](https://scilifelab.se/)
 
-[![](images/biofinder-logo.png)](https://biofinder.se/)
-
-<!-- [![](images/multipark_logo.png)](https://www.multipark.lu.se/) -->
+[![](images/MultiPark-RGB.png)](https://www.multipark.lu.se/)
 
 </div>
 
