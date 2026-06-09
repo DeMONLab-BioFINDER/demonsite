@@ -43,8 +43,6 @@ Our work combines statistical learning, disease progression modelling, and molec
 <div class="about-card">
 
 ## About the Lab
-
-🚧 Website updates in progress. Statistics updates will be completed soon. 
   
 In the DeMON Lab, we investigate how neurodegenerative diseases develop and progress over time. Our research focuses primarily on Alzheimer’s disease but also other neurodegenerative disorders, with the goal of identifying biological changes at any stage of the disease, even those that precede clinical symptoms, and understanding why individuals experience disease differently.
 
