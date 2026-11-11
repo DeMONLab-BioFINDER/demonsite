@@ -1,9 +1,7 @@
 ---
-title: "Papers"
+title: "Publications"
 page-layout: full
 ---
-
-![](images/WebsiteUnderConstruction.png)
 
 ```{r data, echo=FALSE, message=FALSE, cache=FALSE}
 library(rentrez)
@@ -21,7 +19,7 @@ library(visNetwork)
 query <- '(Jacob Vogel[Auth]) OR (Vogel JW[Auth])'
 
 
-pmids <- entrez_search(db='pubmed', term=query, retmax=100)$ids
+pmids <- entrez_search(db='pubmed', term=query, retmax=500)$ids
 publications <- entrez_summary(db='pubmed', id=pmids)
 raw_xml <- entrez_fetch(db="pubmed", id=pmids, rettype="xml")
 
@@ -49,6 +47,9 @@ journal <- papers %>% xml_find_all(".//Title") %>% xml_text() %>% str_trim() %>%
 pub_date <- papers %>% xml_find_all(".//PubDate") %>% xml_text() %>% ymd(truncated = 2)
 pub_type <- papers %>% xml_find_first(".//PublicationType") %>% xml_text()
 abstract <- papers %>% xml_find_first(".//Abstract") %>% xml_text()
+article_records <- xml_find_all(xml_data, ".//PubmedArticle")
+record_pmid <- article_records %>% xml_find_first("./MedlineCitation/PMID") %>% xml_text()
+record_doi <- article_records %>% xml_find_first(".//ArticleIdList/ArticleId[@IdType = 'doi']") %>% xml_text()
 
 
 filt_year <- ymd('2020', truncated = 2)
@@ -58,7 +59,8 @@ pub_data_org <- tibble(Title = titles,
                        Date = ymd(pub_date, truncated = 2), 
                        Type = pub_type, 
                        Abstract = abstract, 
-                       pmid = pmids)
+                       pmid = record_pmid,
+                       doi = record_doi)
 
 
 records <- xml_find_all(xml_data, ".//PubmedArticle")
@@ -90,6 +92,56 @@ ref_data <- pub_data_org %>% mutate(refs = paper_references) |>
   unnest(refs)  
 
 pub_data_org <- pub_data_org |> filter(Date > filt_year, main_auth) 
+
+# Second source: Jake's ORCID profile. Works with a DOI that PubMed does not
+# return (mostly preprints) are added to the table, with authors, journal or
+# preprint server, date and abstract from Crossref, and the same rule as above
+# (Vogel among the first or last three authors, 2020 onwards). If ORCID or
+# Crossref cannot be reached the build stops, so the page is never published
+# with papers missing.
+orcid_id <- "0000-0001-6394-9940"
+
+read_json_url <- function(u) {
+  jsonlite::fromJSON(paste(readLines(url(u, headers = c(Accept = "application/json")), warn = FALSE),
+                           collapse = ""),
+                     simplifyVector = FALSE)
+}
+
+orcid_works <- read_json_url(paste0("https://pub.orcid.org/v3.0/", orcid_id, "/works"))$group
+orcid_dois <- map_chr(orcid_works, function(w) {
+  ids <- keep(w[["external-ids"]][["external-id"]], ~ .x[["external-id-type"]] == "doi")
+  if (length(ids)) tolower(ids[[1]][["external-id-value"]]) else NA_character_
+})
+orcid_dois <- setdiff(unique(na.omit(orcid_dois)), tolower(na.omit(record_doi)))
+
+crossref_row <- function(doi) {
+  m <- read_json_url(paste0("https://api.crossref.org/works/", URLencode(doi, reserved = TRUE)))$message
+  date_parts <- unlist(m$published$`date-parts`[[1]])
+  tibble(Title = str_squish(unlist(m$title)[1]),
+         Author = paste(map_chr(m$author, ~ paste(.x$family %||% "",
+                                                  str_remove_all(.x$given %||% "", "[^A-Z]"))),
+                        collapse = ", "),
+         Journal = unlist(m$`container-title`)[1] %||% m$institution[[1]]$name %||% m$publisher,
+         Date = ymd(paste(c(date_parts, 1, 1)[1:3], collapse = "-")),
+         Type = m$type,
+         Abstract = str_remove(str_squish(str_remove_all(m$abstract %||% NA_character_, "<[^>]+>")),
+                               "^(?i)abstract\\s*"),
+         pmid = NA_character_,
+         doi = doi)
+}
+
+orcid_data <- map_dfr(orcid_dois, crossref_row) |>
+  filter(Date > filt_year) |>
+  mutate(main_auth = map_lgl(str_split(Author, ",\\s*"),
+                             ~ any(grepl("Vogel", head(.x, 3))) || any(grepl("Vogel", tail(.x, 3))))) |>
+  filter(main_auth) |>
+  # skip preprints whose published version PubMed already lists (same title,
+  # ignoring capitals and punctuation), and keep one copy of repeated preprints
+  mutate(title_key = str_to_lower(str_remove_all(Title, "[^[:alnum:]]"))) |>
+  filter(!title_key %in% str_to_lower(str_remove_all(titles, "[^[:alnum:]]"))) |>
+  arrange(desc(Date)) |>
+  distinct(title_key, .keep_all = TRUE) |>
+  select(-title_key)
 
 edge_list <- ref_data %>% filter(Type != 'Preprint') %>% 
   select(pmid, refs) %>% rename(Paper = pmid, Reference = refs) %>% 
@@ -128,16 +180,17 @@ corpus <- VCorpus(VectorSource(docs$text)) %>%
 dtm <- DocumentTermMatrix(corpus)
 
 num_topics <- 4
-lda_model <- LDA(dtm, k = num_topics, method = "Gibbs")
+lda_model <- LDA(dtm, k = num_topics, method = "Gibbs", control = list(seed = 2024))
 doc_topics <- tibble(Title = docs$Title, group = topics(lda_model))
 
 nodes_lookup <- tibble(name = graph_titles)
 
+# Strong colours so the word clouds and network dots are easy to read
 topic_colors <- c(
-  "1" = "tomato",
-  "2" = "steelblue",
-  "3" = "forestgreen",
-  "4" = "goldenrod"
+  "1" = "#D7301F",  # red
+  "2" = "#2166AC",  # blue
+  "3" = "#1B7837",  # green
+  "4" = "#B8860B"   # dark gold
 )
 
 nodes <- nodes_lookup %>%
@@ -184,20 +237,35 @@ top_terms <- tidy(lda_model, matrix = "beta") %>%
   mutate(color = topic_colors[as.character(topic)])
   
 
+set.seed(2024)
 ggplot(top_terms, aes(label = term, size = beta, alpha = beta, color = color)) +
   geom_text_wordcloud() +
   scale_size_area(max_size = 10) +
   facet_wrap(~topic) +
   theme_void() +
-  scale_alpha_continuous(range = c(0.5, 1)) +
+  scale_alpha_continuous(range = c(0.85, 1)) +
   scale_color_identity() +
   theme(
       strip.text.x = element_blank()
       )
 
-visNetwork(nodes, edges)
+# The network stays fixed (no dragging or zooming) so it cannot be moved out of
+# sight. Clicking a paper filters the table below to it; clicking empty space
+# shows all papers again.
+visNetwork(nodes, edges) %>%
+  visLayout(randomSeed = 2024) %>%
+  visInteraction(dragView = FALSE, zoomView = FALSE, dragNodes = FALSE) %>%
+  visEvents(
+    selectNode = "function(p) {
+      var paper = this.body.data.nodes.get(p.nodes[0]);
+      Reactable.setSearch('papers-table', paper.name);
+      document.getElementById('papers-table').scrollIntoView({behavior: 'smooth', block: 'start'});
+    }",
+    deselectNode = "function(p) { Reactable.setSearch('papers-table', undefined); }"
+  )
 
 ```
+
 
 
 ```{r papertable, echo=FALSE, message=FALSE}
@@ -214,7 +282,7 @@ library(tidytext)
 library(ggwordcloud)
 library(visNetwork)
 
-pub_data <- pub_data_org %>% filter(Date > filt_year,
+pub_data <- bind_rows(pub_data_org, orcid_data) %>% filter(Date > filt_year,
                                 !(Type %in% c('Preprint', 'Published Erratum', "Editorial"))) %>%
   arrange(desc(Date)) %>%
   mutate(
@@ -224,17 +292,36 @@ pub_data <- pub_data_org %>% filter(Date > filt_year,
   relocate(Auth, .after = 'Author') %>% 
   select(-Date)
 
-reactable(pub_data %>% select(-Author, -Abstract, -pmid, -Type, -main_auth), searchable = TRUE,
+paper_url <- ifelse(is.na(pub_data$doi),
+                    paste0("https://pubmed.ncbi.nlm.nih.gov/", pub_data$pmid, "/"),
+                    paste0("https://doi.org/", pub_data$doi))
+
+reactable(pub_data %>% select(-Auth, -Abstract, -pmid, -doi, -Type, -main_auth), searchable = TRUE,
+          elementId = "papers-table",
+          language = reactableLang(searchPlaceholder = "Search papers by title, author, journal or year..."),
+          defaultPageSize = 20,
+          pageSizeOptions = c(10, 20, 50, 100),
           defaultColDef = colDef(
-            style = list(fontSize = "11px")
+            style = list(fontSize = "17px", color = "#000")
           ),
-          columns = list(Title = colDef(width = 500),
-                         Year = colDef(width = 80)),
+          theme = reactableTheme(
+            cellPadding = "12px 10px",
+            headerStyle = list(fontSize = "18px")
+          ),
+          columns = list(Title = colDef(minWidth = 500, style = list(fontSize = "19px", lineHeight = "1.45"),
+                                        cell = function(value, index) {
+                                          htmltools::tags$a(href = paper_url[index], target = "_blank", value)
+                                        }),
+                         # authors hidden to give titles more room, but still searchable
+                         Author = colDef(show = FALSE, searchable = TRUE),
+                         Journal = colDef(minWidth = 260, style = list(fontSize = "17px", lineHeight = "1.4", color = "#000")),
+                         Year = colDef(width = 85)),
           showPageSizeOptions = TRUE, filterable = TRUE,
           details = function(index) {
-            abs <- pub_data[index, ] %>%  select(Author, Abstract) %>% t()
-            tbl <- reactable(abs, outlined = TRUE, highlight = TRUE, fullWidth = TRUE,
-                             columns = list(V1 = colDef(width = 600))
+            htmltools::div(class = "paper-details",
+              htmltools::p(htmltools::strong("Authors: "), pub_data$Author[index]),
+              if (!is.na(pub_data$Abstract[index]))
+                htmltools::p(htmltools::strong("Abstract: "), pub_data$Abstract[index])
             )
           })
 

@@ -8,13 +8,6 @@ editor: source
 
 ::: {.content-block}
 
-![](images/WebsiteUnderConstruction.png){width=100%}
-
-:::
-
-
-::: {.content-block}
-
 <div class="hero-section">
 
 <div class="hero-text">
@@ -24,6 +17,14 @@ editor: source
 In the DeMON Lab, we develop computational models that integrate neuroimaging and multi-omics data to understand disease progression and biological heterogeneity in neurodegenerative diseases.
 
 Our work combines statistical learning, disease progression modelling, and molecular profiling to identify meaningful disease subtypes and biological changes associated with neurodegeneration.
+
+<div class="find-us">
+<span class="find-us-title">Find us here</span>
+<a href="https://www.linkedin.com/company/demon-lab/posts/?feedView=all" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="https://github.com/DeMONLab-BioFINDER" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+<a href="https://x.com/_JakeVogel_" target="_blank"><i class="bi bi-twitter-x"></i> X</a>
+<a href="https://scholar.google.com/citations?user=1m6yqlwAAAAJ" target="_blank"><i class="bi bi-mortarboard-fill"></i> Google Scholar</a>
+</div>
 
 </div>
 
@@ -48,16 +49,61 @@ In the DeMON Lab, we investigate how neurodegenerative diseases develop and prog
 
 To address these questions, we integrate large-scale neuroimaging, molecular, genetic, and clinical datasets. By combining statistical learning, disease progression modelling, and multi-omics approaches, we develop computational methods that model disease progression, reveal patterns of heterogeneity in these diseases, identify biologically meaningful subtypes, and improve our understanding of disease mechanisms.
 
-Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets. 
+Our research group is also privileged with a large network of collaborators that help push forward the lab’s research goals by providing both expert domain knowledge and rare datasets.
 
 We are committed to open and reproducible science, FAIR data principles, and the development of methods and resources that benefit the wider research community.
 
-<div class="about-buttons">
-
-[Projects](projects.qmd){.btn .btn-primary .btn-lg}
-[Publications](papers.qmd){.btn .btn-primary .btn-lg}
-
 </div>
+
+:::
+
+
+::: {.content-block}
+
+<div class="latest-section">
+
+## Latest from the Lab
+
+```{r latest, echo=FALSE}
+# Reads the lists on the Research Publications and News pages, so nothing here
+# needs editing by hand: the newest paper is the first entry in `papers`, the
+# news item is the one marked `home: true` (or the newest if none is marked).
+library(htmltools)
+
+papers <- rmarkdown::yaml_front_matter("research-publications.qmd")$papers
+news <- rmarkdown::yaml_front_matter("news.qmd")$news
+
+paper <- papers[[1]]
+marked <- Filter(function(n) isTRUE(n$home), news)
+item <- if (length(marked) > 0) marked[[1]] else news[[1]]
+
+latest_card <- function(label, image, alt, credit, meta, title, text, main_link, more_link) {
+  tags$article(
+    class = "latest-card",
+    tags$figure(class = "latest-figure", img(src = image, alt = alt, loading = "lazy")),
+    div(class = "latest-body",
+        if (!is.null(credit)) div(class = "latest-credit", credit),
+        div(class = "latest-label", label),
+        div(class = "latest-meta", meta),
+        h3(class = "latest-title", title),
+        tags$p(class = "latest-text", text),
+        div(class = "latest-links", main_link, more_link)))
+}
+
+div(class = "latest-grid",
+    latest_card(
+      "Latest publication", paper$figure, paper$alt, paper$credit,
+      paste0(paper$lead, " et al., ", paper$journal, ", ", paper$date),
+      paper$title, paper$summary,
+      a(class = "latest-button", href = paper$url, target = "_blank", "Read the paper"),
+      a(class = "latest-more", href = "research-publications.html", "All publications")),
+    latest_card(
+      "News", item$photos[[1]]$src, item$photos[[1]]$alt, item$credit,
+      item$date, item$title, item$text,
+      if (!is.null(item$link))
+        a(class = "latest-button", href = item$link, target = "_blank", item$link_text),
+      a(class = "latest-more", href = "news.html", "All news")))
+```
 
 </div>
 

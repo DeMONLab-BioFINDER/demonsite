@@ -1,51 +1,1121 @@
 /* css styles */
+
+/* Each person's own page: photos in one shape (3:4), cropped from the centre
+   with a little extra room above the face */
+.quarto-about-trestles .about-image {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
 /* =========================
    MEMBERS PAGE ONLY
    ========================= */
 
-
-.members-page .listing-description {
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 8 !important;
-  overflow: hidden !important;
+.members-page h2 {
+  text-align: center;
+  border-bottom: none;
+  margin-top: 3rem;
 }
 
-/* Member images */
-.members-page .quarto-listing .listing-image img {
-  width: 220px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Align image + text */
-.members-page .quarto-listing .listing-item {
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
-}
-
-/* Student gallery grid */
-.members-page .student-gallery {
+/* Member grid: same-size cards, centred */
+.members-page .member-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, minmax(0, 320px));
+  justify-content: center;
+  gap: 35px 25px;
   margin-top: 20px;
 }
 
-/* Student tile */
-.members-page .student-tile {
+/* PI: one card, centred */
+.members-page .member-grid.pi-grid {
+  grid-template-columns: minmax(0, 320px);
+}
+
+@media (max-width: 700px) {
+  .members-page .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 220px));
+  }
+}
+
+.members-page .member-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 4px;
 }
-/* Square images */
-.members-page .student-tile img {
+
+/* Round photos, all the same size */
+.members-page .member-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.members-page .member-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.members-page a.member-name:hover {
+  text-decoration: underline;
+}
+
+/* "Meet the Team" title, centred with a short line under it */
+body:has(.members-page) .quarto-title h1.title,
+body:has(.pubs-page) .quarto-title h1.title,
+body:has(.news-page) .quarto-title h1.title {
+  text-align: center;
+}
+
+body:has(.members-page) .quarto-title h1.title::after,
+body:has(.pubs-page) .quarto-title h1.title::after,
+body:has(.news-page) .quarto-title h1.title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: currentColor;
+}
+
+/* Degree / field: always one line on desktop */
+.members-page .member-major {
+  font-size: 0.85rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.members-page .member-role {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* LinkedIn / Google Scholar / other icons under each person */
+.members-page .member-links {
+  display: flex;
+  gap: 12px;
+  font-size: 1.25rem;
+}
+
+.members-page .member-links a {
+  color: inherit;
+}
+
+.members-page .member-links a:hover {
+  opacity: 0.7;
+}
+
+/* Lab Life photos */
+.members-page .lab-life-show {
+  max-width: 900px;
+  margin: 20px auto 0;
+}
+
+/* the photos share one spot and fade from one to the next */
+.members-page .lab-life-slides {
+  display: grid;
+}
+
+.members-page .lab-life-slides figure {
+  grid-area: 1 / 1;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+.members-page .lab-life-slides figure.is-current {
+  opacity: 1;
+  visibility: visible;
+}
+
+.members-page .lab-life-slides img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.members-page .lab-life-slides figcaption {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  opacity: 0.8;
+}
+
+.members-page .lab-life-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.members-page .lab-life-nav button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  line-height: 1;
+}
+
+.members-page .lab-life-nav button:hover {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .members-page .lab-life-slides figure {
+    transition: none;
+  }
+}
+
+/* Phones: let the degree line wrap */
+@media (max-width: 700px) {
+  .members-page .member-major {
+    white-space: normal;
+  }
+}
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.location-map {
+  width: 100%;
+  max-width: 700px;
+  height: 380px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Contact page links in the site's red (same as the home page buttons) */
+.contact-page a {
+  color: #A63A50;
+}
+
+.contact-page a:hover {
+  color: #8F3245;
+}
+
+/* =========================
+   PUBLICATIONS PAGE
+   ========================= */
+
+/* The table's search box is hidden; the network still uses it to show a
+   clicked paper. Column filters stay visible. */
+#papers-table .rt-search {
+  display: none;
+}
+
+/* Authors and abstract shown when a row is opened */
+.paper-details {
+  padding: 12px 20px 4px 48px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Paper titles in black (underlined as links), red on hover */
+#papers-table .rt-td a {
+  color: #000;
+}
+
+#papers-table .rt-td a:hover {
+  color: #8F3245;
+}
+
+/* =========================
+   CONTACT PAGE: APPLICATION FORM
+   ========================= */
+
+.apply-form {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 10px 0 30px;
+}
+
+.apply-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form input[type="url"],
+.apply-form input[type="month"],
+.apply-form select,
+.apply-form textarea {
+  font: inherit;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.apply-form input:focus,
+.apply-form select:focus,
+.apply-form textarea:focus {
+  outline: 2px solid #A63A50;
+  border-color: #A63A50;
+}
+
+/* two columns for the short questions, one on phones */
+.apply-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+@media (max-width: 700px) {
+  .apply-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.apply-interests {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+
+.apply-interests legend {
+  font-size: 1rem;
+  font-weight: 600;
+  float: none;
+  width: auto;
+  padding: 0 6px;
+}
+
+.apply-form .apply-interests label,
+.apply-form .apply-consent {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.apply-form .apply-interests label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 18px;
+}
+
+/* checkboxes line up with the first line of their text */
+.apply-form .apply-interests input[type="checkbox"],
+.apply-form .apply-consent input[type="checkbox"] {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.apply-form .apply-consent input[type="checkbox"] {
+  margin-top: 0.3em;
+}
+
+.apply-submit {
+  align-self: flex-start;
+  background: #A63A50;
+  border: 1px solid #A63A50;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+}
+
+.apply-submit:hover {
+  background: #8F3245;
+}
+
+/* spam trap: hidden from people, filled in only by bots */
+.apply-hidden {
+  display: none;
+}
+
+.apply-thanks {
+  max-width: 820px;
+  padding: 16px 20px;
+  border-left: 4px solid #A63A50;
+  background: rgba(166, 58, 80, 0.06);
+  margin: 10px 0 30px;
+}
+
+/* =========================
+   RESEARCH PAGE
+   ========================= */
+
+/* Built from the `topics` list in projects.qmd. Each tile and section gets its
+   colour as --topic from that list. */
+.research-page {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.research-intro {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 2.5rem;
+}
+
+/* coloured tiles, one per theme plus Software, as many per row as fit */
+.research-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 14px;
+  margin-bottom: 3.5rem;
+}
+
+.research-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 175px;
+  padding: 20px 12px;
+  border-radius: 14px;
+  background: var(--topic);
+  color: #1F2328;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.research-tile:hover {
+  color: #1F2328;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* sections fade up as they scroll into view */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.research-more {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.research-more .btn-primary {
+  background-color: #A63A50;
+  border-color: #A63A50;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.research-more .btn-primary:hover {
+  background-color: #8F3245;
+  border-color: #8F3245;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .spot-frame, .research-tile {
+    transition: none;
+  }
+}
+
+/* the theme name on each tile keeps its own spelling (fMRI) and stands out */
+.research-tile .tile-key {
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* icons sit on a white circle so they read on any colour, also in dark mode */
+.theme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 72px;
+  height: 72px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.theme-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.spot-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-credit {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.75;
+}
+
+/* the theme colours are soft, so small marks, lines and buttons use a darker
+   shade of the same colour (--topic-ink); in dark mode the soft colour itself
+   reads well */
+.spot-chapter {
+  --topic-ink: color-mix(in srgb, var(--topic) 45%, black);
+}
+
+.quarto-dark .spot-chapter {
+  --topic-ink: var(--topic);
+}
+
+/* one chapter per research theme, tinted with the theme's colour */
+.spot-chapter {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding: 32px;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--topic) 16%, transparent);
+  scroll-margin-top: 90px;
+  overflow: hidden;
+}
+
+.research-page h2.spot-name {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.spot-subtitle {
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.spot-intro {
+  max-width: 900px;
+  margin: 16px 0 24px;
+}
+
+.spot-intro p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* figure display beside the papers; every second chapter swaps sides. Fixed
+   grid cells, so nothing the theme adds can move them */
+.spot-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.spot-stages { grid-column: 1; grid-row: 1; }
+.spot-papers { grid-column: 2; grid-row: 1; }
+.flip .spot-stages { grid-column: 2; }
+.flip .spot-papers { grid-column: 1; }
+.flip .spot-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+
+.spot-stage[hidden] {
+  display: none;
+}
+
+/* figures stay on white, also in dark mode */
+.spot-frames {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.spot-frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s ease, visibility 0.7s;
+}
+
+.spot-frame.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spot-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.spot-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.spot-label {
+  font-weight: 700;
+}
+
+.spot-label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--topic-ink);
+}
+
+.spot-controls {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.spot-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 1.05rem;
+}
+
+.spot-controls button:hover {
+  background: color-mix(in srgb, var(--topic) 35%, transparent);
+}
+
+.spot-controls .spot-dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--topic-ink);
+  border-radius: 50%;
+}
+
+.spot-controls .spot-dot.active::before {
+  background: var(--topic-ink);
+}
+
+.spot-credit {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+/* papers: the open one is a raised card, others are a one-line choice */
+.spot-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spot-paper {
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--topic) 14%, transparent);
+}
+
+.spot-paper.open {
+  border-left: 5px solid var(--topic-ink);
+  background: var(--bs-body-bg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.research-page h3.spot-heading {
+  margin: 0;
+  font-size: inherit;
+}
+
+.spot-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 18px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+button.spot-head:hover .spot-title {
+  text-decoration: underline;
+}
+
+.spot-photo {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.spot-head-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spot-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.spot-meta {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.spot-body {
+  padding: 0 18px 20px;
+}
+
+.spot-body p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.spot-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--topic) 45%, black);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.spot-link:hover {
+  background: color-mix(in srgb, var(--topic) 30%, black);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .spot-chapter {
+    padding: 20px 16px;
+  }
+  .spot-grid,
+  .flip .spot-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .spot-stages,
+  .flip .spot-stages { grid-column: 1; grid-row: 1; }
+  .spot-papers,
+  .flip .spot-papers { grid-column: 1; grid-row: 2; }
+}
+
+/* open tools from the lab, after the themes */
+.software-tile {
+  --topic: #DDDDDD;
+}
+
+.software {
+  margin-bottom: 2.5rem;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(128, 128, 128, 0.08);
+  scroll-margin-top: 90px;
+}
+
+/* one tool per row: name, description, links side by side on wide screens */
+.software-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.software-card {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 24px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: var(--bs-body-bg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.research-page h3.software-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.software-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .software-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.software-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.software-links a {
+  color: #A63A50;
+  font-weight: 600;
+}
+
+.software-links a:hover {
+  color: #8F3245;
+}
+
+/* =========================
+   RESEARCH PUBLICATIONS PAGE
+   ========================= */
+
+/* Built from the `papers` list in research-publications.qmd. */
+.pubs-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pubs-more {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.pubs-more .btn-primary {
+  background-color: #A63A50;
+  border-color: #A63A50;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.pubs-more .btn-primary:hover {
+  background-color: #8F3245;
+  border-color: #8F3245;
+}
+
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 28px;
+  margin-bottom: 3rem;
+}
+
+.pub-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+/* images fit a 4:3 box; white shows behind figures in dark mode too */
+.pub-figure {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+  background: #fff;
+}
+
+.pub-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pub-credit {
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.pub-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 20px 20px;
+}
+
+.pub-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pub-lead {
+  font-size: 1.1rem;
+}
+
+.pub-journal,
+.pub-date {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.pub-photo {
+  display: block;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pubs-page h2.pub-title {
+  margin: 16px 0 10px;
+  padding: 0;
+  border: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pub-title a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: #A63A50;
+  text-decoration: underline;
+}
+
+.pub-summary {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pub-link {
+  align-self: flex-start;
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: #A63A50;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  background: #8F3245;
+  color: #fff;
+}
+
+/* =========================
+   NEWS PAGE
+   ========================= */
+
+/* Built from the `news` list in news.qmd. Each card gets its colour as --topic
+   from that list. */
+.news-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.news-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.news-filter {
+  padding: 5px 16px;
+  border: 1px solid #A63A50;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.news-filter:hover {
+  background: rgba(166, 58, 80, 0.12);
+}
+
+.news-filter[aria-pressed="true"] {
+  background: #A63A50;
+  color: #fff;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+  margin-bottom: 2.5rem;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+.news-card[hidden] {
+  display: none;
+}
+
+/* all images are 1200 x 900 (4:3), so they fill the box exactly; white shows
+   behind figures in dark mode too */
+.news-figure {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+  background: #fff;
+}
+
+.news-figure a {
+  display: block;
+  height: 100%;
+}
+
+.news-figure a[hidden] {
+  display: none;
+}
+
+.news-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-photo-nav {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.news-photo-nav button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+}
+
+.news-photo-nav button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.news-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 20px 20px;
+}
+
+.news-credit {
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.news-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.news-page h2.news-title {
+  margin: 8px 0 10px;
+  padding: 0;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.news-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.news-link {
+  align-self: flex-start;
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: #A63A50;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  background: #8F3245;
+  color: #fff;
+}
+
+.news-more {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.news-more .btn-primary {
+  background-color: #A63A50;
+  border-color: #A63A50;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.news-more .btn-primary:hover {
+  background-color: #8F3245;
+  border-color: #8F3245;
 }

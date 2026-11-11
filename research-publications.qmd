@@ -1,0 +1,127 @@
+---
+title: "Research Publications"
+page-layout: full
+title-block-banner: false
+toc: false
+
+# ---------------------------------------------------------------------------
+# Highlighted papers, newest first. One card is built per entry, so to add,
+# remove or reorder a paper, edit only this list. See README.md ("Research
+# Publications page") for what each field means.
+# ---------------------------------------------------------------------------
+papers:
+  - lead: Gabriele Vilkaite
+    photo: members/images/round/gabi.jpg
+    page: members/gabri.html
+    journal: bioRxiv
+    date: "Oct 23, 2026"
+    title: "A coordinated and reproducible multicellular response to AD pathology"
+    url: https://doi.org/10.64898/2026.10.19.759610
+    summary: "Single-cell studies of the Alzheimer's brain often report differing results and rarely
+      consider how cell types respond together. Across 2.3 million nuclei from 427 ROSMAP donors, we
+      identified multicellular signatures of AD pathology and of sex, including profound changes in
+      RORB-GABRG excitatory neurons and disrupted oligodendrocyte precursor signalling. These
+      signatures predicted neuropathology and sex in a fully independent dataset (SEA-AD), giving a
+      baseline against which perturbation and treatment experiments can be compared."
+    figure: images/news/vilkaite2026_workflow.jpg
+    alt: "Overview of the analysis workflow, from single-cell data to robust gene clusters"
+    credit: "Figure from this paper (CC BY-NC 4.0)."
+
+  - lead: Jonathan Rittmo
+    photo: members/images/round/jon.jpg
+    page: members/jon.html
+    journal: Nature Neuroscience
+    date: "Oct 1, 2026"
+    title: "Different functional connectivity gradients reflect aging and Alzheimer's disease"
+    url: https://doi.org/10.1038/s41593-026-02402-0
+    summary: "In two independent cohorts (BioFINDER-2, N = 973; ADNI, N = 129), functional connectivity
+      changes linked to aging and to Alzheimer's disease aligned with separate axes of brain
+      communication. Early AD pathology and later cognitive decline followed the sensory-association
+      axis, while age-related change followed the representation-executive axis across the adult
+      lifespan."
+    figure: images/news/rittmo2026_axes.jpg
+    alt: "Brain maps and scatter plots relating age and AD pathology to the sensory-association and representation-executive axes"
+    credit: "Figure from this paper."
+
+  - lead: Lijun An
+    photo: members/images/round/lijun.jpg
+    page: members/lijun.html
+    journal: Nature Medicine
+    date: "Mar 31, 2026"
+    title: "A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia"
+    url: https://doi.org/10.1038/s41591-026-04303-y
+    summary: "Mixed pathologies make dementia hard to diagnose, and scalable biomarkers are missing for most of
+      them. We present ProtAIDe-Dx, a deep joint-learning model trained on 17,187 patients and controls that
+      uses plasma proteomics to diagnose six conditions at once, with a balanced accuracy of 70-95%. It
+      improved differential diagnosis in a memory clinic sample and shows which proteins drive each
+      person's result, all from a single blood draw."
+    figure: images/news/an2026_workflow.jpg
+    alt: "Workflow of the ProtAIDe-Dx model, from plasma proteins through a neural network to disease probabilities and an individual risk report"
+    credit: "Adapted from this paper, panel a of a main figure (CC BY 4.0)."
+
+  - lead: Jacob Vogel
+    photo: members/images/round/jake.jpg
+    page: members/jake.html
+    journal: Nature Medicine
+    date: "Apr 29, 2021"
+    title: "Four distinct trajectories of tau deposition identified in Alzheimer's disease"
+    url: https://doi.org/10.1038/s41591-021-01309-6
+    summary: "Using tau-PET scans from 1,612 individuals, we identified four distinct trajectories of tau
+      pathology: limbic, MTL-sparing, posterior and lateral temporal. These subtypes were stable over
+      follow-up, replicated in a separate sample with a different radiotracer, and showed distinct
+      demographic and cognitive profiles and outcomes, suggesting a re-examination of the idea of
+      'typical' Alzheimer's disease."
+    figure: images/news/vogel2021_subtypes.jpg
+    alt: "Brain maps of tau in the limbic, MTL-sparing, posterior and lateral temporal subtypes, with a plot of how individuals fall across the four subtypes"
+    credit: "Adapted from this paper."
+
+  - lead: Jacob Vogel
+    photo: members/images/round/jake.jpg
+    page: members/jake.html
+    journal: Nature Communications
+    date: "May 26, 2020"
+    title: "Spread of pathological tau proteins through communicating neurons in human Alzheimer's disease"
+    url: https://doi.org/10.1038/s41467-020-15701-2
+    summary: "Animal models suggest that tau spreads from cell to cell through neuronal connections. We tested
+      this in 312 people along the Alzheimer's continuum using an epidemic spreading model, which explained
+      up to 70% of the variance in the spatial pattern of tau. Our results provide evidence in humans that
+      tau spreads through neuronal communication pathways, and that beta-amyloid accelerates this process."
+    figure: images/news/vogel2020_esm_patterns.jpg
+    alt: "Brain maps comparing the expected and observed patterns of tau with the patterns predicted by the epidemic spreading model"
+    credit: "Figure from this paper (CC BY 4.0)."
+---
+
+::: {.pubs-page}
+
+```{=html}
+<div class="pubs-more">
+  <a class="btn btn-primary" href="https://scholar.google.com/citations?hl=en&amp;user=1m6yqlwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank">See the full list of publications</a>
+</div>
+```
+
+```{r cards, echo=FALSE}
+# Builds one card per paper from the `papers` list above.
+library(htmltools)
+
+papers <- rmarkdown::metadata$papers
+
+card <- function(p) {
+  tags$article(
+    class = "pub-card",
+    tags$figure(class = "pub-figure", img(src = p$figure, alt = p$alt, loading = "lazy")),
+    div(class = "pub-body",
+        div(class = "pub-credit", p$credit),
+        div(class = "pub-head",
+            div(div(class = "pub-lead", paste(p$lead, "et al.")),
+                div(class = "pub-journal", p$journal),
+                div(class = "pub-date", p$date)),
+            a(href = p$page, img(class = "pub-photo", src = p$photo, alt = p$lead, loading = "lazy"))),
+        h2(class = "pub-title", a(href = p$url, target = "_blank", p$title)),
+        tags$p(class = "pub-summary", p$summary),
+        a(class = "pub-link", href = p$url, target = "_blank", "Read the paper")))
+}
+
+div(class = "pub-grid", lapply(papers, card))
+```
+
+:::

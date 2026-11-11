@@ -1,0 +1,97 @@
+# Weekly update of the Papers page from PubMed and Jake's ORCID profile.
+#
+# Every Monday GitHub rebuilds papers.qmd with the same Quarto and R packages
+# used locally. If the list of papers changed, it commits the rebuilt _site to
+# master, and Netlify publishes it. If nothing changed, nothing is committed.
+# It can also be started by hand from the repository's Actions tab.
+
+name: Update papers from PubMed and ORCID
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"   # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-papers
+  cancel-in-progress: false
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Set up Quarto (same version as the live site)
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.9.37
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R packages used by papers.qmd
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::knitr
+            any::jsonlite
+            any::rmarkdown
+            any::rentrez
+            any::xml2
+            any::tidyverse
+            any::lubridate
+            any::reactable
+            any::tm
+            any::topicmodels
+            any::tidytext
+            any::reshape2
+            any::ggwordcloud
+            any::visNetwork
+
+      - name: Save the current list of papers
+        run: python3 .github/scripts/paper_titles.py _site/papers.html > /tmp/papers_before.txt
+
+      - name: Rebuild the Papers page
+        run: quarto render papers.qmd
+
+      - name: Stop if R printed warnings on the page
+        run: |
+          if grep -q 'Warning:' _site/papers.html; then
+            echo "R warnings appeared on the Papers page; not publishing."
+            exit 1
+          fi
+
+      - name: Commit only if the list of papers changed
+        run: |
+          python3 .github/scripts/paper_titles.py _site/papers.html > /tmp/papers_after.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898900+github-actions[bot]@users.noreply.github.com"
+          if cmp -s /tmp/papers_before.txt /tmp/papers_after.txt; then
+            echo "No new papers."
+            git checkout -- _site
+            git clean -fdq _site
+          else
+            echo "Paper list changed:"
+            diff /tmp/papers_before.txt /tmp/papers_after.txt || true
+            git add _site
+            git commit -m "Update papers from PubMed and ORCID"
+            git push origin master
+            exit 0
+          fi
+          # GitHub switches off scheduled workflows in public repositories after
+          # 60 days without activity. Keep it running with an empty commit when
+          # the repository has been quiet for 50 days.
+          last=$(git log -1 --format=%ct)
+          if [ $(( $(date +%s) - last )) -gt $(( 50 * 24 * 3600 )) ]; then
+            git commit --allow-empty -m "Keep weekly paper updates active"
+            git push origin master
+          fi

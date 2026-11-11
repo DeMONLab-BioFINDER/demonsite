@@ -1,17 +1,352 @@
 ---
-title: "Projects"
-# listing:
-#   contents: projects
-#   sort: "date desc"
-#   type: grid
-#   categories: true
-#   sort-ui: false
-#   filter-ui: false
-#   feed: true
+title: "Research"
 page-layout: full
 title-block-banner: false
+toc: false
+
+# ---------------------------------------------------------------------------
+# Research themes and their highlighted papers. The tiles, chapters and figure
+# displays are built from this list, so to add, remove or reorder a theme, paper
+# or figure, edit only this list. See README.md ("Research page") for what each
+# field means. The colours are soft tones from Paul Tol's colour-blind-safe
+# "light" scheme: keep dark text on them (see README.md).
+# ---------------------------------------------------------------------------
+topics:
+  - id: pet
+    color: "#FFAABB"
+    name: PET
+    icon: images/icons/pet.svg
+    subtitle: tau subtypes & spread
+    text:
+      - "Alzheimer's disease does not unfold the same way in everyone. Using tau-PET imaging and
+        disease progression modelling, we discovered that tau spreads through the brain along four
+        distinct trajectories: limbic, MTL-sparing, posterior and lateral temporal."
+      - "Tau does not appear everywhere at once: it travels along the brain's connections. By
+        modelling this spread on brain networks we can explain where tau appears, and we now build
+        personalised models that forecast how each person's disease may evolve."
+    papers:
+      - lead: Jacob Vogel
+        photo: members/images/round/jake.jpg
+        journal: Nature Medicine
+        date: "Apr 29, 2021"
+        title: "Four distinct trajectories of tau deposition identified in Alzheimer's disease"
+        url: https://doi.org/10.1038/s41591-021-01309-6
+        summary: "Using tau-PET scans from 1,612 individuals, we identified four distinct trajectories of tau
+          pathology: limbic, MTL-sparing, posterior and lateral temporal. These subtypes were stable over
+          follow-up, replicated in a separate sample with a different radiotracer, and showed distinct
+          demographic and cognitive profiles and outcomes, suggesting a re-examination of the idea of
+          'typical' Alzheimer's disease."
+        credit: "Figures adapted from this paper."
+        figures:
+          - {src: images/news/vogel2021_subtypes.jpg, label: "Four tau subtypes", alt: "Brain maps of tau in the limbic, MTL-sparing, posterior and lateral temporal subtypes, with a plot of how individuals fall across the four subtypes"}
+          - {src: images/news/vogel2021_stages.jpg, label: "Subtypes across disease stages", alt: "Brain maps showing how tau builds up in each of the four subtypes across model stages"}
+          - {src: images/news/vogel2021_epicenters.jpg, label: "Modelling spread from epicenters", alt: "Plots and brain maps comparing observed and predicted tau from epicenter regions in each subtype"}
+  - id: fmri
+    color: "#77AADD"
+    name: fMRI
+    icon: images/icons/fmri.svg
+    subtitle: brain networks
+    text:
+      - "Brain communication is organised along several axes that shape how resources are
+        distributed from moment to moment, and may underlie key cognitive processes. Using a
+        whole-brain framework, we found that ageing reshapes communication along one of these axes,
+        while Alzheimer's disease affects an entirely different one."
+    papers:
+      - lead: Jonathan Rittmo
+        photo: members/images/round/jon.jpg
+        journal: Nature Neuroscience
+        date: "Oct 1, 2026"
+        title: "Different functional connectivity gradients reflect aging and Alzheimer's disease"
+        url: https://doi.org/10.1038/s41593-026-02402-0
+        summary: "In two independent cohorts (BioFINDER-2, N = 973; ADNI, N = 129), functional connectivity
+          changes linked to aging and to Alzheimer's disease aligned with separate axes of brain
+          communication. Early AD pathology and later cognitive decline followed the sensory-association
+          axis, while age-related change followed the representation-executive axis across the adult
+          lifespan."
+        credit: "Figures from this paper."
+        figures:
+          - {src: images/news/rittmo2026_axes.jpg, label: "Age and AD along separate axes", alt: "Brain maps and scatter plots relating age and AD pathology to the sensory-association and representation-executive axes"}
+          - {src: images/news/rittmo2026_pathology.jpg, label: "Across the pathology score", alt: "Plots of the correlation with the sensory-association axis and of pathology measures across the pathology score"}
+
+  - id: omics
+    color: "#44BB99"
+    name: Omics
+    icon: images/icons/omics.svg
+    subtitle: proteomics & single-cell
+    text:
+      - "Every cell type in the brain responds to Alzheimer's disease in its own way. Using
+        single-nucleus RNA sequencing, we found a coordinated, multi-cellular response to AD pathology
+        in one dataset and replicated it cleanly in a completely independent one: a reference point for
+        future perturbation and drug-development studies."
+      - "We bring the same care for robustness to proteins: spinal-fluid reference proteins make
+        biomarkers more accurate and easier to interpret."
+    papers:
+      - lead: Gabriele Vilkaite
+        photo: members/images/round/gabi.jpg
+        journal: bioRxiv
+        date: "Oct 23, 2026"
+        title: "A coordinated and reproducible multicellular response to AD pathology"
+        url: https://doi.org/10.64898/2026.10.19.759610
+        summary: "Single-cell studies of the Alzheimer's brain often report differing results and rarely
+          consider how cell types respond together. Across 2.3 million nuclei from 427 ROSMAP donors, we
+          identified multicellular signatures of AD pathology and of sex, including profound changes in
+          RORB-GABRG excitatory neurons and disrupted oligodendrocyte precursor signalling. These
+          signatures predicted neuropathology and sex in a fully independent dataset (SEA-AD), giving a
+          baseline against which perturbation and treatment experiments can be compared."
+        credit: "Figures from this paper (CC BY-NC 4.0)."
+        figures:
+          - {src: images/news/vilkaite2026_workflow.jpg, label: "Analysis workflow", alt: "Overview of the analysis workflow, from single-cell data to robust gene clusters"}
+          - {src: images/news/vilkaite2026_cohorts.jpg, label: "Discovery and validation", alt: "Results in the ROSMAP discovery cohort and the SEA-AD validation cohort"}
+          - {src: images/news/vilkaite2026_network.jpg, label: "Cell-to-cell communication", alt: "Communication networks between brain cell types"}
+
+  - id: ai
+    color: "#EEDD88"
+    name: AI
+    icon: images/icons/ai.svg
+    subtitle: machine learning
+    text:
+      - "We use machine learning and deep learning to diagnose dementias from proteins, and to
+        predict or even generate tau-PET scans from cheaper, more widely available data such as MRI
+        and blood tests."
+      - "We also hold these models to a high standard: we have shown how data leakage makes
+        models <em>look</em> better while they actually generalise worse, and built tools to prevent
+        it."
+    papers:
+      - lead: Lijun An
+        photo: members/images/round/lijun.jpg
+        journal: Nature Medicine
+        date: "Mar 31, 2026"
+        title: "A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia"
+        url: https://doi.org/10.1038/s41591-026-04303-y
+        summary: "Mixed pathologies make dementia hard to diagnose, and scalable biomarkers are missing for most of
+          them. We present ProtAIDe-Dx, a deep joint-learning model trained on 17,187 patients and controls that
+          uses plasma proteomics to diagnose six conditions at once, with a balanced accuracy of 70-95%. It
+          improved differential diagnosis in a memory clinic sample and shows which proteins drive each
+          person's result, all from a single blood draw."
+        credit: "Figures adapted from this paper (CC BY 4.0)."
+        figures:
+          - {src: images/news/an2026_workflow.jpg, label: "Model workflow", alt: "Workflow of the ProtAIDe-Dx model, from plasma proteins through a neural network to disease probabilities and an individual risk report"}
+          - {src: images/news/an2026_performance.jpg, label: "Performance and validation", alt: "Plots of diagnostic performance across conditions, with APOE, cognition and cognitive decline validation"}
+          - {src: images/news/an2026_subgroups.jpg, label: "Probability map and subgroups", alt: "Maps of individuals by diagnostic probability, with clusters and subgroup characteristics"}
+
+# Credit for the icons that need it. All icons are from https://bioicons.com
+icon_credit: 'Icons from <a href="https://bioicons.com" target="_blank">Bioicons</a>. Brain slice by DBCLS and network by ChenxinLi, both CC BY 4.0; DNA, neural network and workflow icons, CC0.'
+
+# Open tools from the lab, shown as cards after the themes.
+software:
+  - name: Leakly
+    text: "A Python package that checks machine-learning pipelines for data leakage. It uses label
+      permutation to test whether a pipeline performs above chance when no true signal is present."
+    links:
+      - {label: "Get the package", url: "https://pypi.org/project/Leakly/"}
+      - {label: "Source code", url: "https://github.com/DeMONLab-BioFINDER/Leakly"}
+  - name: Plumber
+    text: "A web tool for checking data leakage using large language models. Paste a method section,
+      select the leakage checks, and it builds a structured review prompt to copy into an LLM."
+    links:
+      - {label: "Open the tool", url: "https://demonlab-biofinder.github.io/Plumber/"}
+      - {label: "Source code", url: "https://github.com/DeMONLab-BioFINDER/Plumber"}
 ---
 
-![](images/WebsiteUnderConstruction.png)
+::: {.research-page}
 
-[Descriptions of our projects coming soon!]
+```{=html}
+<p class="research-intro">
+We combine brain imaging, molecular data and computational modelling to understand how
+neurodegenerative diseases begin, spread and differ between people. Our work falls into four
+connected themes: PET, fMRI, omics and AI.
+</p>
+```
+
+```{r chapters, echo=FALSE}
+# Builds the theme tiles and one chapter per theme from the `topics` list above.
+# Chapters are <article> elements, not <section>: see the note on the theme's
+# section:target rule in README.md ("Research page").
+library(htmltools)
+
+topics <- rmarkdown::metadata$topics
+
+tile <- function(t) {
+  a(class = "research-tile", href = paste0("#", t$id), style = paste0("--topic:", t$color),
+    span(class = "theme-icon", img(src = t$icon, alt = "")),
+    span(class = "tile-name", span(class = "tile-key", t$name), br(), t$subtitle))
+}
+
+# one paper's figures, shown one at a time, with buttons if there are several
+stage <- function(p, stage_id, active) {
+  many <- length(p$figures) > 1
+  div(class = "spot-stage", id = stage_id, hidden = if (!active) NA,
+      `aria-roledescription` = if (many) "carousel", `aria-label` = paste("Figures:", p$title),
+      div(class = "spot-frames",
+          Map(function(f, i) {
+            a(class = paste("spot-frame", if (i == 1) "active"), href = f$src, target = "_blank",
+              `data-label` = f$label,
+              img(src = f$src, alt = f$alt, loading = "lazy"))
+          }, p$figures, seq_along(p$figures))),
+      div(class = "spot-bar",
+          span(class = "spot-label", `aria-live` = "polite", p$figures[[1]]$label),
+          if (many)
+            div(class = "spot-controls",
+                tags$button(type = "button", class = "spot-pause", `aria-label` = "Pause figures",
+                            tags$i(class = "bi bi-pause-fill", `aria-hidden` = "true")),
+                tags$button(type = "button", class = "spot-prev", `aria-label` = "Previous figure",
+                            tags$i(class = "bi bi-chevron-left", `aria-hidden` = "true")),
+                lapply(seq_along(p$figures), function(i) {
+                  tags$button(type = "button", class = paste("spot-dot", if (i == 1) "active"),
+                              `aria-label` = paste("Show figure", i))
+                }),
+                tags$button(type = "button", class = "spot-next", `aria-label` = "Next figure",
+                            tags$i(class = "bi bi-chevron-right", `aria-hidden` = "true")))),
+      div(class = "spot-credit", p$credit))
+}
+
+# one paper in the list; with several papers, opening one shows its figures
+paper <- function(p, stage_id, active, several) {
+  body_id <- paste0(stage_id, "-text")
+  head <- tagList(img(class = "spot-photo", src = p$photo, alt = ""),
+                  span(class = "spot-head-text",
+                       span(class = "spot-title", p$title),
+                       span(class = "spot-meta", paste0(p$lead, " et al. "), HTML("&middot; "),
+                            em(p$journal), HTML(" &middot; "), p$date)))
+  div(class = paste("spot-paper", if (active) "open"),
+      tags$h3(class = "spot-heading",
+              if (several)
+                tags$button(type = "button", class = "spot-head", `data-stage` = stage_id,
+                            `aria-expanded` = if (active) "true" else "false",
+                            `aria-controls` = body_id, head)
+              else
+                div(class = "spot-head", head)),
+      div(class = "spot-body", id = body_id, hidden = if (!active) NA,
+          tags$p(p$summary),
+          a(class = "spot-link", href = p$url, target = "_blank", "Read the paper",
+            tags$i(class = "bi bi-arrow-up-right", `aria-hidden` = "true"))))
+}
+
+chapter <- function(t, i) {
+  ids <- paste0(t$id, "-", seq_along(t$papers))
+  several <- length(t$papers) > 1
+  tags$article(
+    id = t$id, style = paste0("--topic:", t$color),
+    class = paste("spot-chapter reveal", if (i %% 2 == 0) "flip"),
+    div(class = "spot-top",
+        span(class = "theme-icon", img(src = t$icon, alt = "")),
+        div(tags$h2(class = "spot-name", t$name), div(class = "spot-subtitle", t$subtitle))),
+    div(class = "spot-intro", lapply(t$text, function(x) tags$p(HTML(x)))),
+    div(class = "spot-grid",
+        div(class = "spot-stages",
+            Map(function(p, id, k) stage(p, id, k == 1), t$papers, ids, seq_along(ids))),
+        div(class = "spot-papers",
+            Map(function(p, id, k) paper(p, id, k == 1, several), t$papers, ids, seq_along(ids)))))
+}
+
+tool <- function(s) {
+  div(class = "software-card",
+      tags$h3(class = "software-name", s$name),
+      tags$p(s$text),
+      div(class = "software-links",
+          lapply(s$links, function(l) a(href = l$url, target = "_blank", l$label))))
+}
+
+tagList(
+  tags$nav(class = "research-tiles", `aria-label` = "Research themes",
+           lapply(topics, tile),
+           a(class = "research-tile software-tile", href = "#software",
+             span(class = "theme-icon", img(src = "images/icons/software.svg", alt = "")),
+             span(class = "tile-name", span(class = "tile-key", "Software"), br(), "open tools"))),
+  Map(chapter, topics, seq_along(topics)),
+  tags$article(id = "software", class = "software reveal",
+               div(class = "spot-top",
+                   span(class = "theme-icon", img(src = "images/icons/software.svg", alt = "")),
+                   div(tags$h2(class = "spot-name", "Software"),
+                       div(class = "spot-subtitle", "open tools from the lab"))),
+               div(class = "software-grid", lapply(rmarkdown::metadata$software, tool))),
+  div(class = "icon-credit", HTML(rmarkdown::metadata$icon_credit))
+)
+```
+
+```{=html}
+<div class="research-more">
+  <a class="btn btn-primary btn-lg" href="https://scholar.google.com/citations?user=1m6yqlwAAAAJ" target="_blank"><i class="bi bi-mortarboard-fill"></i> See all publications on Google Scholar</a>
+</div>
+
+<script>
+// Figure displays: each one moves through its paper's figures while it is on
+// screen. Hovering or focusing it holds the current figure, and the pause button
+// stops it. People who prefer reduced motion get no automatic changes.
+// Chapters fade in as they scroll into view.
+(function () {
+  var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var seconds = 5;
+
+  document.querySelectorAll(".spot-stage").forEach(function (box) {
+    var frames = box.querySelectorAll(".spot-frame");
+    var label = box.querySelector(".spot-label");
+    var dots = box.querySelectorAll(".spot-dot");
+    var pause = box.querySelector(".spot-pause");
+    var current = 0, held = false, onScreen = false, paused = still;
+    if (frames.length < 2) return;
+
+    function show(n) {
+      current = (n + frames.length) % frames.length;
+      frames.forEach(function (f, k) { f.classList.toggle("active", k === current); });
+      dots.forEach(function (d, k) { d.classList.toggle("active", k === current); });
+      label.textContent = frames[current].dataset.label;
+    }
+    function setPaused(value) {
+      paused = value;
+      pause.setAttribute("aria-label", paused ? "Play figures" : "Pause figures");
+      pause.querySelector("i").className = "bi " + (paused ? "bi-play-fill" : "bi-pause-fill");
+    }
+
+    setPaused(still);
+    box.querySelector(".spot-prev").addEventListener("click", function () { show(current - 1); });
+    box.querySelector(".spot-next").addEventListener("click", function () { show(current + 1); });
+    dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); }); });
+    pause.addEventListener("click", function () { setPaused(!paused); });
+    ["mouseenter", "focusin"].forEach(function (e) { box.addEventListener(e, function () { held = true; }); });
+    ["mouseleave", "focusout"].forEach(function (e) { box.addEventListener(e, function () { held = false; }); });
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        onScreen = entries[0].isIntersecting;
+      }, { threshold: 0.4 }).observe(box);
+    } else {
+      onScreen = true;
+    }
+    setInterval(function () {
+      if (!paused && !held && onScreen && !box.hidden && !document.hidden) show(current + 1);
+    }, seconds * 1000);
+  });
+
+  // Papers in a chapter: opening one shows its text and its figures.
+  document.querySelectorAll(".spot-chapter").forEach(function (chapter) {
+    var heads = chapter.querySelectorAll("button.spot-head");
+    heads.forEach(function (head) {
+      head.addEventListener("click", function () {
+        heads.forEach(function (h) {
+          var open = h === head;
+          h.setAttribute("aria-expanded", open);
+          h.closest(".spot-paper").classList.toggle("open", open);
+          document.getElementById(h.getAttribute("aria-controls")).hidden = !open;
+          document.getElementById(h.dataset.stage).hidden = !open;
+        });
+      });
+    });
+  });
+
+  var chapters = document.querySelectorAll(".research-page .reveal");
+  if (still || !("IntersectionObserver" in window)) {
+    chapters.forEach(function (c) { c.classList.add("visible"); });
+    return;
+  }
+  var seen = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("visible"); seen.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  chapters.forEach(function (c) { seen.observe(c); });
+})();
+</script>
+```
+
+:::

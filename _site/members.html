@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Members – DeMON</title>
+<title>Meet the Team – DeMON</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,8 +34,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/logobraindev.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -47,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-df07115ad9f15e2ef3479c789e6873c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5685cd926c25366c96d9f1407e584118.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,149 +75,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pi .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pi'] = new List('listing-pi', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-postdocs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-postdocs'] = new List('listing-postdocs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-phds .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-phds'] = new List('listing-phds', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ras .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ras'] = new List('listing-ras', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -413,15 +269,23 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./members.html" aria-current="page"> 
-<span class="menu-text">Members</span></a>
+<span class="menu-text">Meet the Team</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research-publications.html"> 
+<span class="menu-text">Research Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./papers.html"> 
-<span class="menu-text">Papers</span></a>
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./takepart.html"> 
@@ -441,16 +305,14 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Members</h1>
+<h1 class="title">Meet the Team</h1>
 </div>
 
 
@@ -467,342 +329,333 @@ window.Quarto = {
 </header>
 
 
+<!--
+Each person is one "member-card". To add LinkedIn or Google Scholar, put these
+inside that person's member-links div:
+  <a href="LINKEDIN_URL" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  <a href="SCHOLAR_URL" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+-->
 <div class="members-page">
-<p><img src="members/images/group_050626.jpg" class="img-fluid"></p>
-<hr>
 <section id="principal-investigator" class="level2">
 <h2 class="anchored" data-anchor-id="principal-investigator">Principal Investigator</h2>
-<div id="listing-pi" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1778103228292" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
-<div class="thumbnail"><a href="./members/jake.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/jake.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/jake.html" class="no-external">Jacob Vogel</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/jake.html" class="no-external">Principal Investigator</a>
-</div>
-<div class="delink listing-description"><a href="./members/jake.html" class="no-external">
-Jake is the head of the DeMON Lab and the director of the Neurodegenerative Research Unit at the Department of Clinical Science Malmö at Lund University. As a SciLifeLab and Wallenberg National Program Data-driven Life Sciences (DDLS) fellow, Jake is a proud member of SciLifeLab, and is also a member of Multi-Park Lund. Jake trained at UC-Berkeley, got his PhD at McGill University, and did a postdoc at the University of Pennsylvania, becoming an expert along the way in neuroimaging, aging, AI and bioinformatics. He now dedicates his time toward better understanding how neurodegenerative diseases work, and building innovative tools to improve clinical care.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/jake.html" class="no-external">
-</a>
+<div class="member-grid pi-grid">
+<div class="member-card">
+<a href="members/jake.html"><img class="member-photo" src="members/images/round/jake.jpg" alt="Jacob Vogel"></a>
+<a class="member-name" href="members/jake.html">Jacob Vogel</a>
+<div class="member-major">PhD in Neuroscience</div>
+<div class="member-role">Principal Investigator</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/jacob-vogel-a75a6a48/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=1m6yqlwAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://x.com/_JakeVogel_" title="X"><i class="bi bi-twitter-x"></i></a>
+<a href="https://github.com/illdopejake" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="postdocs" class="level2">
-<h2 class="anchored" data-anchor-id="postdocs">Postdocs</h2>
-<div id="listing-postdocs" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1777376250835" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
-<div class="thumbnail"><a href="./members/xiaoyu.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/xiaoyu.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/xiaoyu.html" class="no-external">Yu Xiao</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/xiaoyu.html" class="no-external">Postdoctoral researcher</a>
-</div>
-<div class="delink listing-description"><a href="./members/xiaoyu.html" class="no-external">
-XIAO Yu joined the lab in November 2023 as a postdoctoral researcher after earning her Ph.D.&nbsp;at Duke-NUS Medical School, National University of Singapore. Trained as a neuroimager, her research broadly centers on uncovering the mechanisms underlying Alzheimer’s disease and related dementias through computational modeling. Her work focuses on developing and adapting disease progression models to better understand pathological spread and atrophy accumulation in these disorders.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/xiaoyu.html" class="no-external">
-</a>
+<section id="researchers" class="level2">
+<h2 class="anchored" data-anchor-id="researchers">Researchers</h2>
+<div class="member-grid">
+<div class="member-card">
+<a href="members/hannah.html"><img class="member-photo" src="members/images/round/hannah.jpg" alt="Hannah Baumeister"></a>
+<a class="member-name" href="members/hannah.html">Hannah Baumeister</a>
+<div class="member-major">PhD in Clinical Neuroscience</div>
+<div class="member-role">Postdoctoral researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/hannah-baumeister-815199137/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=fqU2UX0AAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/hannahbaumeister" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1777376250835" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
-<div class="thumbnail"><a href="./members/lijun.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/lijun.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/lijun.html" class="no-external">Lijun An</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/lijun.html" class="no-external">Postdoctoral researcher</a>
-</div>
-<div class="delink listing-description"><a href="./members/lijun.html" class="no-external">
-Lijun grew up in China and earned his Ph.D.&nbsp;in Electrical and Computer Engineering from the National University of Singapore. He later joined Lund University, where he is currently a postdoctoral researcher in the DeMON Lab..
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/lijun.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/lijun.html"><img class="member-photo" src="members/images/round/lijun.jpg" alt="Lijun An"></a>
+<a class="member-name" href="members/lijun.html">Lijun An</a>
+<div class="member-major">PhD in Electrical and Computer Engineering</div>
+<div class="member-role">Postdoctoral researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/anlijuncn/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=La_luGsAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://x.com/anlijuncn" title="X"><i class="bi bi-twitter-x"></i></a>
+<a href="https://anlijun.cn" title="Homepage"><i class="bi bi-globe"></i></a>
+<a href="https://github.com/anlijuncn" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1777376250835" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
-<div class="thumbnail"><a href="./members/lea.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/lea.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/lea.html" class="no-external">Léa Chauveau</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/lea.html" class="no-external">Postdoctoral researcher</a>
-</div>
-<div class="delink listing-description"><a href="./members/lea.html" class="no-external">
-I joined the DeMON Lab in 2025 as a postdoc researcher, after completing a PhD in the Neuropresage Team (Caen, France). My scientific curiosity has long revolved around the hippocampus and its resilience mechanisms, which led me to explore medial temporal lobe alterations in aging and Alzheimer’s disease through neuroimaging — falling for fMRI along the way.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/lea.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/lea.html"><img class="member-photo" src="members/images/round/lea.jpg" alt="Léa Chauveau"></a>
+<a class="member-name" href="members/lea.html">Léa Chauveau</a>
+<div class="member-major">PhD in the Neuropresage</div>
+<div class="member-role">Postdoctoral researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/léa-chauveau-7159283a3/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=r-iD8O0AAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/leaach" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="3" data-listing-file-modified-sort="1778103238586" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
-<div class="thumbnail"><a href="./members/hannah.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/hannah.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/hannah.html" class="no-external">Hannah Baumeister</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/hannah.html" class="no-external">Postdoctoral researcher</a>
-</div>
-<div class="delink listing-description"><a href="./members/hannah.html" class="no-external">
-Hannah joined the lab in 2026 while wrapping up her PhD in clinical neuroscience at the German Center for Neurodegenerative Diseases (DZNE) in Magdeburg, Germany. During her MSc in psychology, she discovered her passion for neurodegenerative diseases and went on to focus her PhD on developing MRI-based tools to improve our understanding of these diseases and the clinical management of patients. In the DeMON lab, she will utilise large-scale multimodal neuroimaging datasets to investigate the mechanisms driving heterogeneity in Alzheimer’s disease. Outside the lab, Hannah is an avid road cyclist, a mediocre knitter, and considers hunting down cute cafes her unofficial part-time job.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/hannah.html" class="no-external">
-</a>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/rosa.jpg" alt="Rosa Aghdam">
+<span class="member-name">Rosa Aghdam</span>
+<div class="member-major">PhD in Statistics</div>
+<div class="member-role">Assistant Researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/rosa-aghdam/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=y6uIjXEAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/rosaaghdam" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/sophie.jpg" alt="Sophie Mastenbroek">
+<span class="member-name">Sophie Mastenbroek</span>
+<div class="member-major">PhD in Radiology and Nuclear Medicine</div>
+<div class="member-role">Assistant Researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/sophie-mastenbroek-472553199/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=T4HzFjYAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a></div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
+<div class="member-card">
+<a href="members/xiaoyu.html"><img class="member-photo" src="members/images/round/xiaoyu.jpg" alt="Yu Xiao"></a>
+<a class="member-name" href="members/xiaoyu.html">Yu Xiao</a>
+<div class="member-major">PhD in Neuroscience and Behavioral Disorders</div>
+<div class="member-role">Postdoctoral researcher</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/yu-xiao-34006a170/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=0b5LOrYAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/xiaoyucaly" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
 </div>
 </section>
-<section id="graduate-students" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-students">Graduate Students</h2>
-<div id="listing-phds" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1777376250834" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<div class="thumbnail"><a href="./members/jon.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/jon.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/jon.html" class="no-external">Jonathan Rittmo</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/jon.html" class="no-external">Phd Student</a>
-</div>
-<div class="delink listing-description"><a href="./members/jon.html" class="no-external">
-Jonathan is a PhD student studying how brain connectivity changes across aging and Alzheimer’s disease. With a background in statistics and cognitive science, his work focuses on large-scale neuroimaging datasets to better understand how functional brain networks reorganize in the face of pathology.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/jon.html" class="no-external">
-</a>
+<section id="phd-students" class="level2">
+<h2 class="anchored" data-anchor-id="phd-students">PhD Students</h2>
+<div class="member-grid">
+<div class="member-card">
+<a href="members/gabri.html"><img class="member-photo" src="members/images/round/gabi.jpg" alt="Gabriele Vilkaite"></a>
+<a class="member-name" href="members/gabri.html">Gabriele Vilkaite</a>
+<div class="member-major">Molecular Cell Biology</div>
+<div class="member-role">PhD Student</div>
+<div class="member-links">
+<a href="https://github.com/Gabi86" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1778104499345" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
-<div class="thumbnail"><a href="./members/gabri.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/gabi.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/gabri.html" class="no-external">Gabriele Vilkaite</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/gabri.html" class="no-external">Phd Student</a>
-</div>
-<div class="delink listing-description"><a href="./members/gabri.html" class="no-external">
-Gabriele joined the lab in 2023 September after graduating with a degree in Molecular Cell Biology. With a background in wet-lab biology, she now applies single-cell transcriptomics and computational approaches to study cellular and molecular mechanisms of Alzheimer’s disease.<br>
-In her free time, Gabriele enjoys sailing, both recreationally and competitively, having sailed all over Europe and with dreams to one day make a journey across the Atlantic.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/gabri.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/jon.html"><img class="member-photo" src="members/images/round/jon.jpg" alt="Jonathan Rittmo"></a>
+<a class="member-name" href="members/jon.html">Jonathan Rittmo</a>
+<div class="member-major">Statistics</div>
+<div class="member-role">PhD Student</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/jrittmo/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=KbE1v_4AAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://twitter.com/jorittmo" title="X"><i class="bi bi-twitter-x"></i></a>
+<a href="https://github.com/jorittmo" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1777535810469" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
-<div class="thumbnail"><a href="./members/narjes.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/Narjes.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/narjes.html" class="no-external">Narjes Goshtasbi</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/narjes.html" class="no-external">Phd Student</a>
-</div>
-<div class="delink listing-description"><a href="./members/narjes.html" class="no-external">
-I am a PhD student joining the DeMon Lab in 2026, with a background in biomedical engineering and machine learning. My research focuses on applying statistical and computational methods to neuroimaging data to study the heterogeneity of Alzheimer’s disease. My work is grounded in data-driven approaches in neuroscience, motivated by an interest in leveraging engineering methodologies to investigate complex brain-related conditions.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/narjes.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/mirjam.html"><img class="member-photo" src="members/images/round/mirjam.jpg" alt="Mirjam Müller"></a>
+<a class="member-name" href="members/mirjam.html">Mirjam Müller</a>
+<div class="member-major">Mathematics and Bioinformatics</div>
+<div class="member-role">PhD Student</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/mirjamcmmüller/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/mirjamcmmueller" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="3" data-listing-file-modified-sort="1778104007679" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
-<div class="thumbnail"><a href="./members/mirjam.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/mirjam.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/mirjam.html" class="no-external">Mirjam Müller</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/mirjam.html" class="no-external">Phd Student</a>
-</div>
-<div class="delink listing-description"><a href="./members/mirjam.html" class="no-external">
-I started my PhD in 2023 and joined the lab halfway through, bringing a background in mathematics and bioinformatics. My research focuses on subtyping neurodegenerative diseases using both omics data and image analysis, with the goal of better understanding their underlying complexity.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/mirjam.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/narjes.html"><img class="member-photo" src="members/images/round/narjes.jpg" alt="Narjes Goshtasbi"></a>
+<a class="member-name" href="members/narjes.html">Narjes Goshtasbi</a>
+<div class="member-major">Biomedical Engineering</div>
+<div class="member-role">PhD Student</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/narjes-goshtasbi-505315199/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=3b_DJpsAAAAJ&amp;hl=en" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/narjesgoshtasbi" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="research-assistants" class="level2">
 <h2 class="anchored" data-anchor-id="research-assistants">Research Assistants</h2>
-<div id="listing-ras" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1777376250835" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
-<div class="thumbnail"><a href="./members/ruoyi.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/ruoyi.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/ruoyi.html" class="no-external">Zoe Ruoyi Zhao</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/ruoyi.html" class="no-external">Research Assistant</a>
-</div>
-<div class="delink listing-description"><a href="./members/ruoyi.html" class="no-external">
-Ruoyi graduated with a Master’s degree in Machine Learning from Lund University in September 2024 and joined the lab immediately after. She is currently focusing on developing deep learning methods for the automated segmentation of medial temporal lobe (MTL) subregions in histological data to advance the understanding of neurodegenerative pathology. Driven by academic curiosity, she is interested in exploring how AI models can reveal the hidden structural patterns in either images or clinical data that may provide new insights into the progression of neurodegenerative disease.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/ruoyi.html" class="no-external">
-</a>
+<div class="member-grid">
+<div class="member-card">
+<a href="members/romina.html"><img class="member-photo" src="members/images/round/romina.jpg" alt="Romina Zendehdel"></a>
+<a class="member-name" href="members/romina.html">Romina Zendehdel</a>
+<div class="member-major">Molecular Medicine</div>
+<div class="member-role">Research Assistant</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/rominazendehdel/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/Romina-Ze" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1778103256196" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
-<div class="thumbnail"><a href="./members/gabriele.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/gabrieled.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/gabriele.html" class="no-external">Gabriele De Leonardis</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/gabriele.html" class="no-external">Research Assistant</a>
-</div>
-<div class="delink listing-description"><a href="./members/gabriele.html" class="no-external">
-Gabriele joined the lab in October 2024 as a research assistant after getting a master’s degree from the University of Trento, Italy. His work focuses primarily on curating and processing multimodal MRI images from the ROSMAP dataset, a great resource for research on aging and neurodegenerative disease. He is particularly interested in brain connectivity, both structural and functional, and how network-based approaches can help unravel complex mechanisms underlying cognition and pathology.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/gabriele.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-listing-file-modified-sort="1777376250835" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
-<div class="thumbnail"><a href="./members/romina.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="members/images/romina.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./members/romina.html" class="no-external">Romina Zendehdel</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./members/romina.html" class="no-external">Research Assistant</a>
-</div>
-<div class="delink listing-description"><a href="./members/romina.html" class="no-external">
-Romina joined the lab in 2024 as a master’s student in Molecular Medicine, completing her degree project. With a background in Molecular Biology, she focused on proteomics data and bioinformatics approaches to study how organ aging may contribute to neurodegenerative diseases. Her research combined molecular insights with computational methods to better understand systemic factors influencing brain health.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./members/romina.html" class="no-external">
-</a>
+<div class="member-card">
+<a href="members/ruoyi.html"><img class="member-photo" src="members/images/round/ruoyi.jpg" alt="Zoe Ruoyi Zhao"></a>
+<a class="member-name" href="members/ruoyi.html">Zoe Ruoyi Zhao</a>
+<div class="member-major">Machine Learning</div>
+<div class="member-role">Research Assistant</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/zoe-ruoyi-zhao-3592b6226/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/Zoe-Chao" title="GitHub"><i class="bi bi-github"></i></a>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<hr>
 </section>
-<section id="bachelor-master-students" class="level2">
-<h2 class="anchored" data-anchor-id="bachelor-master-students">Bachelor / Master Students</h2>
-<div class="student-gallery">
-<div class="student-tile">
-<p><img src="members/images/nadine.jpeg" class="img-fluid"></p>
-<p><strong>Nadine Li Pigida</strong><br> Project<br> Master in Bioinformatics</p>
+<section id="students" class="level2">
+<h2 class="anchored" data-anchor-id="students">Students</h2>
+<div class="member-grid">
+<div class="member-card">
+<img class="member-photo" src="members/images/round/elsa.jpg" alt="Elsa Gustafsson">
+<span class="member-name">Elsa Gustafsson</span>
+<div class="member-major">Biomedical Engineering</div>
+<div class="member-role">Master Project</div>
+<div class="member-links"></div>
 </div>
-<div class="student-tile">
-<p><img src="members/images/ruizhen.jpg"></p>
-<p><strong>Ruizhen Shen</strong><br> Master Thesis<br> Machine Learning, Systems and Control</p>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/nadine.jpg" alt="Nadine Li Pigida">
+<span class="member-name">Nadine Li Pigida</span>
+<div class="member-major">Bioinformatics</div>
+<div class="member-role">Master Project</div>
+<div class="member-links"></div>
 </div>
-<div class="student-tile">
-<p><img src="members/images/yaqi.jpg"></p>
-<p><strong>Yaqi Jiao</strong><br> Project<br> Master in Bioinformatics</p>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/yaqi.jpg" alt="Yaqi Jiao">
+<span class="member-name">Yaqi Jiao</span>
+<div class="member-major">Bioinformatics</div>
+<div class="member-role">Master Project</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/yaqi-jiao/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
 </div>
-<div class="student-tile">
-<p><img src="members/images/elsa.jpg"></p>
-<p><strong>Elsa Gustafsson</strong><br> Internship<br> Master in Biomedical Engineering</p>
-</div>
-<div class="student-tile">
-<p><img src="members/images/catarina.jpg"></p>
-<p><strong>Catarina Barreiros</strong><br> Thesis<br> Bachelor in Biomedicine</p>
-</div>
-<div class="student-tile">
-<p><img src="members/images/emma.jpg"></p>
-<p><strong>Emma Volcov</strong><br> Thesis<br> Bachelor in Biomedicine</p>
 </div>
 </div>
 </section>
 <section id="alumni" class="level2">
 <h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
-<p><strong>Malo Gicquel</strong>, Master student (2023)<br> <strong>Alma Lennartsson</strong>, Master student (2025-2026)<br></p>
+<div class="member-grid">
+<div class="member-card">
+<img class="member-photo" src="members/images/round/alma.jpg" alt="Alma Lennartsson">
+<span class="member-name">Alma Lennartsson</span>
+<div class="member-major">Biomedical Engineering</div>
+<div class="member-role">Master student (2025–2026)</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/alma-lennartsson-81a60424a/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/almalennartsson" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/catarina.jpg" alt="Catarina Barreiros">
+<span class="member-name">Catarina Barreiros</span>
+<div class="member-major">Biomedicine</div>
+<div class="member-role">Bachelor thesis (2024-2025)</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/catarina-barreiros-a497a4221/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/catabr14" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/emma.jpg" alt="Emma Volcov">
+<span class="member-name">Emma Volcov</span>
+<div class="member-major">Biomedicine</div>
+<div class="member-role">Bachelor thesis (2024-2025)</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/emma-volcov-3b31b9319/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+</div>
+</div>
+<div class="member-card">
+<a href="members/gabriele.html"><img class="member-photo" src="members/images/round/gabrieled.jpg" alt="Gabriele De Leonardis"></a>
+<a class="member-name" href="members/gabriele.html">Gabriele De Leonardis</a>
+<div class="member-major">Cognitive Science</div>
+<div class="member-role">Research Assistant (2024–2026)</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/gabriele-de-leonardis-967b12168/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/gabridele" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/malo.jpg" alt="Malo Gicquel">
+<span class="member-name">Malo Gicquel</span>
+<div class="member-major">Engineering Mathematics</div>
+<div class="member-role">Master student (2024-2025)</div>
+<div class="member-links">
+<a href="https://www.linkedin.com/in/malo-gicquel-899b38225/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/MaloGicquel" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="member-card">
+<img class="member-photo" src="members/images/round/ruizhen.jpg" alt="Ruizhen Shen">
+<span class="member-name">Ruizhen Shen</span>
+<div class="member-major">Machine Learning, Systems and Control</div>
+<div class="member-role">Master thesis (2024-2025)</div>
+<div class="member-links">
+<a href="https://github.com/rzshen2002" title="GitHub"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
 </section>
+<section id="lab-life" class="level2">
+<h2 class="anchored" data-anchor-id="lab-life">Lab Life</h2>
+<!-- To add a photo, add a figure below, oldest first. The buttons and timing need no change. -->
+<div class="lab-life-show" role="group" aria-label="Lab Life photos">
+<div class="lab-life-slides">
+<figure class="is-current figure">
+<img src="members/images/lab_oct2025_web.jpg" alt="Lab evening out" class="figure-img">
+<figcaption>Oct 2025</figcaption>
+</figure>
+<figure class="figure">
+<img src="members/images/lab_jun2026_web.jpg" alt="Lab group photo" class="figure-img">
+<figcaption>June 2026</figcaption>
+</figure>
+<figure class="figure">
+<img src="members/images/lab_oct2026.jpg" alt="Lab dinner, October 2026" class="figure-img">
+<figcaption>Oct 2026</figcaption>
+</figure>
+</div>
+<div class="lab-life-nav">
+<button type="button" class="lab-life-prev" aria-label="Previous photo"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+<button type="button" class="lab-life-pause" aria-label="Pause photos"><i class="bi bi-pause-fill" aria-hidden="true"></i></button>
+<button type="button" class="lab-life-next" aria-label="Next photo"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+</div>
 </div>
 
+<script>
+// Lab Life: a new photo every 5 seconds until someone presses pause. It starts
+// paused for people who ask for reduced motion.
+(function () {
+  var show = document.querySelector(".lab-life-show");
+  var slides = show.querySelectorAll("figure");
+  var pauseButton = show.querySelector(".lab-life-pause");
+  var pauseIcon = pauseButton.querySelector("i");
+  var current = 0;
+  var paused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var timer;
+
+  function move(step) {
+    slides[current].classList.remove("is-current");
+    current = (current + step + slides.length) % slides.length;
+    slides[current].classList.add("is-current");
+  }
+
+  function restartTimer() {
+    clearInterval(timer);
+    timer = setInterval(function () {
+      if (!paused) move(1);
+    }, 5000);
+  }
+
+  function showPauseState() {
+    pauseButton.setAttribute("aria-label", paused ? "Play photos" : "Pause photos");
+    pauseIcon.className = paused ? "bi bi-play-fill" : "bi bi-pause-fill";
+  }
+
+  show.querySelector(".lab-life-prev").addEventListener("click", function () { move(-1); restartTimer(); });
+  show.querySelector(".lab-life-next").addEventListener("click", function () { move(1); restartTimer(); });
+  pauseButton.addEventListener("click", function () {
+    paused = !paused;
+    showPauseState();
+    restartTimer();
+  });
+
+  showPauseState();
+  restartTimer();
+})();
+</script>
+</section>
+</div>
 
 
 

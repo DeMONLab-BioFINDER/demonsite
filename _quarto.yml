@@ -14,11 +14,12 @@ website:
         text: Home
       - members.qmd
       - projects.qmd
+      - research-publications.qmd
       - papers.qmd
       # - href: blog.qmd
       #   text: Blog
-      # - href: news.qmd
-      #   text: News
+      - href: news.qmd
+        text: News
       - href: takepart.qmd
         text: Contact
 

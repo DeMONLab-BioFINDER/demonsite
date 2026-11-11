@@ -31,6 +31,10 @@
   gap: 60px;
   align-items: center;
   min-height: 350px;
+  /* same box as "About the Lab" */
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(128,128,128,0.2);
 }
 
 .hero-text h2 {
@@ -60,6 +64,114 @@
 
 
 /* =========================
+   LATEST FROM THE LAB
+   ========================= */
+
+/* Built from the lists in research-publications.qmd and news.qmd. */
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.latest-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  border: 1px solid rgba(128,128,128,0.2);
+  overflow: hidden;
+}
+
+/* images fit a 4:3 box; white shows behind figures in dark mode too */
+.latest-figure {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+  background: #fff;
+}
+
+.latest-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.latest-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 20px 20px;
+}
+
+.latest-credit {
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.latest-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.latest-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.latest-section h3.latest-title {
+  margin: 12px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* long summaries stop after a few lines; the full text is one click away */
+.latest-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.latest-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.latest-button {
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: #A63A50;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.latest-button:hover {
+  background: #8F3245;
+  color: #fff;
+}
+
+.latest-more {
+  color: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+/* =========================
    ABOUT CARD
    ========================= */
 
@@ -73,27 +185,6 @@
 .about-card p {
   font-size: 1.05rem;
   line-height: 1.7;
-}
-
-.about-buttons {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
-
-.btn-primary {
-  background-color: #A63A50;
-  border-color: #A63A50;
-  border-radius: 999px;
-  font-weight: 600;
-  padding: 0.7rem 1.4rem;
-}
-
-.btn-primary:hover {
-  background-color: #8F3245;
-  border-color: #8F3245;
 }
 
 
@@ -161,6 +252,11 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* this logo is taller than the others, so it looks small at the shared height */
+.logo-row a[href*="multipark"] img {
+  max-height: 120px;
+}
+
 .logo-row img:hover {
   transform: scale(1.05);
   opacity: 0.85;
@@ -190,10 +286,6 @@
     font-size: 2.3rem;
   }
 
-  .about-buttons {
-    justify-content: center;
-  }
-
   .lab-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -202,5 +294,45 @@
 @media (max-width: 500px) {
   .lab-stats {
     grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   FIND US HERE
+   ========================= */
+
+.find-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 1.5rem;
+}
+
+.find-us-title {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.find-us a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid #A63A50;
+  border-radius: 999px;
+  color: #A63A50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.find-us a:hover {
+  background: #A63A50;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .find-us {
+    justify-content: center;
   }
 }

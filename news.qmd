@@ -1,18 +1,236 @@
 ---
 title: "Lab News"
+page-layout: full
+title-block-banner: false
+toc: false
+
+# ---------------------------------------------------------------------------
+# News items, newest first, from the lab's LinkedIn page. One card is built per
+# item, so to add, remove or reorder news, edit only this list. See README.md
+# ("News page") for what each field means.
+# ---------------------------------------------------------------------------
+categories_list: [Publications, Awards, Conferences]
+
+news:
+  - title: "New preprint: a coordinated multicellular response to Alzheimer's disease"
+    date: "Oct 2026"
+    category: Publications
+    photos:
+      - {src: images/news/vilkaite2026_workflow.jpg, alt: "Overview of the analysis workflow, from single-cell data to robust gene clusters"}
+      - {src: images/news/vilkaite2026_cohorts.jpg, alt: "Results in the ROSMAP discovery cohort and the SEA-AD validation cohort"}
+      - {src: images/news/vilkaite2026_network.jpg, alt: "Communication networks between brain cell types"}
+    credit: "Figures from Vilkaite et al., bioRxiv 2026 (CC BY-NC 4.0)."
+    text: "In her first PhD project, Gabriele Vilkaite built a single model integrating AD-related
+      changes across neurons and glia, revealing a coordinated multicellular signature associated
+      with pathology. The signature replicated in a completely independent dataset and was linked to
+      faster cognitive decline. Congratulations, Gabi and team!"
+    link: https://doi.org/10.64898/2026.10.19.759610
+    link_text: Read the preprint
+
+  - title: "New paper in Nature Neuroscience: aging and Alzheimer's reshape the brain along different axes"
+    date: "Oct 2026"
+    category: Publications
+    photos:
+      - {src: images/news/rittmo2026_axes.jpg, alt: "Brain maps and scatter plots relating age and AD pathology to the sensory-association and representation-executive axes"}
+      - {src: images/news/rittmo2026_pathology.jpg, alt: "Plots of the correlation with the sensory-association axis and of pathology measures across the pathology score"}
+    credit: "Figures from Rittmo et al., Nature Neuroscience 2026."
+    text: "Led by PhD student Jonathan Rittmo, this work looks at how functional connectivity
+      reorganizes in aging and Alzheimer's disease along distinct axes of functional brain
+      organization. Congratulations, Jonathan and team!"
+    link: https://doi.org/10.1038/s41593-026-02402-0
+    link_text: Read the paper
+
+  - title: "New preprint: data leakage inflates protein biomarker studies"
+    date: "Sep 2026"
+    category: Publications
+    photos:
+      - {src: images/news/aaic2026_lijun_poster.jpg, alt: "Lijun An next to a poster on data leakage in protein biomarker studies at AAIC 2026"}
+    credit: "Lijun An with a poster on this work at AAIC 2026."
+    text: "A new preprint led by Lijun An quantifies one common reason why proteomics biomarker studies
+      are hard to replicate: data leakage. Even pure noise can look like a biomarker. The preprint also
+      introduces two open tools to catch leakage, Leakly for pipelines and Plumber for manuscripts."
+    link: https://doi.org/10.64898/2026.09.02.26362037
+    link_text: Read the preprint
+
+  - title: "DeMON Lab at AAIC 2026"
+    date: "Jul 2026"
+    category: Conferences
+    photos:
+      - {src: images/news/aaic2026_jonathan_talk.jpg, alt: "Jonathan Rittmo giving his talk at AAIC 2026"}
+      - {src: images/news/aaic2026_group.jpg, alt: "Yu Xiao, Jonathan Rittmo, Hannah Baumeister and Lijun An at AAIC 2026"}
+    text: "Romina Zendehdel, Yu Xiao, Lijun An and Jonathan Rittmo presented the lab's work at the
+      Alzheimer's Association International Conference, including Jonathan's talk on how age and
+      Alzheimer's disease affect functional connectivity."
+
+  - title: "DeMON Lab at OHBM 2026"
+    date: "Jun 2026"
+    category: Conferences
+    photos:
+      - {src: images/news/ohbm2026_group.jpg, alt: "The DeMON Lab team outside the OHBM 2026 venue in Bordeaux"}
+      - {src: images/news/ohbm2026_yu_poster.jpg, alt: "Yu Xiao at a poster on AI for amyloid PET interpretation"}
+      - {src: images/news/ohbm2026_lijun_poster.jpg, alt: "Lijun An at a poster on plasma proteomics for neurodegenerative disease"}
+      - {src: images/news/ohbm2026_lijun_side.jpg, alt: "Lijun An talking at the poster"}
+    text: "Léa Chauveau, Yu Xiao, Lijun An, Zoe Ruoyi Zhao and Jonathan Rittmo presented posters at the
+      annual meeting of the Organization for Human Brain Mapping in Bordeaux."
+
+  - title: "Yu Xiao speaks at the EURO-PAD Symposium"
+    date: "May 2026"
+    category: Conferences
+    photos:
+      - {src: images/news/ohbm2026_yu_poster.jpg, alt: "Yu Xiao at a poster on AI for amyloid PET interpretation"}
+    credit: "Yu Xiao with a poster on this work at OHBM 2026."
+    text: "Yu Xiao shared our work on PET visual reads, including a deep learning model that aims to
+      support amyloid PET interpretation in clinical practice, especially in borderline cases."
+
+  - title: "Global Neurodegeneration Proteomics Consortium features Lijun and Jake"
+    date: "May 2026"
+    category: News
+    photos:
+      - {src: images/news/adpd2026_lijun_talk.jpg, alt: "Announcement of Lijun An's GNPC-based talk at AD/PD 2026"}
+    text: "The GNPC highlighted Lijun An and Jacob Vogel as researchers collaborating with the
+      consortium, and how the scale and diversity of its data help test and validate AI models for
+      Alzheimer's research."
+
+  - title: "Gabriele's PhD work featured in Technology Networks"
+    date: "May 2026"
+    category: News
+    photos:
+      - {src: images/news/vilkaite2026_cohorts.jpg, alt: "Results in the ROSMAP discovery cohort and the SEA-AD validation cohort"}
+    credit: "Figure from Vilkaite et al., bioRxiv 2026 (CC BY-NC 4.0)."
+    text: "Technology Networks covered Gabriele Vilkaite's work on multicellular and sex-specific
+      responses in Alzheimer's disease, with comments from Gabriele and Jacob Vogel."
+    link: https://www.technologynetworks.com/proteomics/articles/sex-specific-brain-changes-in-alzheimers-disease-revealed-411927
+    link_text: Read the article
+
+  - title: "Jacob Vogel receives the Young Researcher Prize 2026"
+    date: "May 2026"
+    category: Awards
+    home: true
+    photos:
+      - {src: images/news/prize2026_jake.jpg, alt: "Jacob Vogel speaking at the podium at the award ceremony"}
+    text: "Our PI Jacob Vogel was awarded the Young Researcher Prize 2026 by the Fondation Recherche
+      Alzheimer, at the award ceremony held at the AD/PD meeting in Copenhagen. Congratulations, Jake!"
+
+  - title: "New paper in Nature Medicine: diagnosing neurodegenerative diseases from blood"
+    date: "Apr 2026"
+    category: Publications
+    photos:
+      - {src: images/news/ohbm2026_lijun_poster.jpg, alt: "Lijun An at a poster on plasma proteomics for neurodegenerative disease"}
+    credit: "Lijun An with a poster on this work at OHBM 2026."
+    text: "Lijun An and colleagues present ProtAIDe-Dx, an AI-proteomics model that diagnoses multiple
+      neurodegenerative diseases from blood plasma. The model was validated for real-world clinical
+      questions, including differential diagnosis in a memory clinic setting."
+    link: https://doi.org/10.1038/s41591-026-04303-y
+    link_text: Read the paper
+
+  - title: "DeMON Lab at AD/PD 2026"
+    date: "Mar 2026"
+    category: Conferences
+    photos:
+      - {src: images/news/adpd2026_jonathan_talk.jpg, alt: "Jonathan Rittmo on stage at AD/PD 2026 with his title slide"}
+      - {src: images/news/adpd2026_jonathan_thanks.jpg, alt: "Jonathan Rittmo on stage at AD/PD 2026 with his acknowledgements slide"}
+      - {src: images/news/adpd2026_lijun_talk.jpg, alt: "Announcement of Lijun An's talk at AD/PD 2026"}
+    text: "Lijun An and Jonathan Rittmo gave talks at AD/PD 2026 in Copenhagen: Lijun on the AI-based
+      diagnostic potential of plasma proteomics across 17,187 people, and Jonathan on how age and
+      Alzheimer's disease affect functional connectivity along separate axes of brain organization."
+
+  - title: "Jacob Vogel receives H.M. Queen Silvia's Prize"
+    date: "Nov 2023"
+    category: Awards
+    photos:
+      - {src: images/news/queen_silvia_prize2023_jake.jpg, alt: "Jacob Vogel holding flowers and a certificate, standing with Queen Silvia of Sweden and another guest"}
+    credit: "Photo: Yanan Li."
+    text: "Jacob Vogel received H.M. Queen Silvia's Prize for a young Alzheimer's researcher, instituted
+      by Alzheimerfonden, at a ceremony at the German Church in Stockholm. The prize recognizes his
+      contributions to Alzheimer's research, including work suggesting four distinct types of the
+      disease and evidence that tau can spread through the brain along neurons."
 ---
 
-Here we can post any updates, such as new people joining or papers being accepted. 
+::: {.news-page}
 
-### demonlab 0.3.0 (01-11-23)
+```{r news, echo=FALSE}
+# Builds the category buttons and one card per item from the `news` list above.
+library(htmltools)
 
-- Xiao Yu started
+news <- rmarkdown::metadata$news
 
-### demonlab 0.2.0 (04-09-23)
+filter_button <- function(label, pressed = "false") {
+  tags$button(type = "button", class = "news-filter", `data-category` = label,
+              `aria-pressed` = pressed, label)
+}
 
-- Gabriele and Jonathan started 
+# one image at a time, with buttons to move between them if there are several
+photo_gallery <- function(photos) {
+  div(class = "news-figure news-photos",
+      Map(function(p, i) {
+        a(href = p$src, target = "_blank", hidden = if (i > 1) NA,
+          img(src = p$src, alt = p$alt, loading = "lazy"))
+      }, photos, seq_along(photos)),
+      if (length(photos) > 1)
+        div(class = "news-photo-nav",
+            tags$button(type = "button", class = "news-prev", `aria-label` = "Previous image",
+                        tags$i(class = "bi bi-chevron-left", `aria-hidden` = "true")),
+            span(class = "news-count", `aria-live` = "polite", paste0("1 / ", length(photos))),
+            tags$button(type = "button", class = "news-next", `aria-label` = "Next image",
+                        tags$i(class = "bi bi-chevron-right", `aria-hidden` = "true"))))
+}
 
+card <- function(n) {
+  tags$article(
+    class = "news-card", `data-category` = n$category,
+    photo_gallery(n$photos),
+    div(class = "news-body",
+        if (!is.null(n$credit)) div(class = "news-credit", n$credit),
+        div(class = "news-meta", paste(n$category, "&middot;", n$date) |> HTML()),
+        h2(class = "news-title", n$title),
+        tags$p(class = "news-text", n$text),
+        if (!is.null(n$link))
+          a(class = "news-link", href = n$link, target = "_blank", n$link_text)))
+}
 
-### demonlab 0.1.0 (??-??-??)
+tagList(
+  div(class = "news-filters", role = "group", `aria-label` = "Filter news by category",
+      filter_button("All", "true"),
+      lapply(rmarkdown::metadata$categories_list, filter_button)),
+  div(class = "news-grid", lapply(news, card))
+)
+```
 
-- Initial commit
+```{=html}
+<div class="news-more">
+  <a class="btn btn-primary" href="https://www.linkedin.com/company/demon-lab/posts/" target="_blank"><i class="bi bi-linkedin"></i> Follow us on LinkedIn</a>
+</div>
+
+<script>
+// Category buttons: show only the cards of the chosen category.
+(function () {
+  var buttons = document.querySelectorAll(".news-filter");
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var chosen = button.dataset.category;
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === button); });
+      document.querySelectorAll(".news-card").forEach(function (card) {
+        card.hidden = chosen !== "All" && card.dataset.category !== chosen;
+      });
+    });
+  });
+
+  // Image buttons: move through a card's images, starting again after the last.
+  document.querySelectorAll(".news-photos").forEach(function (box) {
+    var photos = box.querySelectorAll("a");
+    var count = box.querySelector(".news-count");
+    var current = 0;
+    function move(step) {
+      current = (current + step + photos.length) % photos.length;
+      photos.forEach(function (p, k) { p.hidden = k !== current; });
+      count.textContent = (current + 1) + " / " + photos.length;
+    }
+    if (!count) return;
+    box.querySelector(".news-prev").addEventListener("click", function () { move(-1); });
+    box.querySelector(".news-next").addEventListener("click", function () { move(1); });
+  });
+})();
+</script>
+```
+
+:::
