@@ -132,9 +132,11 @@ topics:
 # Credit for the icons that need it. All icons are from https://bioicons.com
 icon_credit: 'Icons from <a href="https://bioicons.com" target="_blank">Bioicons</a>. Brain slice by DBCLS and network by ChenxinLi, both CC BY 4.0; DNA, neural network and workflow icons, CC0.'
 
-# Open tools from the lab, shown as cards after the themes.
+# Open tools from the lab, shown as cards after the themes. `logo` is optional
+# (a small square image in images/software/, shown next to the name).
 software:
   - name: Leakly
+    logo: images/software/leakly_logo.png
     text: "A Python package that checks machine-learning pipelines for data leakage. It uses label
       permutation to test whether a pipeline performs above chance when no true signal is present."
     links:
@@ -241,7 +243,9 @@ chapter <- function(t, i) {
 
 tool <- function(s) {
   div(class = "software-card",
-      tags$h3(class = "software-name", s$name),
+      tags$h3(class = "software-name",
+              if (!is.null(s$logo)) img(class = "software-logo", src = s$logo, alt = ""),
+              s$name),
       tags$p(s$text),
       div(class = "software-links",
           lapply(s$links, function(l) a(href = l$url, target = "_blank", l$label))))

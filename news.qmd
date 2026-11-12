@@ -9,7 +9,18 @@ toc: false
 # item, so to add, remove or reorder news, edit only this list. See README.md
 # ("News page") for what each field means.
 # ---------------------------------------------------------------------------
-categories_list: [Publications, Awards, Conferences]
+# One subtab per entry, in this order (Openings is added last). Each news item
+# appears under the subtab whose `category` matches its own; the first subtab
+# is shown when the page opens.
+sections:
+  - category: Awards
+    heading: "Awards"
+  - category: Publications
+    heading: "Publications"
+  - category: Conferences
+    heading: "Conferences"
+  - category: News
+    heading: "In the media"
 
 news:
   - title: "New preprint: a coordinated multicellular response to Alzheimer's disease"
@@ -44,8 +55,8 @@ news:
     date: "Sep 2026"
     category: Publications
     photos:
-      - {src: images/news/aaic2026_lijun_poster.jpg, alt: "Lijun An next to a poster on data leakage in protein biomarker studies at AAIC 2026"}
-    credit: "Lijun An with a poster on this work at AAIC 2026."
+      - {src: images/news/an2026_leakage_fig1.jpg, alt: "Leaky and non-leaky machine-learning pipelines, with simulation results and real-world performance differences in GNPC data"}
+    credit: "Figure 1 from An et al., medRxiv 2026 (CC BY-NC-ND 4.0), shown unchanged."
     text: "A new preprint led by Lijun An quantifies one common reason why proteomics biomarker studies
       are hard to replicate: data leakage. Even pure noise can look like a biomarker. The preprint also
       introduces two open tools to catch leakage, Leakly for pipelines and Plumber for manuscripts."
@@ -58,6 +69,7 @@ news:
     photos:
       - {src: images/news/aaic2026_jonathan_talk.jpg, alt: "Jonathan Rittmo giving his talk at AAIC 2026"}
       - {src: images/news/aaic2026_group.jpg, alt: "Yu Xiao, Jonathan Rittmo, Hannah Baumeister and Lijun An at AAIC 2026"}
+      - {src: images/news/aaic2026_lijun_poster.jpg, alt: "Lijun An next to a poster on data leakage in protein biomarker studies at AAIC 2026"}
     text: "Romina Zendehdel, Yu Xiao, Lijun An and Jonathan Rittmo presented the lab's work at the
       Alzheimer's Association International Conference, including Jonathan's talk on how age and
       Alzheimer's disease affect functional connectivity."
@@ -115,8 +127,10 @@ news:
     date: "Apr 2026"
     category: Publications
     photos:
-      - {src: images/news/ohbm2026_lijun_poster.jpg, alt: "Lijun An at a poster on plasma proteomics for neurodegenerative disease"}
-    credit: "Lijun An with a poster on this work at OHBM 2026."
+      - {src: images/news/an2026_workflow.jpg, alt: "Workflow of the ProtAIDe-Dx model, from plasma proteins through a neural network to disease probabilities and an individual risk report"}
+      - {src: images/news/an2026_performance.jpg, alt: "Plots of diagnostic performance across conditions, with APOE, cognition and cognitive decline validation"}
+      - {src: images/news/an2026_subgroups.jpg, alt: "Maps of individuals by diagnostic probability, with clusters and subgroup characteristics"}
+    credit: "Figures adapted from An et al., Nature Medicine 2026 (CC BY 4.0)."
     text: "Lijun An and colleagues present ProtAIDe-Dx, an AI-proteomics model that diagnoses multiple
       neurodegenerative diseases from blood plasma. The model was validated for real-world clinical
       questions, including differential diagnosis in a memory clinic setting."
@@ -144,20 +158,51 @@ news:
       by Alzheimerfonden, at a ceremony at the German Church in Stockholm. The prize recognizes his
       contributions to Alzheimer's research, including work suggesting four distinct types of the
       disease and evidence that tau can spread through the brain along neurons."
+
+# ---------------------------------------------------------------------------
+# Positions in the lab, newest first, shown in the "Openings" section at the
+# end. A position is marked "Closed" by itself the day after its deadline.
+# See README.md ("Openings") for what each field means.
+# ---------------------------------------------------------------------------
+openings:
+  - title: "Postdoctoral Researcher in Neurodegenerative Disease Neuroimaging"
+    type: "Postdoc, full time, fixed term (2 years)"
+    location: "Biomedical Centre (BMC), Lund"
+    start: "1 December 2026, or as agreed"
+    deadline: 2026-11-12
+    reference: "PA2026/3011"
+    summary: >
+      Join us to model how tau spreads through the brain in Alzheimer's disease,
+      using large tau-PET datasets. You will process and analyse the imaging data,
+      adapt analysis pipelines and validate the model across modalities. We are
+      looking for someone with a doctorate in a relevant field, neuroimaging and
+      tau-PET experience, and programming skills in Python and/or R.
+    contact: "Jacob Vogel"
+    link: "https://lu.varbi.com/en/what:job/jobID:980945/"
+
+  - title: "Assistant Researcher in Neurodegenerative Disease"
+    type: "Assistant researcher, full time, fixed term (12 months)"
+    location: "Biomedical Centre (BMC), Lund"
+    start: "1 September 2026, or as agreed"
+    deadline: 2026-06-25
+    reference: "PA2026/1780"
+    summary: >
+      A one-year post split equally between research and running the lab.
+      The research half supports the lab's neuroimaging and AI projects, with
+      room to lead a project of one's own; the other half covers hiring,
+      purchasing, documentation, the website and communications.
+    contact: "Jacob Vogel"
+    link: "https://lu.varbi.com/en/what:job/jobID:939073/"
 ---
 
 ::: {.news-page}
 
 ```{r news, echo=FALSE}
-# Builds the category buttons and one card per item from the `news` list above.
+# Builds one section per entry in `sections`, with one card per news item,
+# then the Openings section from the `openings` list.
 library(htmltools)
 
 news <- rmarkdown::metadata$news
-
-filter_button <- function(label, pressed = "false") {
-  tags$button(type = "button", class = "news-filter", `data-category` = label,
-              `aria-pressed` = pressed, label)
-}
 
 # one image at a time, with buttons to move between them if there are several
 photo_gallery <- function(photos) {
@@ -177,22 +222,78 @@ photo_gallery <- function(photos) {
 
 card <- function(n) {
   tags$article(
-    class = "news-card", `data-category` = n$category,
+    class = "news-card",
     photo_gallery(n$photos),
     div(class = "news-body",
         if (!is.null(n$credit)) div(class = "news-credit", n$credit),
-        div(class = "news-meta", paste(n$category, "&middot;", n$date) |> HTML()),
-        h2(class = "news-title", n$title),
+        div(class = "news-meta", n$date),
+        h3(class = "news-title", n$title),
         tags$p(class = "news-text", n$text),
         if (!is.null(n$link))
           a(class = "news-link", href = n$link, target = "_blank", n$link_text)))
 }
 
+# one panel per subtab; the id also lets a link open it, e.g. news.html#openings
+panel_id <- function(heading) gsub("[^a-z]+", "-", tolower(heading))
+
+tab_button <- function(heading, first) {
+  tags$button(type = "button", class = "news-filter",
+              `data-panel` = panel_id(heading), `aria-controls` = panel_id(heading),
+              `aria-pressed` = if (first) "true" else "false", heading)
+}
+
+panel <- function(heading, first, ...) {
+  tags$section(class = "news-section", id = panel_id(heading),
+               `aria-label` = heading, hidden = if (!first) NA, ...)
+}
+
+news_panel <- function(s, first) {
+  items <- Filter(function(n) identical(n$category, s$category), news)
+  panel(s$heading, first, div(class = "news-grid", lapply(items, card)))
+}
+
+# --- Openings ---
+openings <- rmarkdown::metadata$openings
+nice_date <- function(d) format(as.Date(d), "%d %B %Y")
+
+fact <- function(label, value) {
+  if (is.null(value)) return(NULL)
+  tagList(tags$dt(label), tags$dd(value))
+}
+
+# past positions get a "Closed" tag and a grey edge; the button stays the same
+opening_card <- function(o) {
+  past <- as.Date(o$deadline) < Sys.Date()
+  tags$article(
+    class = paste("opening-card", if (past) "is-past"),
+    `data-deadline` = as.character(o$deadline),
+    span(class = "opening-closed", "Closed"),
+    h3(class = "opening-title", o$title),
+    tags$dl(class = "opening-facts",
+            fact("Position", o$type),
+            fact("Location", o$location),
+            fact("Start", o$start),
+            fact("Apply by", nice_date(o$deadline)),
+            fact("Reference", o$reference),
+            fact("Contact", o$contact)),
+    tags$p(class = "opening-text", o$summary),
+    a(class = "opening-link", href = o$link, target = "_blank",
+      "Read more and apply"))
+}
+
+sections <- rmarkdown::metadata$sections
+headings <- c(vapply(sections, function(s) s$heading, ""), "Openings")
+first <- seq_along(headings) == 1
+
 tagList(
-  div(class = "news-filters", role = "group", `aria-label` = "Filter news by category",
-      filter_button("All", "true"),
-      lapply(rmarkdown::metadata$categories_list, filter_button)),
-  div(class = "news-grid", lapply(news, card))
+  div(class = "news-filters", role = "group", `aria-label` = "News sections",
+      Map(tab_button, headings, first)),
+  Map(news_panel, sections, first[seq_along(sections)]),
+  panel("Openings", FALSE,
+    tags$p("Positions in the DeMON Lab are advertised through Lund University. ",
+           "Have a question, or no position that fits? Get in touch through the ",
+           a(href = "takepart.html", "Contact"), " page."),
+    div(class = "opening-list", lapply(openings, opening_card)))
 )
 ```
 
@@ -202,19 +303,42 @@ tagList(
 </div>
 
 <script>
-// Category buttons: show only the cards of the chosen category.
+// Mark positions as closed in the visitor's browser the day after their
+// deadline, since the site is only rebuilt now and then.
+(function () {
+  var d = new Date();
+  var today = d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+  document.querySelectorAll(".opening-card").forEach(function (card) {
+    if (card.dataset.deadline < today) card.classList.add("is-past");
+  });
+})();
+
+// Subtabs: show only the chosen section. A link to news.html#openings (or any
+// other section id) opens that section directly.
 (function () {
   var buttons = document.querySelectorAll(".news-filter");
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var chosen = button.dataset.category;
-      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === button); });
-      document.querySelectorAll(".news-card").forEach(function (card) {
-        card.hidden = chosen !== "All" && card.dataset.category !== chosen;
-      });
+  function show(id) {
+    var found = false;
+    buttons.forEach(function (b) {
+      var on = b.dataset.panel === id;
+      b.setAttribute("aria-pressed", on);
+      document.getElementById(b.dataset.panel).hidden = !on;
+      found = found || on;
+    });
+    return found;
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      show(b.dataset.panel);
+      history.replaceState(null, "", "#" + b.dataset.panel);
     });
   });
+  if (location.hash) show(location.hash.slice(1));
+})();
 
+(function () {
   // Image buttons: move through a card's images, starting again after the last.
   document.querySelectorAll(".news-photos").forEach(function (box) {
     var photos = box.querySelectorAll("a");

@@ -56,7 +56,8 @@ reorder or edit a theme, paper or figure, change only that list; no HTML or CSS 
 | `figures` | The paper's images: `src`, `label` and `alt`, shown one after another every 5 seconds |
 
 The `software` list in the same front matter builds the Software cards after the themes: each tool has a
-`name`, `text` and `links` (`label`, `url`).
+`name`, `text` and `links` (`label`, `url`), and optionally a `logo` (a small square image in
+`images/software/`, shown next to the name).
 
 Notes:
 
@@ -105,7 +106,7 @@ matter, in the order listed (newest first). To add news, add an entry at the top
 | Field | What it is |
 |---|---|
 | `title`, `date`, `text` | Headline, month and year, and a few sentences |
-| `category` | Label on the card. Names in `categories_list` also get a button at the top of the page; other items appear under All only |
+| `category` | Which subtab the item appears under: `Awards`, `Publications`, `Conferences` or `News` (shown as "In the media"). The subtabs and their order are set in the `sections` list; Openings is always last |
 | `photos` | One or more images: a list of `src` and `alt`, shown one at a time with buttons |
 | `credit` | Optional. Credit line or short description of the images |
 | `link`, `link_text` | Optional. Button linking to the paper or article |
@@ -113,3 +114,20 @@ matter, in the order listed (newest first). To add news, add an entry at the top
 
 Images go in `images/news/`, all as JPEG at 1200 x 900 pixels (4:3). Before adding one, check that
 it shows no private details, such as a phone number on a poster, and that its licence allows reuse.
+
+## Openings (on the News page)
+
+The Openings subtab of the News page (link: `news.html#openings`) lists the lab's positions, from the `openings` list in the
+front matter of `news.qmd` (newest first). To add a position, add an entry at the top of that list.
+The day after its deadline a position is marked with a "Closed" tag by itself (the button to the ad stays)
+(when the site is rebuilt, and also in the visitor's browser), so old entries can stay.
+
+| Field | What it is |
+|---|---|
+| `title` | Job title, as in the Lund University ad |
+| `type`, `location`, `start` | Kind of position and length, workplace, start date |
+| `deadline` | Last day to apply, written as `YYYY-MM-DD` |
+| `reference` | Optional. Lund University reference number (e.g. PA2026/3011) |
+| `summary` | A few sentences about the position, in our own words |
+| `contact` | Optional. Name of the person to contact (no phone numbers or emails) |
+| `link` | Link to the ad on lu.varbi.com |

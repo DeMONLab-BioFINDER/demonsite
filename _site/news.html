@@ -332,14 +332,45 @@ ul.task-list li input[type="checkbox"] {
 <div class="news-page">
 <div class="cell">
 <div class="cell-output-display">
-<div class="news-filters" role="group" aria-label="Filter news by category">
-<button type="button" class="news-filter" data-category="All" aria-pressed="true">All</button>
-<button type="button" class="news-filter" data-category="Publications" aria-pressed="false">Publications</button>
-<button type="button" class="news-filter" data-category="Awards" aria-pressed="false">Awards</button>
-<button type="button" class="news-filter" data-category="Conferences" aria-pressed="false">Conferences</button>
+<div class="news-filters" role="group" aria-label="News sections">
+<button type="button" class="news-filter" data-panel="awards" aria-controls="awards" aria-pressed="true">Awards</button>
+<button type="button" class="news-filter" data-panel="publications" aria-controls="publications" aria-pressed="false">Publications</button>
+<button type="button" class="news-filter" data-panel="conferences" aria-controls="conferences" aria-pressed="false">Conferences</button>
+<button type="button" class="news-filter" data-panel="in-the-media" aria-controls="in-the-media" aria-pressed="false">In the media</button>
+<button type="button" class="news-filter" data-panel="openings" aria-controls="openings" aria-pressed="false">Openings</button>
 </div>
+<section class="news-section" id="awards" aria-label="Awards">
 <div class="news-grid">
-<article class="news-card" data-category="Publications">
+<article class="news-card">
+<div class="news-figure news-photos">
+<a href="images/news/prize2026_jake.jpg" target="_blank">
+<img src="images/news/prize2026_jake.jpg" alt="Jacob Vogel speaking at the podium at the award ceremony" loading="lazy">
+</a>
+</div>
+<div class="news-body">
+<div class="news-meta">May 2026</div>
+<h3 class="news-title anchored">Jacob Vogel receives the Young Researcher Prize 2026</h3>
+<p class="news-text">Our PI Jacob Vogel was awarded the Young Researcher Prize 2026 by the Fondation Recherche Alzheimer, at the award ceremony held at the AD/PD meeting in Copenhagen. Congratulations, Jake!</p>
+</div>
+</article>
+<article class="news-card">
+<div class="news-figure news-photos">
+<a href="images/news/queen_silvia_prize2023_jake.jpg" target="_blank">
+<img src="images/news/queen_silvia_prize2023_jake.jpg" alt="Jacob Vogel holding flowers and a certificate, standing with Queen Silvia of Sweden and another guest" loading="lazy">
+</a>
+</div>
+<div class="news-body">
+<div class="news-credit">Photo: Yanan Li.</div>
+<div class="news-meta">Nov 2023</div>
+<h3 class="news-title anchored">Jacob Vogel receives H.M. Queen Silvia's Prize</h3>
+<p class="news-text">Jacob Vogel received H.M. Queen Silvia's Prize for a young Alzheimer's researcher, instituted by Alzheimerfonden, at a ceremony at the German Church in Stockholm. The prize recognizes his contributions to Alzheimer's research, including work suggesting four distinct types of the disease and evidence that tau can spread through the brain along neurons.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="news-section" id="publications" aria-label="Publications" hidden="">
+<div class="news-grid">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/vilkaite2026_workflow.jpg" target="_blank">
 <img src="images/news/vilkaite2026_workflow.jpg" alt="Overview of the analysis workflow, from single-cell data to robust gene clusters" loading="lazy">
@@ -362,13 +393,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="news-body">
 <div class="news-credit">Figures from Vilkaite et al., bioRxiv 2026 (CC BY-NC 4.0).</div>
-<div class="news-meta">Publications · Oct 2026</div>
-<h2 class="news-title anchored">New preprint: a coordinated multicellular response to Alzheimer's disease</h2>
+<div class="news-meta">Oct 2026</div>
+<h3 class="news-title anchored">New preprint: a coordinated multicellular response to Alzheimer's disease</h3>
 <p class="news-text">In her first PhD project, Gabriele Vilkaite built a single model integrating AD-related changes across neurons and glia, revealing a coordinated multicellular signature associated with pathology. The signature replicated in a completely independent dataset and was linked to faster cognitive decline. Congratulations, Gabi and team!</p>
 <a class="news-link" href="https://doi.org/10.64898/2026.10.19.759610" target="_blank">Read the preprint</a>
 </div>
 </article>
-<article class="news-card" data-category="Publications">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/rittmo2026_axes.jpg" target="_blank">
 <img src="images/news/rittmo2026_axes.jpg" alt="Brain maps and scatter plots relating age and AD pathology to the sensory-association and representation-executive axes" loading="lazy">
@@ -388,27 +419,60 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="news-body">
 <div class="news-credit">Figures from Rittmo et al., Nature Neuroscience 2026.</div>
-<div class="news-meta">Publications · Oct 2026</div>
-<h2 class="news-title anchored">New paper in Nature Neuroscience: aging and Alzheimer's reshape the brain along different axes</h2>
+<div class="news-meta">Oct 2026</div>
+<h3 class="news-title anchored">New paper in Nature Neuroscience: aging and Alzheimer's reshape the brain along different axes</h3>
 <p class="news-text">Led by PhD student Jonathan Rittmo, this work looks at how functional connectivity reorganizes in aging and Alzheimer's disease along distinct axes of functional brain organization. Congratulations, Jonathan and team!</p>
 <a class="news-link" href="https://doi.org/10.1038/s41593-026-02402-0" target="_blank">Read the paper</a>
 </div>
 </article>
-<article class="news-card" data-category="Publications">
+<article class="news-card">
 <div class="news-figure news-photos">
-<a href="images/news/aaic2026_lijun_poster.jpg" target="_blank">
-<img src="images/news/aaic2026_lijun_poster.jpg" alt="Lijun An next to a poster on data leakage in protein biomarker studies at AAIC 2026" loading="lazy">
+<a href="images/news/an2026_leakage_fig1.jpg" target="_blank">
+<img src="images/news/an2026_leakage_fig1.jpg" alt="Leaky and non-leaky machine-learning pipelines, with simulation results and real-world performance differences in GNPC data" loading="lazy">
 </a>
 </div>
 <div class="news-body">
-<div class="news-credit">Lijun An with a poster on this work at AAIC 2026.</div>
-<div class="news-meta">Publications · Sep 2026</div>
-<h2 class="news-title anchored">New preprint: data leakage inflates protein biomarker studies</h2>
+<div class="news-credit">Figure 1 from An et al., medRxiv 2026 (CC BY-NC-ND 4.0), shown unchanged.</div>
+<div class="news-meta">Sep 2026</div>
+<h3 class="news-title anchored">New preprint: data leakage inflates protein biomarker studies</h3>
 <p class="news-text">A new preprint led by Lijun An quantifies one common reason why proteomics biomarker studies are hard to replicate: data leakage. Even pure noise can look like a biomarker. The preprint also introduces two open tools to catch leakage, Leakly for pipelines and Plumber for manuscripts.</p>
 <a class="news-link" href="https://doi.org/10.64898/2026.09.02.26362037" target="_blank">Read the preprint</a>
 </div>
 </article>
-<article class="news-card" data-category="Conferences">
+<article class="news-card">
+<div class="news-figure news-photos">
+<a href="images/news/an2026_workflow.jpg" target="_blank">
+<img src="images/news/an2026_workflow.jpg" alt="Workflow of the ProtAIDe-Dx model, from plasma proteins through a neural network to disease probabilities and an individual risk report" loading="lazy">
+</a>
+<a href="images/news/an2026_performance.jpg" target="_blank" hidden="">
+<img src="images/news/an2026_performance.jpg" alt="Plots of diagnostic performance across conditions, with APOE, cognition and cognitive decline validation" loading="lazy">
+</a>
+<a href="images/news/an2026_subgroups.jpg" target="_blank" hidden="">
+<img src="images/news/an2026_subgroups.jpg" alt="Maps of individuals by diagnostic probability, with clusters and subgroup characteristics" loading="lazy">
+</a>
+<div class="news-photo-nav">
+<button type="button" class="news-prev" aria-label="Previous image">
+<i class="bi bi-chevron-left" aria-hidden="true"></i>
+</button>
+<span class="news-count" aria-live="polite">1 / 3</span>
+<button type="button" class="news-next" aria-label="Next image">
+<i class="bi bi-chevron-right" aria-hidden="true"></i>
+</button>
+</div>
+</div>
+<div class="news-body">
+<div class="news-credit">Figures adapted from An et al., Nature Medicine 2026 (CC BY 4.0).</div>
+<div class="news-meta">Apr 2026</div>
+<h3 class="news-title anchored">New paper in Nature Medicine: diagnosing neurodegenerative diseases from blood</h3>
+<p class="news-text">Lijun An and colleagues present ProtAIDe-Dx, an AI-proteomics model that diagnoses multiple neurodegenerative diseases from blood plasma. The model was validated for real-world clinical questions, including differential diagnosis in a memory clinic setting.</p>
+<a class="news-link" href="https://doi.org/10.1038/s41591-026-04303-y" target="_blank">Read the paper</a>
+</div>
+</article>
+</div>
+</section>
+<section class="news-section" id="conferences" aria-label="Conferences" hidden="">
+<div class="news-grid">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/aaic2026_jonathan_talk.jpg" target="_blank">
 <img src="images/news/aaic2026_jonathan_talk.jpg" alt="Jonathan Rittmo giving his talk at AAIC 2026" loading="lazy">
@@ -416,23 +480,26 @@ ul.task-list li input[type="checkbox"] {
 <a href="images/news/aaic2026_group.jpg" target="_blank" hidden="">
 <img src="images/news/aaic2026_group.jpg" alt="Yu Xiao, Jonathan Rittmo, Hannah Baumeister and Lijun An at AAIC 2026" loading="lazy">
 </a>
+<a href="images/news/aaic2026_lijun_poster.jpg" target="_blank" hidden="">
+<img src="images/news/aaic2026_lijun_poster.jpg" alt="Lijun An next to a poster on data leakage in protein biomarker studies at AAIC 2026" loading="lazy">
+</a>
 <div class="news-photo-nav">
 <button type="button" class="news-prev" aria-label="Previous image">
 <i class="bi bi-chevron-left" aria-hidden="true"></i>
 </button>
-<span class="news-count" aria-live="polite">1 / 2</span>
+<span class="news-count" aria-live="polite">1 / 3</span>
 <button type="button" class="news-next" aria-label="Next image">
 <i class="bi bi-chevron-right" aria-hidden="true"></i>
 </button>
 </div>
 </div>
 <div class="news-body">
-<div class="news-meta">Conferences · Jul 2026</div>
-<h2 class="news-title anchored">DeMON Lab at AAIC 2026</h2>
+<div class="news-meta">Jul 2026</div>
+<h3 class="news-title anchored">DeMON Lab at AAIC 2026</h3>
 <p class="news-text">Romina Zendehdel, Yu Xiao, Lijun An and Jonathan Rittmo presented the lab's work at the Alzheimer's Association International Conference, including Jonathan's talk on how age and Alzheimer's disease affect functional connectivity.</p>
 </div>
 </article>
-<article class="news-card" data-category="Conferences">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/ohbm2026_group.jpg" target="_blank">
 <img src="images/news/ohbm2026_group.jpg" alt="The DeMON Lab team outside the OHBM 2026 venue in Bordeaux" loading="lazy">
@@ -457,12 +524,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="news-body">
-<div class="news-meta">Conferences · Jun 2026</div>
-<h2 class="news-title anchored">DeMON Lab at OHBM 2026</h2>
+<div class="news-meta">Jun 2026</div>
+<h3 class="news-title anchored">DeMON Lab at OHBM 2026</h3>
 <p class="news-text">Léa Chauveau, Yu Xiao, Lijun An, Zoe Ruoyi Zhao and Jonathan Rittmo presented posters at the annual meeting of the Organization for Human Brain Mapping in Bordeaux.</p>
 </div>
 </article>
-<article class="news-card" data-category="Conferences">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/ohbm2026_yu_poster.jpg" target="_blank">
 <img src="images/news/ohbm2026_yu_poster.jpg" alt="Yu Xiao at a poster on AI for amyloid PET interpretation" loading="lazy">
@@ -470,64 +537,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="news-body">
 <div class="news-credit">Yu Xiao with a poster on this work at OHBM 2026.</div>
-<div class="news-meta">Conferences · May 2026</div>
-<h2 class="news-title anchored">Yu Xiao speaks at the EURO-PAD Symposium</h2>
+<div class="news-meta">May 2026</div>
+<h3 class="news-title anchored">Yu Xiao speaks at the EURO-PAD Symposium</h3>
 <p class="news-text">Yu Xiao shared our work on PET visual reads, including a deep learning model that aims to support amyloid PET interpretation in clinical practice, especially in borderline cases.</p>
 </div>
 </article>
-<article class="news-card" data-category="News">
-<div class="news-figure news-photos">
-<a href="images/news/adpd2026_lijun_talk.jpg" target="_blank">
-<img src="images/news/adpd2026_lijun_talk.jpg" alt="Announcement of Lijun An's GNPC-based talk at AD/PD 2026" loading="lazy">
-</a>
-</div>
-<div class="news-body">
-<div class="news-meta">News · May 2026</div>
-<h2 class="news-title anchored">Global Neurodegeneration Proteomics Consortium features Lijun and Jake</h2>
-<p class="news-text">The GNPC highlighted Lijun An and Jacob Vogel as researchers collaborating with the consortium, and how the scale and diversity of its data help test and validate AI models for Alzheimer's research.</p>
-</div>
-</article>
-<article class="news-card" data-category="News">
-<div class="news-figure news-photos">
-<a href="images/news/vilkaite2026_cohorts.jpg" target="_blank">
-<img src="images/news/vilkaite2026_cohorts.jpg" alt="Results in the ROSMAP discovery cohort and the SEA-AD validation cohort" loading="lazy">
-</a>
-</div>
-<div class="news-body">
-<div class="news-credit">Figure from Vilkaite et al., bioRxiv 2026 (CC BY-NC 4.0).</div>
-<div class="news-meta">News · May 2026</div>
-<h2 class="news-title anchored">Gabriele's PhD work featured in Technology Networks</h2>
-<p class="news-text">Technology Networks covered Gabriele Vilkaite's work on multicellular and sex-specific responses in Alzheimer's disease, with comments from Gabriele and Jacob Vogel.</p>
-<a class="news-link" href="https://www.technologynetworks.com/proteomics/articles/sex-specific-brain-changes-in-alzheimers-disease-revealed-411927" target="_blank">Read the article</a>
-</div>
-</article>
-<article class="news-card" data-category="Awards">
-<div class="news-figure news-photos">
-<a href="images/news/prize2026_jake.jpg" target="_blank">
-<img src="images/news/prize2026_jake.jpg" alt="Jacob Vogel speaking at the podium at the award ceremony" loading="lazy">
-</a>
-</div>
-<div class="news-body">
-<div class="news-meta">Awards · May 2026</div>
-<h2 class="news-title anchored">Jacob Vogel receives the Young Researcher Prize 2026</h2>
-<p class="news-text">Our PI Jacob Vogel was awarded the Young Researcher Prize 2026 by the Fondation Recherche Alzheimer, at the award ceremony held at the AD/PD meeting in Copenhagen. Congratulations, Jake!</p>
-</div>
-</article>
-<article class="news-card" data-category="Publications">
-<div class="news-figure news-photos">
-<a href="images/news/ohbm2026_lijun_poster.jpg" target="_blank">
-<img src="images/news/ohbm2026_lijun_poster.jpg" alt="Lijun An at a poster on plasma proteomics for neurodegenerative disease" loading="lazy">
-</a>
-</div>
-<div class="news-body">
-<div class="news-credit">Lijun An with a poster on this work at OHBM 2026.</div>
-<div class="news-meta">Publications · Apr 2026</div>
-<h2 class="news-title anchored">New paper in Nature Medicine: diagnosing neurodegenerative diseases from blood</h2>
-<p class="news-text">Lijun An and colleagues present ProtAIDe-Dx, an AI-proteomics model that diagnoses multiple neurodegenerative diseases from blood plasma. The model was validated for real-world clinical questions, including differential diagnosis in a memory clinic setting.</p>
-<a class="news-link" href="https://doi.org/10.1038/s41591-026-04303-y" target="_blank">Read the paper</a>
-</div>
-</article>
-<article class="news-card" data-category="Conferences">
+<article class="news-card">
 <div class="news-figure news-photos">
 <a href="images/news/adpd2026_jonathan_talk.jpg" target="_blank">
 <img src="images/news/adpd2026_jonathan_talk.jpg" alt="Jonathan Rittmo on stage at AD/PD 2026 with his title slide" loading="lazy">
@@ -549,25 +564,95 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="news-body">
-<div class="news-meta">Conferences · Mar 2026</div>
-<h2 class="news-title anchored">DeMON Lab at AD/PD 2026</h2>
+<div class="news-meta">Mar 2026</div>
+<h3 class="news-title anchored">DeMON Lab at AD/PD 2026</h3>
 <p class="news-text">Lijun An and Jonathan Rittmo gave talks at AD/PD 2026 in Copenhagen: Lijun on the AI-based diagnostic potential of plasma proteomics across 17,187 people, and Jonathan on how age and Alzheimer's disease affect functional connectivity along separate axes of brain organization.</p>
 </div>
 </article>
-<article class="news-card" data-category="Awards">
+</div>
+</section>
+<section class="news-section" id="in-the-media" aria-label="In the media" hidden="">
+<div class="news-grid">
+<article class="news-card">
 <div class="news-figure news-photos">
-<a href="images/news/queen_silvia_prize2023_jake.jpg" target="_blank">
-<img src="images/news/queen_silvia_prize2023_jake.jpg" alt="Jacob Vogel holding flowers and a certificate, standing with Queen Silvia of Sweden and another guest" loading="lazy">
+<a href="images/news/adpd2026_lijun_talk.jpg" target="_blank">
+<img src="images/news/adpd2026_lijun_talk.jpg" alt="Announcement of Lijun An's GNPC-based talk at AD/PD 2026" loading="lazy">
 </a>
 </div>
 <div class="news-body">
-<div class="news-credit">Photo: Yanan Li.</div>
-<div class="news-meta">Awards · Nov 2023</div>
-<h2 class="news-title anchored">Jacob Vogel receives H.M. Queen Silvia's Prize</h2>
-<p class="news-text">Jacob Vogel received H.M. Queen Silvia's Prize for a young Alzheimer's researcher, instituted by Alzheimerfonden, at a ceremony at the German Church in Stockholm. The prize recognizes his contributions to Alzheimer's research, including work suggesting four distinct types of the disease and evidence that tau can spread through the brain along neurons.</p>
+<div class="news-meta">May 2026</div>
+<h3 class="news-title anchored">Global Neurodegeneration Proteomics Consortium features Lijun and Jake</h3>
+<p class="news-text">The GNPC highlighted Lijun An and Jacob Vogel as researchers collaborating with the consortium, and how the scale and diversity of its data help test and validate AI models for Alzheimer's research.</p>
+</div>
+</article>
+<article class="news-card">
+<div class="news-figure news-photos">
+<a href="images/news/vilkaite2026_cohorts.jpg" target="_blank">
+<img src="images/news/vilkaite2026_cohorts.jpg" alt="Results in the ROSMAP discovery cohort and the SEA-AD validation cohort" loading="lazy">
+</a>
+</div>
+<div class="news-body">
+<div class="news-credit">Figure from Vilkaite et al., bioRxiv 2026 (CC BY-NC 4.0).</div>
+<div class="news-meta">May 2026</div>
+<h3 class="news-title anchored">Gabriele's PhD work featured in Technology Networks</h3>
+<p class="news-text">Technology Networks covered Gabriele Vilkaite's work on multicellular and sex-specific responses in Alzheimer's disease, with comments from Gabriele and Jacob Vogel.</p>
+<a class="news-link" href="https://www.technologynetworks.com/proteomics/articles/sex-specific-brain-changes-in-alzheimers-disease-revealed-411927" target="_blank">Read the article</a>
 </div>
 </article>
 </div>
+</section>
+<section class="news-section" id="openings" aria-label="Openings" hidden="">
+<p>
+Positions in the DeMON Lab are advertised through Lund University. 
+Have a question, or no position that fits? Get in touch through the 
+<a href="takepart.html">Contact</a>
+ page.
+</p>
+<div class="opening-list">
+<article class="opening-card " data-deadline="2026-11-12">
+<span class="opening-closed">Closed</span>
+<h3 class="opening-title anchored">Postdoctoral Researcher in Neurodegenerative Disease Neuroimaging</h3>
+<dl class="opening-facts">
+<dt>Position</dt>
+<dd>Postdoc, full time, fixed term (2 years)</dd>
+<dt>Location</dt>
+<dd>Biomedical Centre (BMC), Lund</dd>
+<dt>Start</dt>
+<dd>1 December 2026, or as agreed</dd>
+<dt>Apply by</dt>
+<dd>12 November 2026</dd>
+<dt>Reference</dt>
+<dd>PA2026/3011</dd>
+<dt>Contact</dt>
+<dd>Jacob Vogel</dd>
+</dl>
+<p class="opening-text">Join us to model how tau spreads through the brain in Alzheimer's disease, using large tau-PET datasets. You will process and analyse the imaging data, adapt analysis pipelines and validate the model across modalities. We are looking for someone with a doctorate in a relevant field, neuroimaging and tau-PET experience, and programming skills in Python and/or R.
+</p>
+<a class="opening-link" href="https://lu.varbi.com/en/what:job/jobID:980945/" target="_blank">Read more and apply</a>
+</article>
+<article class="opening-card is-past" data-deadline="2026-06-25">
+<span class="opening-closed">Closed</span>
+<h3 class="opening-title anchored">Assistant Researcher in Neurodegenerative Disease</h3>
+<dl class="opening-facts">
+<dt>Position</dt>
+<dd>Assistant researcher, full time, fixed term (12 months)</dd>
+<dt>Location</dt>
+<dd>Biomedical Centre (BMC), Lund</dd>
+<dt>Start</dt>
+<dd>1 September 2026, or as agreed</dd>
+<dt>Apply by</dt>
+<dd>25 June 2026</dd>
+<dt>Reference</dt>
+<dd>PA2026/1780</dd>
+<dt>Contact</dt>
+<dd>Jacob Vogel</dd>
+</dl>
+<p class="opening-text">A one-year post split equally between research and running the lab. The research half supports the lab's neuroimaging and AI projects, with room to lead a project of one's own; the other half covers hiring, purchasing, documentation, the website and communications.
+</p>
+<a class="opening-link" href="https://lu.varbi.com/en/what:job/jobID:939073/" target="_blank">Read more and apply</a>
+</article>
+</div>
+</section>
 </div>
 </div>
 <div class="news-more">
@@ -575,19 +660,42 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <script>
-// Category buttons: show only the cards of the chosen category.
+// Mark positions as closed in the visitor's browser the day after their
+// deadline, since the site is only rebuilt now and then.
+(function () {
+  var d = new Date();
+  var today = d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+  document.querySelectorAll(".opening-card").forEach(function (card) {
+    if (card.dataset.deadline < today) card.classList.add("is-past");
+  });
+})();
+
+// Subtabs: show only the chosen section. A link to news.html#openings (or any
+// other section id) opens that section directly.
 (function () {
   var buttons = document.querySelectorAll(".news-filter");
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var chosen = button.dataset.category;
-      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === button); });
-      document.querySelectorAll(".news-card").forEach(function (card) {
-        card.hidden = chosen !== "All" && card.dataset.category !== chosen;
-      });
+  function show(id) {
+    var found = false;
+    buttons.forEach(function (b) {
+      var on = b.dataset.panel === id;
+      b.setAttribute("aria-pressed", on);
+      document.getElementById(b.dataset.panel).hidden = !on;
+      found = found || on;
+    });
+    return found;
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      show(b.dataset.panel);
+      history.replaceState(null, "", "#" + b.dataset.panel);
     });
   });
+  if (location.hash) show(location.hash.slice(1));
+})();
 
+(function () {
   // Image buttons: move through a card's images, starting again after the last.
   document.querySelectorAll(".news-photos").forEach(function (box) {
     var photos = box.querySelectorAll("a");

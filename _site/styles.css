@@ -775,9 +775,19 @@ button.spot-head:hover .spot-title {
 }
 
 .research-page h3.software-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+/* the name follows as text, so the logo itself needs no alt text */
+.software-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .software-card p {
@@ -836,16 +846,42 @@ button.spot-head:hover .spot-title {
 .pub-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 28px;
+  column-gap: 28px;
   margin-bottom: 3rem;
 }
 
+/* Cards in a row share their row heights (subgrid), so figures, credit lines,
+   names, titles and buttons line up across the row even when one card has a
+   longer credit or title. The six rows are: figure, credit, names, title,
+   summary, button. */
 .pub-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  margin-bottom: 28px;
   border-radius: 14px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
   overflow: hidden;
+}
+
+.pub-body {
+  display: contents;
+}
+
+.pub-body > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pub-body > .pub-credit {
+  margin-top: 18px;
+}
+
+.pub-body > .pub-link {
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 20px;
 }
 
 /* images fit a 4:3 box; white shows behind figures in dark mode too */
@@ -866,13 +902,6 @@ button.spot-head:hover .spot-title {
   margin-bottom: 8px;
   font-size: 0.75rem;
   opacity: 0.75;
-}
-
-.pub-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 18px 20px 20px;
 }
 
 .pub-head {
@@ -902,7 +931,7 @@ button.spot-head:hover .spot-title {
 }
 
 .pubs-page h2.pub-title {
-  margin: 16px 0 10px;
+  margin: 16px 20px 10px;
   padding: 0;
   border: 0;
   font-size: 1.05rem;
@@ -954,6 +983,7 @@ button.spot-head:hover .spot-title {
   margin: 0 auto;
 }
 
+/* subtabs at the top: Awards, Publications, Conferences, In the media, Openings */
 .news-filters {
   display: flex;
   flex-wrap: wrap;
@@ -981,6 +1011,10 @@ button.spot-head:hover .spot-title {
   color: #fff;
 }
 
+.news-section[hidden] {
+  display: none;
+}
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -994,10 +1028,6 @@ button.spot-head:hover .spot-title {
   border-radius: 14px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
   overflow: hidden;
-}
-
-.news-card[hidden] {
-  display: none;
 }
 
 /* all images are 1200 x 900 (4:3), so they fill the box exactly; white shows
@@ -1019,10 +1049,12 @@ button.spot-head:hover .spot-title {
   display: none;
 }
 
+/* contain, not cover: 4:3 photos still fill the box, and a figure in another
+   shape is shown whole (its licence may not allow cropping) */
 .news-figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .news-photo-nav {
@@ -1072,7 +1104,7 @@ button.spot-head:hover .spot-title {
   opacity: 0.75;
 }
 
-.news-page h2.news-title {
+.news-page h3.news-title {
   margin: 8px 0 10px;
   padding: 0;
   border: 0;
@@ -1118,4 +1150,106 @@ button.spot-head:hover .spot-title {
 .news-more .btn-primary:hover {
   background-color: #8F3245;
   border-color: #8F3245;
+}
+
+/* =========================
+   OPENINGS (last section of the News page)
+   ========================= */
+
+.opening-list {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
+  margin: 1.5rem 0 3rem;
+}
+
+/* past positions: grey edge and "Closed" label (the Lund University ad is
+   no longer open for applications) */
+.opening-closed {
+  display: none;
+}
+
+.opening-card.is-past .opening-closed {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(128, 128, 128, 0.18);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.opening-card.is-past {
+  border-left-color: rgba(128, 128, 128, 0.5);
+  box-shadow: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.opening-card {
+  padding: 24px 28px;
+  border-radius: 14px;
+  border-left: 5px solid #A63A50;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+}
+
+.news-page h3.opening-title {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* label / value pairs side by side; stacked on phones */
+.opening-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 18px;
+  margin: 0 0 14px;
+}
+
+.opening-facts dt {
+  font-weight: 700;
+}
+
+.opening-facts dd {
+  margin: 0;
+}
+
+.opening-text {
+  line-height: 1.6;
+}
+
+.opening-link {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: #A63A50;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.opening-link:hover {
+  background: #8F3245;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .opening-card {
+    padding: 20px;
+  }
+
+  .opening-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .opening-facts dd {
+    margin-bottom: 6px;
+  }
 }
