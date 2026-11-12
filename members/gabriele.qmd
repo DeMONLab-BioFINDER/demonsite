@@ -6,7 +6,13 @@ about:
   id: hero-heading
   template: trestles
   image: images/gabrieled.jpg
-
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/gabriele-de-leonardis-967b12168/
+    - icon: github
+      text: GitHub
+      href: https://github.com/gabridele
 ---
 
 :::{#hero-heading}

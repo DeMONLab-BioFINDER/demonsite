@@ -6,7 +6,10 @@ about:
   id: hero-heading
   template: trestles
   image: images/gabi.png
-
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/Gabi86
 ---
 
 :::{#hero-heading}

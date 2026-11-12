@@ -6,6 +6,16 @@ about:
   id: hero-heading
   template: trestles
   image: images/Narjes.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/narjes-goshtasbi-505315199/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=3b_DJpsAAAAJ&hl=en
+    - icon: github
+      text: GitHub
+      href: https://github.com/narjesgoshtasbi
 ---
 
 :::{#hero-heading}

@@ -6,7 +6,13 @@ about:
   id: hero-heading
   template: trestles
   image: images/romina.png
-
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/rominazendehdel/
+    - icon: github
+      text: GitHub
+      href: https://github.com/Romina-Ze
 ---
 
 :::{#hero-heading}

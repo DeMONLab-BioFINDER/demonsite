@@ -6,6 +6,16 @@ about:
   id: hero-heading
   template: trestles
   image: images/xiaoyu.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/yu-xiao-34006a170/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=0b5LOrYAAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/xiaoyucaly
 ---
 
 :::{#hero-heading}

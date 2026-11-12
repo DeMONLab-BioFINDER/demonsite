@@ -6,6 +6,16 @@ about:
   id: hero-heading
   template: trestles
   image: images/lea.png
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/léa-chauveau-7159283a3/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=r-iD8O0AAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/leaach
 ---
 
 :::{#hero-heading}

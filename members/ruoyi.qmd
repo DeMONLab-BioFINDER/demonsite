@@ -6,7 +6,13 @@ about:
   id: hero-heading
   template: trestles
   image: images/ruoyi.jpg
-
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/zoe-ruoyi-zhao-3592b6226/
+    - icon: github
+      text: GitHub
+      href: https://github.com/Zoe-Chao
 ---
 
 :::{#hero-heading}

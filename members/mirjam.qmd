@@ -6,6 +6,13 @@ about:
   id: hero-heading
   template: trestles
   image: images/mirjam.jpeg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/mirjamcmmüller/
+    - icon: github
+      text: GitHub
+      href: https://github.com/mirjamcmmueller
 ---
 
 :::{#hero-heading}

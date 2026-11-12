@@ -1,0 +1,31 @@
+---
+title: "Rosa Aghdam"
+subtitle: "Assistant Researcher"
+category: "Assistant Researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/rosa.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/rosa-aghdam/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=y6uIjXEAAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/rosaaghdam
+---
+
+:::{#hero-heading}
+
+Rosa is a data scientist and statistician with a PhD in Mathematical Statistics and more than nine years of experience in data science research for bioinformatics. She is an assistant researcher in the DeMON Lab at Lund University.
+
+Her research has covered gene regulatory networks, Bayesian networks, hidden Markov models and statistical modelling, with applications in cancer genomics, drug repurposing for COVID-19, and microbiome studies of the gut, lakes and soil. In the DeMON Lab, she is now working on identifying tau subtypes in Alzheimer's disease.
+
+She works mainly in Python (scikit-learn, pandas, NumPy, TensorFlow, Keras), R and MATLAB.
+
+Outside the lab, Rosa loves spending time with her daughter, being in the mountains, and meeting people and hearing about their cultures. She enjoys cooking and trying new food, watching American TV series, and reading books and poetry in her native Persian. She also follows the news, perhaps a little too closely.
+
+:::

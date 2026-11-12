@@ -6,6 +6,16 @@ about:
   id: hero-heading
   template: trestles
   image: images/hannah.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hannah-baumeister-815199137/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=fqU2UX0AAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/hannahbaumeister
 ---
 
 :::{#hero-heading}
