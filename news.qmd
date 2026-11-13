@@ -290,7 +290,7 @@ tagList(
       Map(tab_button, headings, first)),
   Map(news_panel, sections, first[seq_along(sections)]),
   panel("Openings", FALSE,
-    tags$p("Positions in the DeMON Lab are advertised through Lund University. ",
+    tags$p(class = "opening-intro", "Positions in the DeMON Lab are advertised through Lund University. ",
            "Have a question, or no position that fits? Get in touch through the ",
            a(href = "takepart.html", "Contact"), " page."),
     div(class = "opening-list", lapply(openings, opening_card)))
