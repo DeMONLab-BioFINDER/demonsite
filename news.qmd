@@ -88,6 +88,14 @@ news:
       Alzheimer's Association International Conference, including Jonathan's talk on how age and
       Alzheimer's disease affect functional connectivity."
 
+  - title: "Lijun An receives his first grant, on agentic AI for biomarker discovery"
+    date: "Jul 2026"
+    category: Awards
+    text: "Lijun An received his first grant, on agentic AI for biomarker discovery, funded by the
+      Biswas Family Foundation. Congratulations, Lijun!"
+    link: https://www.biswasfamilyfoundation.org/science/fast-grants
+    link_text: Read about the grants
+
   - title: "DeMON Lab at OHBM 2026"
     date: "Jun 2026"
     category: Conferences
@@ -161,6 +169,13 @@ news:
     text: "Lijun An and Jonathan Rittmo gave talks at AD/PD 2026 in Copenhagen: Lijun on the AI-based
       diagnostic potential of plasma proteomics across 17,187 people, and Jonathan on how age and
       Alzheimer's disease affect functional connectivity along separate axes of brain organization."
+
+  - title: "Lijun An receives the AD/PD Junior Faculty Award"
+    date: "Mar 2026"
+    category: Awards
+    text: "Lijun An received the AD/PD Junior Faculty Award. Congratulations, Lijun!"
+    link: https://adpd.kenes.com/junior-faculty-awards/
+    link_text: Read about the award
 
   - title: "Jacob Vogel receives H.M. Queen Silvia's Prize"
     date: "Nov 2023"
@@ -237,7 +252,7 @@ photo_gallery <- function(photos) {
 card <- function(n) {
   tags$article(
     class = "news-card",
-    photo_gallery(n$photos),
+    if (length(n$photos) > 0) photo_gallery(n$photos),
     div(class = "news-body",
         if (!is.null(n$credit)) div(class = "news-credit", n$credit),
         div(class = "news-meta", n$date),

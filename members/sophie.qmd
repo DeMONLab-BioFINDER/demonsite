@@ -1,0 +1,27 @@
+---
+title: "Sophie Mastenbroek"
+subtitle: "Assistant Researcher"
+category: "Assistant Researcher"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/sophie_profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sophie-mastenbroek-472553199/
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=T4HzFjYAAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/sophiemastenbroek
+---
+
+:::{#hero-heading}
+
+Sophie joined the DeMON Lab in 2026 as an assistant researcher. Her PhD at the Amsterdam UMC and Lund University focused on heterogeneity in neurodegenerative diseases. Her main interests are disease progression modeling to estimate the timing, sequence, and regional distribution of pathological changes and variability therein, and the effects of co-pathologies on clinical progression.
+
+Outside the lab, Sophie can be found on hiking trails, deep in a good book, or working through her ever-expanding collection of crochet projects.
+
+:::

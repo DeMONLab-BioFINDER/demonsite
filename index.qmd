@@ -120,11 +120,11 @@ div(class = "latest-grid",
 
 <div class="logo-row">
 
-[![](images/lundolog.png)](https://lu.se/)
+[![](images/lundolog.png){loading="lazy"}](https://lu.se/)
 
-[![](images/scilifelab_logo.png)](https://scilifelab.se/)
+[![](images/scilifelab_logo.png){loading="lazy"}](https://scilifelab.se/)
 
-[![](images/MultiPark-RGB.png)](https://www.multipark.lu.se/)
+[![](images/MultiPark-RGB.png){loading="lazy"}](https://www.multipark.lu.se/)
 
 </div>
 
