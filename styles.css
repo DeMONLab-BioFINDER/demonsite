@@ -1262,3 +1262,35 @@ button.spot-head:hover .spot-title {
     margin-bottom: 6px;
   }
 }
+
+
+/* =========================
+   TOP MENU: ARROW NEXT TO "RESEARCH PUBLICATIONS"
+   ========================= */
+
+/* "Research Publications" is a normal link (to Highlights). The arrow beside it
+   opens "All publications". On wide screens only the arrow shows, snug against the
+   link; the words stay for screen readers and for the phone menu. */
+@media (min-width: 992px) {
+  .navbar-nav .menu-arrow-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .navbar-nav > .nav-item:has(+ .nav-item .menu-arrow-label) > .nav-link {
+    padding-right: 0.1rem;
+  }
+
+  .navbar-nav > .nav-item > .nav-link.dropdown-toggle:has(.menu-arrow-label) {
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar-nav > .nav-item > .nav-link.dropdown-toggle:has(.menu-arrow-label)::after {
+    margin-left: 0;
+  }
+}

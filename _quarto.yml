@@ -14,10 +14,11 @@ website:
         text: Home
       - members.qmd
       - projects.qmd
-      - text: Research Publications
+      - href: research-publications.qmd
+        text: Research Publications
+      # the arrow next to "Research Publications"; it opens the full list
+      - text: '<span class="menu-arrow-label">Publication pages</span>'
         menu:
-          - href: research-publications.qmd
-            text: Highlights
           - href: papers.qmd
             text: All publications
       # - href: blog.qmd
