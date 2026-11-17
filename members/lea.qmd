@@ -13,6 +13,9 @@ about:
     - icon: mortarboard-fill
       text: Google Scholar
       href: https://scholar.google.com/citations?user=r-iD8O0AAAAJ
+    - icon: twitter-x
+      text: X
+      href: https://x.com/LeawChauveau
     - icon: github
       text: GitHub
       href: https://github.com/leaach

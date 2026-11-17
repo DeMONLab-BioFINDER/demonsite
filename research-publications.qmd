@@ -10,6 +10,23 @@ toc: false
 # Publications page") for what each field means.
 # ---------------------------------------------------------------------------
 papers:
+  - lead: Romina Zendehdel
+    photo: members/images/round/romina.jpg
+    page: members/romina.html
+    journal: bioRxiv
+    date: "Nov 10, 2026"
+    title: "Beyond organ age gaps: comparing plasma proteomic metrics of organ biology in relation to brain structure and neurodegenerative disease"
+    url: https://doi.org/10.64898/2026.11.09.765339
+    summary: "Neurodegenerative diseases mainly affect the brain, but biological changes throughout
+      the body may matter too. Using plasma proteomics from over 50,000 UK Biobank participants, we
+      compared three organ-level proteomic metrics (organ age gap, PC1 and PLS1) in relation to brain
+      structure and disease risk. Aging of specific organs was linked to thinning of specific brain
+      regions. Organ age gaps predicted incident neurological disease best of the three, but added
+      only modestly to prediction models."
+    figure: images/news/zendehdel2026_workflow.jpg
+    alt: "Study overview: UK Biobank cohort and data, three organ-level proteomic metrics, and their associations with brain structure and disease"
+    credit: "Figure from this paper (CC BY-NC 4.0)."
+
   - lead: Gabriele Vilkaite
     photo: members/images/round/gabi.jpg
     page: members/gabri.html

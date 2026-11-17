@@ -23,6 +23,20 @@ sections:
     heading: "In the media"
 
 news:
+  - title: "New preprint: how aging beyond the brain relates to neurodegenerative disease"
+    date: "Nov 2026"
+    category: Publications
+    photos:
+      - {src: images/news/zendehdel2026_workflow.jpg, alt: "Study overview: UK Biobank cohort and data, three organ-level proteomic metrics, and their associations with brain structure and disease"}
+      - {src: images/news/zendehdel2026_brainmaps.jpg, alt: "Brain maps of regions linked to brain, stomach, artery and immune proteomic metrics"}
+    credit: "Figures from Zendehdel et al., bioRxiv 2026 (CC BY-NC 4.0)."
+    text: "A new preprint led by Romina Zendehdel, which began as her master's thesis, uses plasma
+      proteomics from over 50,000 UK Biobank participants to show how the biological aging of
+      different organs relates to brain structure and neurodegenerative disease risk. Congratulations,
+      Romina and team!"
+    link: https://doi.org/10.64898/2026.11.09.765339
+    link_text: Read the preprint
+
   - title: "New preprint: a coordinated multicellular response to Alzheimer's disease"
     date: "Oct 2026"
     category: Publications

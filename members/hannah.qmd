@@ -13,6 +13,9 @@ about:
     - icon: mortarboard-fill
       text: Google Scholar
       href: https://scholar.google.com/citations?user=fqU2UX0AAAAJ
+    - icon: globe
+      text: Homepage
+      href: https://hannahbaumeister.com
     - icon: github
       text: GitHub
       href: https://github.com/hannahbaumeister
