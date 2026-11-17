@@ -205,10 +205,37 @@ body:has(.news-page) .quarto-title h1.title::after {
   color: #8F3245;
 }
 
-/* the email address under "Theses and internships" */
-.contact-email {
-  font-size: 1.15rem;
+/* the email buttons under "Theses and internships" (same look as the home page
+   "Find us here" buttons) */
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid #A63A50;
+  border-radius: 999px;
+  background: transparent;
+  color: #A63A50;
+  font: inherit;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  background: #A63A50;
+  color: #fff;
+}
+
+.contact-status {
+  min-height: 1.5em;
+  font-size: 0.95rem;
 }
 
 /* the Contact link above the openings, in the same red */

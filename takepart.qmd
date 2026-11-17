@@ -19,23 +19,48 @@ Find us also on:
 Looking for a master's thesis or internship? Send us an email with your CV and we will get back to you.
 
 ```{=html}
-<p class="contact-email"><a id="contact-email" href="#"><i class="bi bi-envelope-fill"></i> <span>Email us</span></a></p>
-<noscript>Please turn on JavaScript to see our email address, or find us on LinkedIn above.</noscript>
+<p class="contact-actions">
+<button type="button" id="contact-email" class="contact-button"><i class="bi bi-envelope-fill"></i> Email us</button>
+<button type="button" id="contact-copy" class="contact-button"><i class="bi bi-clipboard"></i> Copy our email address</button>
+</p>
+<p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+<noscript>Please turn on JavaScript to use these buttons, or find us on LinkedIn above.</noscript>
 <script>
-// The address is not in the page until a person clicks "Email us": it is put
-// together at that moment, then the email app opens. Programs that collect
-// addresses from websites read the page but do not click, so they never see it.
+// Our address is never written on the page. It is put together only when someone
+// clicks a button, and then it goes straight to their email app or clipboard.
+// Programs that collect addresses from websites do not click buttons.
 (function () {
-  var link = document.getElementById("contact-email");
-  link.addEventListener("click", function (e) {
-    if (link.dataset.shown === "1") return;
-    e.preventDefault();
-    var address = "demonlab.lund" + "@" + "gmail.com";
-    link.href = "mailto:" + address + "?subject=" +
+  function address() { return "demonlab.lund" + "@" + "gmail.com"; }
+  var status = document.getElementById("contact-status");
+
+  document.getElementById("contact-email").addEventListener("click", function () {
+    window.location.href = "mailto:" + address() + "?subject=" +
       encodeURIComponent("Master's thesis or internship application");
-    link.querySelector("span").textContent = address;
-    link.dataset.shown = "1";
-    window.location.href = link.href;
+    status.textContent = "If your email app did not open, use the copy button and paste the address into your email.";
+  });
+
+  document.getElementById("contact-copy").addEventListener("click", function () {
+    var failed = "Sorry, we could not copy it. Please try the Email us button.";
+    var copied = "Copied! Paste it into your email.";
+
+    // older way of copying, for browsers that refuse the modern one
+    function copyOldWay() {
+      var box = document.createElement("textarea");
+      box.value = address();
+      box.setAttribute("readonly", "");
+      box.style.position = "fixed";
+      box.style.opacity = "0";
+      document.body.appendChild(box);
+      box.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (err) { ok = false; }
+      document.body.removeChild(box);
+      status.textContent = ok ? copied : failed;
+    }
+
+    if (!navigator.clipboard || !navigator.clipboard.writeText) { copyOldWay(); return; }
+    navigator.clipboard.writeText(address()).then(
+      function () { status.textContent = copied; }, copyOldWay);
   });
 })();
 </script>
