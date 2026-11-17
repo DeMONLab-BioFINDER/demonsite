@@ -69,11 +69,19 @@ We are committed to open and reproducible science, FAIR data principles, and the
 ```{r latest, echo=FALSE}
 # Reads the lists on the Research Publications and News pages, so nothing here
 # needs editing by hand: the newest paper is the first entry in `papers`, the
-# news item is the one marked `home: true` (or the newest if none is marked).
+# news item is the one marked `home: true` (or the newest one with a photo if none is marked).
 library(htmltools)
 
 papers <- rmarkdown::yaml_front_matter("research-publications.qmd")$papers
 news <- rmarkdown::yaml_front_matter("news.qmd")$news
+
+# newest first, as on the News page ("Nov 2026" becomes year * 12 + month)
+month_key <- function(d) {
+  parts <- strsplit(trimws(d), " +")[[1]]
+  as.integer(parts[2]) * 12 + match(tolower(substr(parts[1], 1, 3)), tolower(month.abb))
+}
+news <- news[order(-vapply(news, function(n) month_key(n$date), numeric(1)))]
+news <- Filter(function(n) length(n$photos) > 0, news)  # the card needs a picture
 
 paper <- papers[[1]]
 marked <- Filter(function(n) isTRUE(n$home), news)

@@ -110,19 +110,26 @@ order listed (newest first). To add, remove or edit a paper, change only that li
 
 The News page (`news.qmd`) is written by hand from the lab's LinkedIn posts: LinkedIn does not
 update it automatically. One card is built per entry in the `news` list in the page's front
-matter, in the order listed (newest first). To add news, add an entry at the top of that list.
+matter. The cards are sorted by `date`, newest first, whatever order they are written in, so a new
+entry can go anywhere in the list (items from the same month keep their order). The date must look
+like `Nov 2026`: the build stops with a message if it does not.
 
 | Field | What it is |
 |---|---|
 | `title`, `date`, `text` | Headline, month and year, and a few sentences |
 | `category` | Which subtab the item appears under: `Awards`, `Publications`, `Conferences` or `News` (shown as "In the media"). The subtabs and their order are set in the `sections` list; Openings is always last |
-| `photos` | One or more images: a list of `src` and `alt`, shown one at a time with buttons |
+| `photos` | Optional. One or more images: a list of `src` and `alt`, shown one at a time with buttons. An item with no photo shows the lab logo in a box of the same size |
+| `fit` | Optional. `fit: figure` shows the images whole in a taller (4:3) box instead of cropping them. Use it for paper figures and slides; every item in the Publications subtab does this by itself |
+| `fit: portrait` | Optional. For a tall photo (for example a team portrait): it is shown whole, centred on a blurred copy of itself, instead of being cropped to the wide box |
+| `focus` | Optional. Where the crop of a photo is centred, as `"50% 20%"` (across, down). The default is `"50% 30%"`; a smaller second number shows more of the top |
 | `credit` | Optional. Credit line or short description of the images |
 | `link`, `link_text` | Optional. Button linking to the paper or article |
 | `home` | Optional. `home: true` shows this item on the Home page. Keep it on one item only |
 
-Images go in `images/news/`, all as JPEG at 1200 x 900 pixels (4:3). Before adding one, check that
-it shows no private details, such as a phone number on a poster, and that its licence allows reuse.
+Images go in `images/news/` as JPEG, no wider than 1200 pixels. Photos are cropped to a wide
+2:1 box, so keep the people and the subject in the middle; paper figures (see `fit`) are not cropped.
+Before adding one, check that it shows no private details, such as a phone number on a poster, and
+that its licence allows reuse.
 
 ## Openings (on the News page)
 

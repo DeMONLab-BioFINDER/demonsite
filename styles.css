@@ -1082,10 +1082,15 @@ button.spot-head:hover .spot-title {
    behind figures in dark mode too */
 .news-figure {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   margin: 0;
   background: #fff;
+}
+
+/* paper figures keep the taller box and are shown whole */
+.news-figure.is-figure {
+  aspect-ratio: 4 / 3;
 }
 
 .news-figure a {
@@ -1097,12 +1102,58 @@ button.spot-head:hover .spot-title {
   display: none;
 }
 
-/* contain, not cover: 4:3 photos still fill the box, and a figure in another
-   shape is shown whole (its licence may not allow cropping) */
+/* photos are cropped to the wide box (--focus moves the crop); figures are shown
+   whole, because their licence may not allow cropping */
 .news-figure img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: var(--focus, 50% 30%);
+}
+
+.news-figure.is-figure img {
   object-fit: contain;
+}
+
+/* a tall photo shown whole, centred on a blurred copy of itself (--bg is set in news.qmd) */
+.news-figure.is-portrait {
+  background: transparent;
+}
+
+.news-figure.is-portrait::before {
+  content: "";
+  position: absolute;
+  inset: -24px;
+  background: var(--bg) center / cover;
+  filter: blur(22px);
+  opacity: 0.85;
+}
+
+.news-figure.is-portrait a {
+  position: relative;
+}
+
+.news-figure.is-portrait img {
+  object-fit: contain;
+}
+
+/* a news item with no photo: the lab logo on a soft tint, same box size */
+.news-figure.is-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, #A63A50 9%, #fff);
+}
+
+.quarto-dark .news-figure.is-empty {
+  background: color-mix(in srgb, #A63A50 22%, #222);
+}
+
+.news-figure.is-empty img {
+  width: auto;
+  height: 45%;
+  object-fit: contain;
+  opacity: 0.85;
 }
 
 .news-photo-nav {
