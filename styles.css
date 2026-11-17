@@ -205,6 +205,12 @@ body:has(.news-page) .quarto-title h1.title::after {
   color: #8F3245;
 }
 
+/* the email address under "Theses and internships" */
+.contact-email {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
 /* the Contact link above the openings, in the same red */
 .opening-intro a {
   color: #A63A50;

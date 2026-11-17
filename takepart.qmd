@@ -16,121 +16,32 @@ Find us also on:
 
 ## Theses and internships
 
-Looking for a master's thesis or internship? Fill in the form below with your CV and we will get back to you.
-
-For PhD and postdoc positions, please apply through our [Openings](news.html#openings) page. Thank you!
+Looking for a master's thesis or internship? Send us an email with your CV and we will get back to you.
 
 ```{=html}
-<!-- Netlify Forms: Netlify finds this form when the site is deployed, stores
-     each application (with the CV) and emails it to the address set in the
-     Netlify dashboard. It does not send anything from the local preview. -->
-<div id="apply-thanks" class="apply-thanks" hidden>
-  <strong>Thank you for your application!</strong> We have received it and will get back to you.
-</div>
-
-<form name="join-the-lab" method="POST" action="/takepart.html?applied=1"
-      data-netlify="true" netlify-honeypot="bot-field"
-      enctype="multipart/form-data" class="apply-form" id="apply-form">
-  <input type="hidden" name="form-name" value="join-the-lab">
-  <input type="hidden" name="subject" data-remove-prefix value="New application to the DeMON Lab">
-  <p class="apply-hidden"><label>Leave this empty: <input name="bot-field"></label></p>
-
-  <div class="apply-grid">
-    <label>Full name *
-      <input type="text" name="name" required autocomplete="name">
-    </label>
-    <label>Email *
-      <input type="email" name="email" required autocomplete="email">
-    </label>
-    <label>University / institution *
-      <input type="text" name="university" required>
-    </label>
-    <label>Major / field of study *
-      <input type="text" name="major" required placeholder="e.g. Bioinformatics, Statistics">
-    </label>
-    <label>Current degree level *
-      <select name="degree" required>
-        <option value="">Choose…</option>
-        <option>Bachelor student</option>
-        <option>Master student</option>
-        <option>PhD student</option>
-        <option>PhD graduate</option>
-        <option>Other</option>
-      </select>
-    </label>
-    <label>What would you like to apply for? *
-      <select name="position" required>
-        <option value="">Choose…</option>
-        <option>Bachelor project / thesis</option>
-        <option>Master project / thesis</option>
-        <option>Internship</option>
-        <option>Research assistant</option>
-        <option>Visiting researcher</option>
-        <option>Other</option>
-      </select>
-    </label>
-    <label>Preferred start date
-      <input type="month" name="start">
-    </label>
-    <label>Expected duration
-      <select name="duration">
-        <option value="">Choose…</option>
-        <option>Less than 3 months</option>
-        <option>3–6 months</option>
-        <option>6–12 months</option>
-        <option>More than 12 months</option>
-      </select>
-    </label>
-  </div>
-
-  <fieldset class="apply-interests">
-    <legend>Research interests</legend>
-    <label><input type="checkbox" name="interests" value="PET"> PET</label>
-    <label><input type="checkbox" name="interests" value="fMRI"> fMRI</label>
-    <label><input type="checkbox" name="interests" value="Omics"> Omics</label>
-    <label><input type="checkbox" name="interests" value="AI / machine learning"> AI / machine learning</label>
-    <label><input type="checkbox" name="interests" value="Other"> Other</label>
-  </fieldset>
-
-  <label>Programming skills
-    <input type="text" name="skills" placeholder="e.g. Python, R, MATLAB">
-  </label>
-  <label>Why do you want to join the DeMON Lab? *
-    <textarea name="motivation" rows="6" required maxlength="2000"
-              placeholder="A few sentences about your background, interests and what you would like to work on"></textarea>
-  </label>
-  <label>LinkedIn, Google Scholar or website
-    <input type="url" name="profile" placeholder="https://">
-  </label>
-  <label>CV (PDF or Word, max 8 MB) *
-    <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
-  </label>
-  <label class="apply-consent">
-    <input type="checkbox" name="consent" value="yes" required>
-    I agree that the DeMON Lab stores the information and CV I send, only to review my application and contact me. *
-  </label>
-
-  <button type="submit" class="apply-submit">Submit application</button>
-</form>
-
+<p class="contact-email"><a id="contact-email" href="#"><i class="bi bi-envelope-fill"></i> <span>Email us</span></a></p>
+<noscript>Please turn on JavaScript to see our email address, or find us on LinkedIn above.</noscript>
 <script>
-// Netlify returns visitors to this page with ?applied=1 after a successful
-// submission: show the thank-you message instead of the form.
-if (new URLSearchParams(window.location.search).get("applied") === "1") {
-  document.getElementById("apply-form").hidden = true;
-  document.getElementById("apply-thanks").hidden = false;
-}
-
-// CVs larger than Netlify's 8 MB limit are refused before sending.
-document.getElementById("apply-form").addEventListener("submit", function (e) {
-  var file = this.querySelector('input[name="cv"]').files[0];
-  if (file && file.size > 8 * 1024 * 1024) {
-    e.preventDefault();
-    alert("Your CV is larger than 8 MB. Please upload a smaller file.");
-  }
-});
+// The address is put together here, not written in the page, so that programs
+// collecting email addresses from websites do not find it.
+(function () {
+  var address = "demonlab.lund" + "@" + "gmail.com";
+  var link = document.getElementById("contact-email");
+  link.href = "mailto:" + address + "?subject=" +
+    encodeURIComponent("Master's thesis or internship application");
+  link.querySelector("span").textContent = address;
+})();
 </script>
 ```
+
+In your email, please tell us:
+
+- your name, university and degree level,
+- what you would like to apply for (for example a master's thesis or an internship),
+- when you would like to start and for how long,
+- a few lines about your interests, with your CV attached as a PDF.
+
+For PhD and postdoc positions, please apply through our [Openings](news.html#openings) page. Thank you!
 
 ---
 
