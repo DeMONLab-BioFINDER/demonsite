@@ -334,14 +334,21 @@ ul.task-list li input[type="checkbox"] {
 <p class="contact-email"><a id="contact-email" href="#"><i class="bi bi-envelope-fill"></i> <span>Email us</span></a></p>
 <noscript>Please turn on JavaScript to see our email address, or find us on LinkedIn above.</noscript>
 <script>
-// The address is put together here, not written in the page, so that programs
-// collecting email addresses from websites do not find it.
+// The address is not in the page until a person clicks "Email us": it is put
+// together at that moment, then the email app opens. Programs that collect
+// addresses from websites read the page but do not click, so they never see it.
 (function () {
-  var address = "demonlab.lund" + "@" + "gmail.com";
   var link = document.getElementById("contact-email");
-  link.href = "mailto:" + address + "?subject=" +
-    encodeURIComponent("Master's thesis or internship application");
-  link.querySelector("span").textContent = address;
+  link.addEventListener("click", function (e) {
+    if (link.dataset.shown === "1") return;
+    e.preventDefault();
+    var address = "demonlab.lund" + "@" + "gmail.com";
+    link.href = "mailto:" + address + "?subject=" +
+      encodeURIComponent("Master's thesis or internship application");
+    link.querySelector("span").textContent = address;
+    link.dataset.shown = "1";
+    window.location.href = link.href;
+  });
 })();
 </script>
 <p>In your email, please tell us:</p>
