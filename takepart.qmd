@@ -14,9 +14,9 @@ Find us also on:
 
 ---
 
-## Theses and internships
+## Join the DeMON Lab
 
-Looking for a master's thesis or internship? Send us an email with your CV and we will get back to you.
+Looking for a **master's project**, **thesis** or **internship**? Send us an email with your CV and we will get back to you.
 
 ```{=html}
 <p class="contact-actions">
@@ -73,7 +73,7 @@ In your email, please tell us:
 - when you would like to start and for how long,
 - a few lines about your interests, with your CV attached as a PDF.
 
-For PhD and postdoc positions, please apply through our [Openings](news.html#openings) page. Thank you!
+For **PhD** and **postdoc** positions, please apply through our [Openings](news.html#openings) page. Thank you!
 
 ---
 
