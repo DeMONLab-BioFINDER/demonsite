@@ -250,6 +250,7 @@ edges <- data.frame(
 ```{r wc, echo=FALSE, message=FALSE}
 #| layout-ncol: 2
 #| fig-dpi: 72
+#| dev.args: !expr list(bg = "transparent")
 
 library(rentrez)
 library(xml2)
@@ -278,7 +279,9 @@ ggplot(top_terms, aes(label = term, size = beta, alpha = beta, color = color)) +
   scale_alpha_continuous(range = c(0.85, 1)) +
   scale_color_identity() +
   theme(
-      strip.text.x = element_blank()
+      strip.text.x = element_blank(),
+      plot.background = element_rect(fill = NA, colour = NA),
+      panel.background = element_rect(fill = NA, colour = NA)
       )
 
 # The network stays fixed (no dragging or zooming) so it cannot be moved out of
@@ -334,11 +337,19 @@ reactable(pub_data %>% select(-Auth, -Abstract, -pmid, -doi, -Type, -main_auth),
           defaultPageSize = 20,
           pageSizeOptions = c(10, 20, 50, 100),
           defaultColDef = colDef(
-            style = list(fontSize = "17px", color = "#000")
+            style = list(fontSize = "17px")
           ),
           theme = reactableTheme(
+            color = "inherit",
+            backgroundColor = "transparent",
+            borderColor = "rgba(128, 128, 128, 0.35)",
+            highlightColor = "rgba(128, 128, 128, 0.12)",
             cellPadding = "12px 10px",
-            headerStyle = list(fontSize = "18px")
+            headerStyle = list(fontSize = "18px"),
+            filterInputStyle = list(backgroundColor = "transparent", color = "inherit",
+                                   border = "1px solid rgba(128, 128, 128, 0.55)"),
+            searchInputStyle = list(backgroundColor = "transparent", color = "inherit"),
+            pageButtonStyle = list(color = "inherit")
           ),
           columns = list(Title = colDef(minWidth = 500, style = list(fontSize = "19px", lineHeight = "1.45"),
                                         cell = function(value, index) {
@@ -346,7 +357,7 @@ reactable(pub_data %>% select(-Auth, -Abstract, -pmid, -doi, -Type, -main_auth),
                                         }),
                          # authors hidden to give titles more room, but still searchable
                          Author = colDef(show = FALSE, searchable = TRUE),
-                         Journal = colDef(minWidth = 260, style = list(fontSize = "17px", lineHeight = "1.4", color = "#000")),
+                         Journal = colDef(minWidth = 260, style = list(fontSize = "17px", lineHeight = "1.4")),
                          Year = colDef(width = 85)),
           showPageSizeOptions = TRUE, filterable = TRUE,
           details = function(index) {

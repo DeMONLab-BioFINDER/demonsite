@@ -173,6 +173,10 @@ news:
   - title: "Lijun An receives the AD/PD Junior Faculty Award"
     date: "Mar 2026"
     category: Awards
+    photos:
+      - {src: images/news/adpd2026_graphic.jpg, alt: "AD/PD 2026 conference graphic: a colourful glass-like brain with the text AD/PD 2026, March 17-21, Copenhagen"}
+      - {src: images/news/adpd2026_award_interview.jpg, alt: "A smiling man in glasses and a grey blazer, wearing an AD/PD 2026 lanyard, in the conference hall"}
+    credit: "Images: AD/PD 2026 conference graphic; video still from Best Practice Nordic."
     text: "Lijun An received the AD/PD Junior Faculty Award. Congratulations, Lijun!"
     link: https://adpd.kenes.com/junior-faculty-awards/
     link_text: Read about the award

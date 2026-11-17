@@ -264,9 +264,15 @@ body:has(.news-page) .quarto-title h1.title::after {
   line-height: 1.5;
 }
 
-/* Paper titles in black (underlined as links), red on hover */
+/* Paper titles in the page's text colour (underlined as links), red on hover */
 #papers-table .rt-td a {
-  color: #000;
+  color: inherit;
+}
+
+/* The word clouds are a transparent picture drawn in dark colours for a light page.
+   In dark mode their colours are flipped to light tints of the same hues. */
+.quarto-dark img[src*="papers_files/figure-html/wc"] {
+  filter: invert(1) hue-rotate(180deg) brightness(1.3);
 }
 
 #papers-table .rt-td a:hover {
