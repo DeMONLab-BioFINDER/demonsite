@@ -185,19 +185,50 @@ doc_topics <- tibble(Title = docs$Title, group = topics(lda_model))
 
 nodes_lookup <- tibble(name = graph_titles)
 
-# Strong colours so the word clouds and network dots are easy to read
-topic_colors <- c(
-  "1" = "#D7301F",  # red
-  "2" = "#2166AC",  # blue
-  "3" = "#1B7837",  # green
-  "4" = "#B8860B"   # dark gold
+# The four topics are found automatically from the abstracts. Each one gets the
+# colour of the Research page theme (PET, fMRI, Omics, AI) whose key words it
+# shares most, so a colour means the same thing on both pages. The soft colours
+# are the ones in projects.qmd (used for the network dots); the words use a
+# darker shade of the same colour so they stay readable on white.
+research_themes <- tibble(
+  theme = c("PET", "fMRI", "Omics", "AI"),
+  soft  = c("#FFAABB", "#77AADD", "#44BB99", "#EEDD88"),
+  words = list(
+    c("tau", "taupet", "pet", "amyloid", "amyloidbeta", "spread", "tracer", "deposition"),
+    c("connectivity", "functional", "fmri", "networks", "network", "brain", "cognitive", "regions"),
+    c("proteins", "protein", "proteomics", "proteomic", "plasma", "biomarkers", "biomarker", "genes", "genetic", "molecular"),
+    c("model", "models", "learning", "machine", "subtypes", "subtype", "progression", "data", "deep", "clinical")
+  )
 )
+
+topic_beta <- tidy(lda_model, matrix = "beta") %>%
+  group_by(topic) %>% slice_max(beta, n = 15) %>% ungroup()
+
+# score every topic against every theme, then hand out the best pairs first
+scores <- expand_grid(topic = seq_len(num_topics), theme = seq_len(nrow(research_themes))) %>%
+  mutate(score = map2_dbl(topic, theme, function(tp, th)
+    sum(topic_beta$beta[topic_beta$topic == tp & topic_beta$term %in% research_themes$words[[th]]]))) %>%
+  arrange(desc(score))
+theme_of_topic <- rep(NA_integer_, num_topics)
+for (i in seq_len(nrow(scores))) {
+  if (is.na(theme_of_topic[scores$topic[i]]) && !(scores$theme[i] %in% theme_of_topic))
+    theme_of_topic[scores$topic[i]] <- scores$theme[i]
+}
+message("Topic -> theme: ", paste(seq_len(num_topics), research_themes$theme[theme_of_topic], sep = "=", collapse = ", "))
+
+topic_soft <- setNames(research_themes$soft[theme_of_topic], as.character(seq_len(num_topics)))
+topic_colors <- setNames(rgb(t(col2rgb(topic_soft)) * 0.55, maxColorValue = 255),
+                         as.character(seq_len(num_topics)))
 
 nodes <- nodes_lookup %>%
   left_join(doc_topics, by = c("name" = "Title")) %>%
   mutate(group = replace_na(group, 0L),
-         color = topic_colors[as.character(group)]) %>% 
-  mutate(id = row_number(),
+         color.background = unname(topic_soft[as.character(group)]),
+         color.border = unname(topic_colors[as.character(group)]),
+         color.highlight.background = color.background,
+         color.highlight.border = color.border) %>% 
+  mutate(borderWidth = 2,
+         id = row_number(),
          title = name)
 
 
@@ -218,6 +249,7 @@ edges <- data.frame(
 
 ```{r wc, echo=FALSE, message=FALSE}
 #| layout-ncol: 2
+#| fig-dpi: 72
 
 library(rentrez)
 library(xml2)

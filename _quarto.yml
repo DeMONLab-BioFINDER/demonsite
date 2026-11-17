@@ -14,8 +14,12 @@ website:
         text: Home
       - members.qmd
       - projects.qmd
-      - research-publications.qmd
-      - papers.qmd
+      - text: Research Publications
+        menu:
+          - href: research-publications.qmd
+            text: Highlights
+          - href: papers.qmd
+            text: All publications
       # - href: blog.qmd
       #   text: Blog
       - href: news.qmd

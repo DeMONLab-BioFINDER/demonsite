@@ -83,6 +83,15 @@ The Home page changes only after a full build (`quarto render`). `quarto preview
 page you edited, so it won't show the change on Home. The live site changes once the rebuilt
 `_site` is published.
 
+## Publications page (All publications)
+
+The top menu item "Research Publications" opens a small menu with two entries: "Highlights"
+(`research-publications.qmd`) and "All publications" (`papers.qmd`). The full list is built from
+PubMed and Jake's ORCID profile, so a new paper appears once it is in one of them (the weekly
+workflow above refreshes it). The four word clouds are found automatically from the abstracts, and
+each is given the colour of the Research page theme (PET, fMRI, Omics, AI) whose key words it
+shares most, so the same colour means the same thing on both pages.
+
 ## Research Publications page
 
 The Research Publications page (`research-publications.qmd`) shows the lab's highlighted papers
