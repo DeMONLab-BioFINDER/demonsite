@@ -144,7 +144,6 @@ news:
   - title: "Jacob Vogel receives the Young Researcher Prize 2026"
     date: "May 2026"
     category: Awards
-    home: true
     photos:
       - {src: images/news/prize2026_jake.jpg, alt: "Jacob Vogel speaking at the podium at the award ceremony"}
     text: "Our PI Jacob Vogel was awarded the Young Researcher Prize 2026 by the Fondation Recherche

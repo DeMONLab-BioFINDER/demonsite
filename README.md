@@ -124,7 +124,7 @@ like `Nov 2026`: the build stops with a message if it does not.
 | `focus` | Optional. Where the crop of a photo is centred, as `"50% 20%"` (across, down). The default is `"50% 30%"`; a smaller second number shows more of the top |
 | `credit` | Optional. Credit line or short description of the images |
 | `link`, `link_text` | Optional. Button linking to the paper or article |
-| `home` | Optional. `home: true` shows this item on the Home page. Keep it on one item only |
+| `home` | Optional. By default the Home page shows the newest news item that has a photo and is not in the Publications subtab. `home: true` pins one item there instead; keep it on one item only, and remove it when the item should no longer be pinned |
 
 Images go in `images/news/` as JPEG, no wider than 1200 pixels. Photos are cropped to a wide
 2:1 box, so keep the people and the subject in the middle; paper figures (see `fit`) are not cropped.
