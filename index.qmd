@@ -96,6 +96,7 @@ latest_card <- function(label, image, alt, credit, meta, title, text, main_link,
   tags$article(
     class = "latest-card",
     tags$figure(class = paste("latest-figure", if (portrait) "is-portrait"),
+                style = if (portrait) paste0("--bg:url('", image, "')"),
                 img(src = image, alt = alt, loading = "lazy")),
     div(class = "latest-body",
         if (!is.null(credit)) div(class = "latest-credit", credit),

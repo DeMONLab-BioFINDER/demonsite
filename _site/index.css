@@ -97,10 +97,25 @@
   object-fit: contain;
 }
 
-/* a tall portrait fills the box, with the face kept in view */
+/* a tall portrait is shown whole, centred on a blurred copy of itself (--bg is set
+   in index.qmd), the same way as on the News page */
+.latest-figure.is-portrait {
+  position: relative;
+  background: transparent;
+}
+
+.latest-figure.is-portrait::before {
+  content: "";
+  position: absolute;
+  inset: -24px;
+  background: var(--bg) center / cover;
+  filter: blur(22px);
+  opacity: 0.85;
+}
+
 .latest-figure.is-portrait img {
-  object-fit: cover;
-  object-position: 50% 20%;
+  position: relative;
+  object-fit: contain;
 }
 
 .latest-body {
