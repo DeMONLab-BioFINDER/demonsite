@@ -97,6 +97,12 @@
   object-fit: contain;
 }
 
+/* a tall portrait fills the box, with the face kept in view */
+.latest-figure.is-portrait img {
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
 .latest-body {
   display: flex;
   flex-direction: column;

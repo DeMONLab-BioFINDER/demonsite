@@ -88,6 +88,17 @@ news:
       Alzheimer's Association International Conference, including Jonathan's talk on how age and
       Alzheimer's disease affect functional connectivity."
 
+  - title: "Jacob Vogel named a Highly Cited Researcher 2026"
+    date: "Nov 2026"
+    category: Awards
+    fit: portrait
+    photos:
+      - {src: images/news/jake_portrait.jpg, alt: "Jacob Vogel smiling, with a red beard, in a checked shirt"}
+    text: "Our PI Jacob Vogel is on Clarivate's 2026 list of Highly Cited Researchers, in the
+      category Neuroscience and Behavior. Congratulations, Jake!"
+    link: https://clarivate.com/highly-cited-researchers/
+    link_text: About the list
+
   - title: "Lijun An receives his first grant, on agentic AI for biomarker discovery"
     date: "Jul 2026"
     category: Awards
@@ -185,6 +196,8 @@ news:
   - title: "DeMON Lab at AAIC 2025"
     date: "Jul 2025"
     category: Conferences
+    photos:
+      - {src: images/news/aaic2025_sign.jpg, alt: "Three DeMON Lab members standing behind the large AAIC 25 sign at the conference venue in Toronto"}
     text: "Jacob Vogel, Yu Xiao and Gabriele Vilkaite attended the Alzheimer's Association
       International Conference (AAIC) 2025 in Toronto, July 27-31. Lijun An took part online."
 
