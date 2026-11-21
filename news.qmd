@@ -163,6 +163,14 @@ news:
     link: https://doi.org/10.1038/s41591-026-04303-y
     link_text: Read the paper
 
+  - title: "Team photo at AD/PD 2026"
+    date: "Mar 2026"
+    category: Conferences
+    photos:
+      - {src: images/news/adpd2026_team.jpg, alt: "Eight members of the DeMON Lab standing together on a concrete staircase at AD/PD 2026, wearing conference lanyards"}
+    focus: "50% 20%"
+    text: "Part of the DeMON Lab team on the stairs at AD/PD 2026 in Copenhagen."
+
   - title: "DeMON Lab at AD/PD 2026"
     date: "Mar 2026"
     category: Conferences
@@ -173,6 +181,12 @@ news:
     text: "Lijun An and Jonathan Rittmo gave talks at AD/PD 2026 in Copenhagen: Lijun on the AI-based
       diagnostic potential of plasma proteomics across 17,187 people, and Jonathan on how age and
       Alzheimer's disease affect functional connectivity along separate axes of brain organization."
+
+  - title: "DeMON Lab at AAIC 2025"
+    date: "Jul 2025"
+    category: Conferences
+    text: "Jacob Vogel, Yu Xiao and Gabriele Vilkaite attended the Alzheimer's Association
+      International Conference (AAIC) 2025 in Toronto, July 27-31. Lijun An took part online."
 
   - title: "Lijun An receives the AD/PD Junior Faculty Award"
     date: "Mar 2026"
