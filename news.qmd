@@ -201,6 +201,24 @@ news:
     text: "Jacob Vogel, Yu Xiao and Gabriele Vilkaite attended the Alzheimer's Association
       International Conference (AAIC) 2025 in Toronto, July 27-31. Lijun An took part online."
 
+  - title: "DeMON Lab at OHBM 2024"
+    date: "Jun 2024"
+    category: Conferences
+    photos:
+      - {src: images/news/ohbm2024_jonathan_talk.jpg, alt: "Jonathan Rittmo presenting at the podium in front of a slide on brain networks and gradients at OHBM 2024 in Seoul"}
+    focus: "50% 40%"
+    text: "Jacob Vogel and Jonathan Rittmo went to the annual meeting of the Organization for Human
+      Brain Mapping (OHBM) in Seoul, South Korea. It was Jonathan's first conference."
+
+  - title: "Jonathan Rittmo receives an OHBM abstract award"
+    date: "Jun 2024"
+    category: Awards
+    photos:
+      - {src: images/news/ohbm2024_jonathan_talk.jpg, alt: "Jonathan Rittmo presenting at the podium in front of a slide on brain networks and gradients at OHBM 2024 in Seoul"}
+    focus: "50% 40%"
+    text: "Jonathan Rittmo received an abstract award at OHBM 2024 in Seoul, at his first conference.
+      Congratulations, Jonathan!"
+
   - title: "Lijun An receives the AD/PD Junior Faculty Award"
     date: "Mar 2026"
     category: Awards
